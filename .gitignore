@@ -1,0 +1,18 @@
+# Data (too large for Git)
+data/raw/
+data/processed/
+
+# R
+.Rhistory
+.Rdata
+.RData
+*.Rproj.user/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temp files
+~$*
+*.tmp
