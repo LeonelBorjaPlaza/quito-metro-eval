@@ -105,11 +105,10 @@ read_remmaq <- function(filepath, sheet_name, var_suffix) {
   if (nrow(dup_check) > 0) {
     cat(sprintf("  WARNING: %d duplicate date-hour combinations. Averaging.\n", nrow(dup_check)))
     print(dup_check)
-    stn_cols <- grep(paste0("_", var_suffix, "$"), names(df), value = TRUE)
     df <- df %>%
       group_by(date, hour_of_day) %>%
       summarise(fecha = first(fecha),
-                across(all_of(stn_cols), ~ mean(.x, na.rm = TRUE)),
+                across(all_of(available), ~ mean(.x, na.rm = TRUE)),
                 .groups = "drop")
   }
   cat(sprintf("  Rows: %d, Stations: %d\n", nrow(df), length(available)))
