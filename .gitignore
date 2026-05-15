@@ -1,18 +1,29 @@
-# Data (too large for Git)
+# Data (regenerable or external)
 data/raw/
 data/processed/
 
-# R
+# R session files
 .Rhistory
-.Rdata
 .RData
-*.Rproj.user/
+.Ruserdata
+.Rapp.history
+
+# RStudio
+.Rproj.user/
+
+# renv (only keep lock + activate)
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/staging/
+
+# OneDrive cruft (estás en OneDrive)
+*.tmp
+~$*
+.~lock.*
 
 # OS
 .DS_Store
-Thumbs.db
-desktop.ini
-
-# Office temp files
-~$*
-*.tmp
+Thumbs.db.RDataTmp

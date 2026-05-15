@@ -57,10 +57,11 @@ station_distances <- tibble(
 # Matches Stata: keep if inlist(hour_of_day, 7, 8, 9, 17, 18, 19)
 
 peak <- panel %>%
-  filter(hour_of_day %in% c(7, 8, 9, 17, 18, 19))
+  filter(hour_of_day %in% c(7, 8, 9, 17, 18, 19),
+         day_of_week %in% 1:5)
 
-cat(sprintf("After peak-hour filter: %d rows (from %d)\n", nrow(peak), nrow(panel)))
-
+cat(sprintf("After peak-hour + weekday filter: %d rows (from %d)\n",
+            nrow(peak), nrow(panel)))
 
 #=========================================================
 #  STEP 2: Reshape from wide to long (station as unit)
@@ -69,7 +70,8 @@ cat(sprintf("After peak-hour filter: %d rows (from %d)\n", nrow(peak), nrow(pane
 # Reshape so each row is one station-hour observation.
 
 # Identify all variable suffixes
-var_suffixes <- c("pm25", "co", "tmp", "hum", "vel", "dir", "llu", "rs", "pre")
+var_suffixes <- c("pm25", "co", "no2", "so2",
+                  "tmp", "hum", "vel", "dir", "llu", "rs", "pre")
 
 # Build the long panel
 peak_long <- peak %>%
@@ -102,14 +104,14 @@ cat(sprintf("After dropping events and pre-Dec 2022: %d rows\n", nrow(peak_long)
 daily <- peak_long %>%
   group_by(estacion, date) %>%
   summarise(
-    across(c(pm25, co, tmp, hum, vel, dir, llu, rs, pre),
+    across(c(pm25, co, no2, so2, tmp, hum, vel, dir, llu, rs, pre),
            ~ mean(.x, na.rm = TRUE)),
     across(c(holiday, wildfire, poweroutage),
            ~ mean(.x, na.rm = TRUE)),
     .groups = "drop"
   ) %>%
   # NaN from all-NA groups -> NA
-  mutate(across(c(pm25, co, tmp, hum, vel, dir, llu, rs, pre),
+  mutate(across(c(pm25, co, no2, so2, tmp, hum, vel, dir, llu, rs, pre),
                 ~ ifelse(is.nan(.x), NA, .x)))
 
 cat(sprintf("Daily panel: %d rows\n", nrow(daily)))
@@ -411,7 +413,7 @@ build_weekly_panel <- function(daily_data, covars, pollutant,
     arrange(week_date) %>%
     mutate(
       week_id    = row_number(),
-      year       = year(week_date),
+      year       = isoyear(week_date),
       weeknum    = isoweek(week_date),
       week_label = paste0(year, "w", sprintf("%02d", weeknum))
     )
@@ -469,6 +471,26 @@ write_csv(co_panel, file.path(proc_dir, "CO_completepanel_peakweekly.csv"))
 cat(sprintf("Saved: %s\n", file.path(proc_dir, "CO_completepanel_peakweekly.csv")))
 
 
+
+#=========================================================
+#  Build NO2 panel (San Antonio not measured -> dropped)
+#=========================================================
+no2_panel <- build_weekly_panel(daily, covars_weekly, "no2",
+                                drop_sanantonio = TRUE)
+
+write_csv(no2_panel, file.path(proc_dir, "NO2_completepanel_peakweekly.csv"))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, "NO2_completepanel_peakweekly.csv")))
+
+
+#=========================================================
+#  Build SO2 panel (assume San Antonio not measured -> dropped)
+#=========================================================
+so2_panel <- build_weekly_panel(daily, covars_weekly, "so2",
+                                drop_sanantonio = TRUE)
+
+write_csv(so2_panel, file.path(proc_dir, "SO2_completepanel_peakweekly.csv"))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, "SO2_completepanel_peakweekly.csv")))
+
 #=========================================================
 #  Final summary
 #=========================================================
@@ -477,5 +499,15 @@ cat(sprintf("PM2.5 panel: %d obs, %d weeks, 8 stations\n",
             nrow(pm25_panel), n_distinct(pm25_panel$week_id)))
 cat(sprintf("CO panel:    %d obs, %d weeks, 7 stations\n",
             nrow(co_panel), n_distinct(co_panel$week_id)))
+cat(sprintf("Output dir:  %s\n", proc_dir))
+
+cat(sprintf("PM2.5 panel: %d obs, %d weeks, 8 stations\n",
+            nrow(pm25_panel), n_distinct(pm25_panel$week_id)))
+cat(sprintf("CO panel:    %d obs, %d weeks, 7 stations\n",
+            nrow(co_panel), n_distinct(co_panel$week_id)))
+cat(sprintf("NO2 panel:   %d obs, %d weeks\n",
+            nrow(no2_panel), n_distinct(no2_panel$week_id)))
+cat(sprintf("SO2 panel:   %d obs, %d weeks\n",
+            nrow(so2_panel), n_distinct(so2_panel$week_id)))
 cat(sprintf("Output dir:  %s\n", proc_dir))
 

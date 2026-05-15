@@ -128,6 +128,8 @@ read_remmaq <- function(filepath, sheet_name, var_suffix) {
 # Pollutants (outcomes)
 pm25 <- read_remmaq(file.path(raw_dir, "PM2.5.xlsx"), "PM2.5", "pm25")
 co   <- read_remmaq(file.path(raw_dir, "CO.xlsx"),    "CO",    "co")
+no2  <- read_remmaq(file.path(raw_dir, "NO2.xlsx"),   "NO2",   "no2")
+so2  <- read_remmaq(file.path(raw_dir, "SO2.xlsx"),   "SO2",   "so2")
 
 # Weather covariates
 tmp  <- read_remmaq(file.path(raw_dir, "TMP.xlsx"), "TMP", "tmp")
@@ -176,6 +178,8 @@ check_month_duplication <- function(df, var_suffix) {
 
 check_month_duplication(pm25, "pm25")
 check_month_duplication(co, "co")
+check_month_duplication(no2, "no2")
+check_month_duplication(so2, "so2")
 check_month_duplication(tmp, "tmp")
 
 
@@ -186,15 +190,23 @@ check_month_duplication(tmp, "tmp")
 # observation is represented, even if some files start/end
 # at different dates.
 
-# Find the overlapping date range across all files
-start_date <- max(min(pm25$date), min(co$date), min(tmp$date), min(hum$date),
-                  min(vel$date), min(dir$date), min(llu$date), min(rs$date),
-                  min(pre$date))
-end_date   <- min(max(pm25$date), max(co$date), max(tmp$date), max(hum$date),
-                  max(vel$date), max(dir$date), max(llu$date), max(rs$date),
-                  max(pre$date))
+# Use the UNION of date ranges (NAs propagate per variable; the per-pollutant
+# balanced-panel step drops incomplete weeks downstream).
+start_date <- min(min(pm25$date), min(co$date), min(no2$date), min(so2$date),
+                  min(tmp$date), min(hum$date), min(vel$date), min(dir$date),
+                  min(llu$date), min(rs$date), min(pre$date))
+end_date   <- max(max(pm25$date), max(co$date), max(no2$date), max(so2$date),
+                  max(tmp$date), max(hum$date), max(vel$date), max(dir$date),
+                  max(llu$date), max(rs$date), max(pre$date))
 
-cat(sprintf("\nOverlapping date range: %s to %s\n", start_date, end_date))
+cat(sprintf("\nUnion date range: %s to %s\n", start_date, end_date))
+
+# Per-variable date ranges (diagnostic)
+for (nm in c("pm25", "co", "no2", "so2", "tmp", "hum",
+             "vel", "dir", "llu", "rs", "pre")) {
+  d <- get(nm)
+  cat(sprintf("  %-5s: %s to %s\n", nm, min(d$date), max(d$date)))
+}
 
 # Build spine: every hour from start to end
 spine <- expand.grid(
@@ -215,6 +227,8 @@ merge_onto_spine <- function(spine, df) {
 panel <- spine %>%
   merge_onto_spine(pm25) %>%
   merge_onto_spine(co) %>%
+  merge_onto_spine(no2) %>%
+  merge_onto_spine(so2) %>%
   merge_onto_spine(tmp) %>%
   merge_onto_spine(hum) %>%
   merge_onto_spine(vel) %>%
@@ -232,7 +246,7 @@ cat(sprintf("Merged panel: %d rows, %d columns\n", nrow(panel), ncol(panel)))
 # REMMAQ QA/QC already validated the data. This is a defensive check
 # for any values that slipped through (negatives are physically impossible).
 
-for (col in grep("_(pm25|co)$", names(panel), value = TRUE)) {
+for (col in grep("_(pm25|co|no2|so2)$", names(panel), value = TRUE)) {
   n_neg <- sum(panel[[col]] < 0, na.rm = TRUE)
   if (n_neg > 0) cat(sprintf("  %s: %d negative values set to NA\n", col, n_neg))
   panel[[col]] <- ifelse(panel[[col]] < 0, NA, panel[[col]])
@@ -355,7 +369,7 @@ cat(sprintf("Date range: %s to %s\n", min(panel$date), max(panel$date)))
 cat(sprintf("Years: %s\n", paste(unique(panel$year), collapse = ", ")))
 
 # Count non-missing by station for PM2.5 and CO
-for (v in c("pm25", "co")) {
+for (v in c("pm25", "co", "no2", "so2")) {
   cat(sprintf("\nNon-missing counts for %s:\n", v))
   cols <- grep(paste0("_", v, "$"), names(panel), value = TRUE)
   for (col in cols) {
