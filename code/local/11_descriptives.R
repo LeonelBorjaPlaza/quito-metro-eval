@@ -17,8 +17,8 @@ library(stringr)
 # ---- Paths ----
 root_dir <- here::here()
 proc_dir <- file.path(root_dir, "data", "processed")
-out_tables_dir  <- file.path(root_dir, "output", "tables")
-out_figures_dir <- file.path(root_dir, "output", "figures")
+out_tables_dir  <- file.path(root_dir, "output", "local", "tables")
+out_figures_dir <- file.path(root_dir, "output", "local", "figures")
 dir.create(out_tables_dir,  showWarnings = FALSE, recursive = TRUE)
 dir.create(out_figures_dir, showWarnings = FALSE, recursive = TRUE)
 

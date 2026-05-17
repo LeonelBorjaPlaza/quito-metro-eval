@@ -14,7 +14,7 @@ library(stringr)
 
 root_dir <- here::here()
 proc_dir <- file.path(root_dir, "data", "processed")
-out_dir  <- file.path(root_dir, "output", "diagnostics")
+out_dir  <- file.path(root_dir, "output", "local", "diagnostics")
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 stations_keep <- c("belisario", "carapungo", "centro", "cotocollao",

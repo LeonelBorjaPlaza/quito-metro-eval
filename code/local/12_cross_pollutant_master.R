@@ -16,8 +16,8 @@ library(stringr)
 
 # ---- Paths ----
 root_dir   <- here::here()
-tables_dir <- file.path(root_dir, "output", "tables")
-figs_dir   <- file.path(root_dir, "output", "figures")
+tables_dir <- file.path(root_dir, "output", "local", "tables")
+figs_dir   <- file.path(root_dir, "output", "local", "figures")
 
 TREATMENT_DATE <- as.Date("2023-12-01")
 BLACKOUT_START <- as.Date("2024-09-18")

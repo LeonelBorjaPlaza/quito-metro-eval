@@ -483,7 +483,7 @@ cat("Use plot_event_study(m5b) to re-examine any model.\n")
 
 library(ggplot2)
 
-OUTPUT_DIR  <- file.path(ROOT_DIR, "output")
+OUTPUT_DIR  <- file.path(ROOT_DIR, "output", "local")
 TABLES_DIR  <- file.path(OUTPUT_DIR, "tables")
 FIGURES_DIR <- file.path(OUTPUT_DIR, "figures")
 dir.create(TABLES_DIR,  showWarnings = FALSE, recursive = TRUE)
