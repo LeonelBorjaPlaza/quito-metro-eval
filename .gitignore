@@ -27,3 +27,21 @@ renv/staging/
 # OS
 .DS_Store
 Thumbs.db.RDataTmp
+
+# Raw and intermediate data - too large/binary for git
+data/raw/satellite/
+data/raw/remmaq/
+data/working/temp_chunks/
+
+# Stata and parquet binary panels generally not tracked
+*.dta
+*.parquet
+
+# But DO track the small UCDB shapefile so the GEE asset is documented
+!data/working/ucdb_lac.*
+
+# Python environments and caches
+myenv/
+.venv/
+__pycache__/
+*.pyc
