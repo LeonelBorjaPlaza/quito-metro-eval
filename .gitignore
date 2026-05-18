@@ -1,47 +1,63 @@
-# Data (regenerable or external)
-data/raw/
-data/processed/
+# =============================================================================
+# DATA FILES — regenerable or external, do not commit
+# =============================================================================
+# Large data binaries (ignored regardless of folder)
+*.dta
+*.parquet
+*.gpkg
+*.tif
+*.tiff
+*.nc
+*.h5
+*.zip
+*.7z
+*.gz
+*.tar
 
-# R session files
+# Raw data folder: ignore data files, allow documentation
+data/raw/**/*.csv
+data/raw/**/*.xlsx
+data/raw/**/*.xls
+data/raw/**/*.pdf
+
+# Processed/working: ignore most CSV outputs (regenerable from raw)
+# Note: existing committed CSVs in data/processed/ stay tracked.
+data/processed/**/*.csv
+data/working/temp_chunks/
+
+# Allow the small UCDB shapefile (documents the GEE asset)
+!data/working/ucdb_lac.*
+
+# =============================================================================
+# R
+# =============================================================================
 .Rhistory
 .RData
+.RDataTmp
 .Ruserdata
 .Rapp.history
-
-# RStudio
 .Rproj.user/
 
-# renv (only keep lock + activate)
+# renv (keep lock + activate only)
 renv/library/
 renv/local/
 renv/cellar/
-renv/lock/
 renv/python/
 renv/staging/
 
-# OneDrive cruft (estás en OneDrive)
-*.tmp
-~$*
-.~lock.*
-
-# OS
-.DS_Store
-Thumbs.db.RDataTmp
-
-# Raw and intermediate data - too large/binary for git
-data/raw/satellite/
-data/raw/remmaq/
-data/working/temp_chunks/
-
-# Stata and parquet binary panels generally not tracked
-*.dta
-*.parquet
-
-# But DO track the small UCDB shapefile so the GEE asset is documented
-!data/working/ucdb_lac.*
-
-# Python environments and caches
+# =============================================================================
+# Python
+# =============================================================================
 myenv/
 .venv/
 __pycache__/
 *.pyc
+
+# =============================================================================
+# OS / OneDrive cruft
+# =============================================================================
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+.~lock.*
