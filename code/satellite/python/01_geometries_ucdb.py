@@ -38,7 +38,7 @@ FeatureCollection asset at:
 import os
 from pathlib import Path
 
-import fiona
+import pyogrio
 import geopandas as gpd
 
 # ----------------------------------------------------------------------------
@@ -79,7 +79,7 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     print(f"Reading from: {INPUT_GPKG}")
-    print(f"Available layers: {fiona.listlayers(str(INPUT_GPKG))}")
+    print(f"Available layers: {pyogrio.list_layers(str(INPUT_GPKG))}")
 
     gdf = gpd.read_file(INPUT_GPKG, layer=LAYER)
     gdf = gdf[KEEP_FIELDS]
