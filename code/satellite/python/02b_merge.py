@@ -9,9 +9,12 @@ CSVs to Google Drive. Once those files have been downloaded into
 `data/raw/satellite/<pollutant>/`, this script stitches them into a single
 analysis-ready file per pollutant at `data/processed/satellite/<pollutant>_weekly.csv`.
 
-The merge is structural only: rows are stacked, a `source_file` column is added
-for provenance, no cleaning/winsorizing/imputation. Those steps belong to the
-R-side Stage 3 (cleaning) and Stage 4 (panel building) scripts.
+The merge is structural: rows are stacked, a `source_file` column is added for
+provenance, and exact duplicates on (city, iso_year, iso_week) are removed
+(arises naturally for AOD because per-month chunking duplicates weeks that span
+month boundaries — same week, same values). No cleaning/winsorizing/imputation
+happens here; those steps belong to the R-side Stage 3 (clean ERA5) and Stage 4
+(build panels) scripts.
 
 Usage
 -----
@@ -24,11 +27,11 @@ Merge specific pollutants:
 
 Inputs
 ------
-data/raw/satellite/<pollutant>/*.csv          (any number of files; e.g. 52 monthly for AOD, 5-6 yearly for others)
+data/raw/satellite/<pollutant>/*.csv          (any number; e.g. 52 monthly for AOD, 5-6 yearly for others)
 
 Outputs
 -------
-data/processed/satellite/<pollutant>_weekly.csv   (single concatenated file)
+data/processed/satellite/<pollutant>_weekly.csv   (single deduplicated file)
 """
 
 import argparse
@@ -50,7 +53,7 @@ POLLUTANTS = ['aod', 'no2', 'co', 'so2', 'era5l', 'hcho', 'ch4']
 # MERGE ONE
 # ----------------------------------------------------------------------------
 def merge_one(pollutant: str) -> None:
-    """Read all CSVs in data/raw/satellite/<pollutant>/, concat, write merged file."""
+    """Read all CSVs in data/raw/satellite/<pollutant>/, concat, dedupe, write."""
     in_dir = RAW_DIR / pollutant
     if not in_dir.exists():
         print(f"\n{pollutant.upper()}: directory not found at {in_dir}; skipping.")
@@ -78,23 +81,36 @@ def merge_one(pollutant: str) -> None:
         return
 
     merged = pd.concat(frames, ignore_index=True)
+    rows_raw = len(merged)
 
-    # Detect a city-id column without hardcoding (UCDB uses ID_UC_G0)
+    # Detect city-id column without hardcoding (UCDB uses ID_UC_G0)
     id_col = next(
         (c for c in ['ID_UC_G0', 'ID_UC', 'city_id', 'system:index'] if c in merged.columns),
         None,
     )
 
+    # Deduplicate on (city, iso_year, iso_week) if those columns are present.
+    # Duplicates arise naturally for AOD (per-month chunking) and harmlessly when
+    # the same week falls into two different files; values are identical.
+    if id_col and 'iso_year' in merged.columns and 'iso_week' in merged.columns:
+        dup_keys = [id_col, 'iso_year', 'iso_week']
+        n_dups = merged.duplicated(subset=dup_keys).sum()
+        if n_dups > 0:
+            merged = merged.drop_duplicates(subset=dup_keys, keep='first') \
+                           .reset_index(drop=True)
+            print(f"  Dedup        : dropped {n_dups:,} duplicate rows "
+                  f"on ({', '.join(dup_keys)})")
+
     # Summary diagnostics
-    print(f"  Rows         : {len(merged):,}")
+    print(f"  Rows in      : {rows_raw:,}")
+    print(f"  Rows out     : {len(merged):,}")
     print(f"  Columns      : {len(merged.columns)}")
     if 'iso_year' in merged.columns:
         years = sorted(merged['iso_year'].dropna().unique())
         if years:
             print(f"  Year range   : {int(years[0])} – {int(years[-1])}")
-    if 'iso_week' in merged.columns:
-        unique_weeks = merged[['iso_year', 'iso_week']].drop_duplicates() \
-            if 'iso_year' in merged.columns else merged[['iso_week']].drop_duplicates()
+    if 'iso_week' in merged.columns and 'iso_year' in merged.columns:
+        unique_weeks = merged[['iso_year', 'iso_week']].drop_duplicates()
         print(f"  Unique weeks : {len(unique_weeks):,}")
     if id_col:
         print(f"  Unique cities: {merged[id_col].nunique():,} (column: {id_col})")
@@ -103,13 +119,6 @@ def merge_one(pollutant: str) -> None:
         if len(cov) > 0:
             print(f"  Coverage     : mean {cov.mean():.3f}, "
                   f"p10 {cov.quantile(0.10):.3f}, p90 {cov.quantile(0.90):.3f}")
-
-    # Duplicate check (informational)
-    if id_col and 'iso_year' in merged.columns and 'iso_week' in merged.columns:
-        dups = merged.duplicated(subset=[id_col, 'iso_year', 'iso_week']).sum()
-        if dups > 0:
-            print(f"  WARN: {dups:,} duplicate (city, iso_year, iso_week) rows. "
-                  f"Likely due to ISO week 2021-W52 appearing in both 2021 and 2022 files.")
 
     # Write
     OUT_DIR.mkdir(parents=True, exist_ok=True)
