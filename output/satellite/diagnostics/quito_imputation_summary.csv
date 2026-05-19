@@ -1,0 +1,6 @@
+metric,value
+Total weeks,227
+Raw ln_aod present,221
+Raw ln_aod missing,6
+Imputed (short-gap filled),6
+Still missing post-imputation,0
