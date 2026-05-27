@@ -423,8 +423,8 @@ build_weekly_panel <- function(daily_data, covars, pollutant,
 
 
   # ---- Reconstruct treatment flags ----
-  # Treatment week: 2023w49 (week containing Dec 1, 2023)
-  t_int <- week_map$week_id[week_map$week_label == "2023w49"]
+  # Treatment week: 2023w48 -- ISO week containing Dec 1, 2023 (Fri)
+  t_int <- week_map$week_id[week_map$week_label == "2023w48"]
   if (length(t_int) == 0) {
     # Find closest week
     t_int <- week_map$week_id[week_map$week_date ==

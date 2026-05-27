@@ -33,8 +33,15 @@ station_distances <- tibble(
 )
 
 TREATMENT_DATE <- as.Date("2023-12-01")
-BLACKOUT_START <- as.Date("2024-09-18")
-BLACKOUT_END   <- as.Date("2024-12-20")
+# ISO week containing Dec 1, 2023 = 2023-W48 (treatment week start, Monday)
+TREATMENT_WEEK_START <- floor_date(TREATMENT_DATE, "week", week_start = 1)
+
+# Phase 3 blackout: matched to the estimation setup scripts (03/05/07/09) --
+# a window AND a power-outage/wildfire threshold (not a plain date box).
+BLACKOUT_START <- as.Date("2024-09-15")
+BLACKOUT_END   <- as.Date("2024-12-31")
+PO_THRESHOLD   <- 0.3
+WF_THRESHOLD   <- 0.3
 
 pollutants <- c("pm25", "co", "no2", "so2")
 pollutant_labels <- c(pm25 = "PM[2.5]~~(mu*g/m^3)",
@@ -69,7 +76,7 @@ summary_stats <- bind_rows(lapply(pollutants, function(pol) {
   raw_col     <- pol
   
   panel %>%
-    mutate(period = ifelse(week_date < TREATMENT_DATE, "pre", "post")) %>%
+    mutate(period = ifelse(week_date < TREATMENT_WEEK_START, "pre", "post")) %>%
     group_by(estacion, period) %>%
     summarise(
       n_weeks      = n(),
@@ -153,37 +160,62 @@ print(sample_construction)
 #---------------------------------------------------------
 cat("\nBuilding treatment timeline table...\n")
 
-data_end_max <- max(do.call(c, lapply(panels, function(p) max(p$week_date))))
+classify_periods <- function(panel) {
+  # Per-week power-outage / wildfire flags (panel is station x week; these
+  # event flags are city-level, so averaging over stations recovers the
+  # week-level value -- same construction as the estimation setup scripts).
+  wk <- panel %>%
+    group_by(week_id, week_date, week_label) %>%
+    summarise(po = mean(poweroutage, na.rm = TRUE),
+              wf = mean(wildfire,    na.rm = TRUE),
+              .groups = "drop") %>%
+    arrange(week_date)
 
-data_start_min <- min(do.call(c, lapply(panels, function(p) min(p$week_date))))
+  t_int <- min(wk$week_id[wk$week_date >= TREATMENT_WEEK_START])
 
+  # Phase 3 blackout: the weeks actually dropped from the SDID donut --
+  # in-window AND outage/wildfire above threshold (identical to 03/05/07/09).
+  blackout_ids <- wk %>%
+    filter(week_date >= BLACKOUT_START & week_date <= BLACKOUT_END &
+           (po > PO_THRESHOLD | wf > WF_THRESHOLD)) %>%
+    pull(week_id)
 
-periods <- list(
-  list(name = "Pre-treatment",
-       start = data_start_min, end = TREATMENT_DATE - 1),
-  list(name = "Period 1 (post, pre-blackout)",
-       start = TREATMENT_DATE, end = BLACKOUT_START - 1),
-  list(name = "Phase 3 blackout (excluded in SDID donut)",
-       start = BLACKOUT_START, end = BLACKOUT_END),
-  list(name = "Period 2 (post, post-blackout)",
-       start = BLACKOUT_END + 1, end = data_end_max)
+  wk %>%
+    mutate(period = case_when(
+      week_id < t_int            ~ "Pre-treatment",
+      week_id %in% blackout_ids  ~ "Phase 3 blackout (dropped from SDID donut)",
+      week_date < BLACKOUT_START ~ "Period 1 (post, pre-blackout)",
+      week_date > BLACKOUT_END   ~ "Period 2 (post, post-blackout)",
+      TRUE                       ~ "Late Dec 2024 (post-outage, pre-Period 2)"
+    ))
+}
+
+period_levels <- c(
+  "Pre-treatment",
+  "Period 1 (post, pre-blackout)",
+  "Phase 3 blackout (dropped from SDID donut)",
+  "Late Dec 2024 (post-outage, pre-Period 2)",
+  "Period 2 (post, post-blackout)"
 )
 
-timeline <- bind_rows(lapply(periods, function(p) {
-  weeks_per_pol <- sapply(pollutants, function(pol) {
-    panel <- panels[[pol]]
-    n_distinct(panel$week_date[panel$week_date >= p$start &
-                                 panel$week_date <= p$end])
-  })
-  
+classified <- lapply(pollutants, function(pol) {
+  classify_periods(panels[[pol]]) %>% mutate(pollutant = pol)
+})
+names(classified) <- pollutants
+
+timeline <- bind_rows(lapply(period_levels, function(pname) {
+  n_per_pol <- sapply(pollutants, function(pol)
+    sum(classified[[pol]]$period == pname))
+  dates <- do.call(c, lapply(pollutants, function(pol)
+    classified[[pol]]$week_date[classified[[pol]]$period == pname]))
   tibble(
-    period       = p$name,
-    start_date   = p$start,
-    end_date     = p$end,
-    n_weeks_pm25 = weeks_per_pol["pm25"],
-    n_weeks_co   = weeks_per_pol["co"],
-    n_weeks_no2  = weeks_per_pol["no2"],
-    n_weeks_so2  = weeks_per_pol["so2"]
+    period       = pname,
+    start_date   = if (length(dates)) min(dates) else as.Date(NA),
+    end_date     = if (length(dates)) max(dates) else as.Date(NA),
+    n_weeks_pm25 = n_per_pol["pm25"],
+    n_weeks_co   = n_per_pol["co"],
+    n_weeks_no2  = n_per_pol["no2"],
+    n_weeks_so2  = n_per_pol["so2"]
   )
 }))
 
@@ -191,6 +223,13 @@ write_csv(timeline,
           file.path(out_tables_dir, "descriptives_treatment_timeline.csv"))
 cat(sprintf("  Wrote: descriptives_treatment_timeline.csv\n"))
 print(timeline)
+
+# Calendar span of the flagged blackout weeks -- used to shade the figure below
+blackout_dates <- do.call(c, lapply(pollutants, function(pol)
+  classified[[pol]]$week_date[classified[[pol]]$period ==
+    "Phase 3 blackout (dropped from SDID donut)"]))
+blackout_span_start <- min(blackout_dates)
+blackout_span_end   <- max(blackout_dates)
 
 
 #---------------------------------------------------------
@@ -233,7 +272,7 @@ p_ts <- ggplot(ts_data, aes(x = week_date, y = value, group = estacion,
                             color = station_group, alpha = station_group,
                             linewidth = station_group)) +
   annotate("rect",
-           xmin = BLACKOUT_START, xmax = BLACKOUT_END,
+           xmin = blackout_span_start, xmax = blackout_span_end,
            ymin = -Inf, ymax = Inf,
            alpha = 0.15, fill = "gray60") +
   geom_vline(xintercept = TREATMENT_DATE, linetype = "dashed",
@@ -255,8 +294,8 @@ p_ts <- ggplot(ts_data, aes(x = week_date, y = value, group = estacion,
        y = "Weekly mean of peak-hour weekday levels",
        color = NULL, alpha = NULL, linewidth = NULL,
        caption = paste("Vertical dashed line: Metro Quito opening",
-                       "(Dec 1, 2023). Shaded region: Phase 3 power outages",
-                       "(Sep 18 - Dec 20, 2024).")) +
+                       "(Dec 1, 2023). Shaded region: Phase 3 power-outage",
+                       "weeks dropped from the SDID donut sample.")) +
   theme_minimal(base_size = 11) +
   theme(legend.position = "bottom",
         panel.grid.minor = element_blank(),

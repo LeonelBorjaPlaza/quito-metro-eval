@@ -20,8 +20,10 @@ tables_dir <- file.path(root_dir, "output", "local", "tables")
 figs_dir   <- file.path(root_dir, "output", "local", "figures")
 
 TREATMENT_DATE <- as.Date("2023-12-01")
-BLACKOUT_START <- as.Date("2024-09-18")
-BLACKOUT_END   <- as.Date("2024-12-20")
+# Headline-figure shading: calendar span of the flagged Phase 3 blackout
+# weeks (the weeks the SDID donut drops) -- matches 11_descriptives.R.
+BLACKOUT_START <- as.Date("2024-09-16")
+BLACKOUT_END   <- as.Date("2024-12-16")
 
 #---------------------------------------------------------
 # 1. Load per-pollutant results, bind into master

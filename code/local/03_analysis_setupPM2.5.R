@@ -73,7 +73,7 @@ df <- df %>%
   )
 
 t_int <- df %>%
-  filter(week_date >= TREATMENT_DATE) %>%
+  filter(week_date >= floor_date(TREATMENT_DATE, "week", week_start = 1)) %>%
   pull(week_id) %>%
   min()
 
@@ -143,13 +143,12 @@ blackout_ids    <- post_weeks %>% filter(is_blackout) %>% pull(week_id)
 
 cat(sprintf("\nPost-treatment breakdown:\n"))
 cat(sprintf("  Period 1 (Dec 2023 - mid Sep 2024):  %d weeks (ids %d-%d)\n",
-            length(p1_ids), min(p1_ids), max(p1_ids)))
+            length(p1_ids), as.integer(min(p1_ids)), as.integer(max(p1_ids))))
 cat(sprintf("  Phase 3 blackout:                    %d weeks (ids %d-%d)\n",
-            length(blackout_ids), min(blackout_ids), max(blackout_ids)))
+            length(blackout_ids), as.integer(min(blackout_ids)), as.integer(max(blackout_ids))))
 cat(sprintf("  Period 2 (Jan 2025+):                %d weeks (ids %d-%d)\n",
-            length(p2_ids), min(p2_ids), max(p2_ids)))
+            length(p2_ids), as.integer(min(p2_ids)), as.integer(max(p2_ids))))
 cat(sprintf("  Clean (non-blackout):                %d weeks\n", length(clean_post_ids)))
-
 
 #=========================================================
 #  STEP 5: Residualize for SDID
@@ -189,7 +188,7 @@ df_donut <- df_donut %>%
   select(-week_id_donut)
 
 t_int_donut <- donut_week_map %>%
-  filter(week_date >= TREATMENT_DATE) %>%
+  filter(week_date >= floor_date(TREATMENT_DATE, "week", week_start = 1)) %>%
   slice_min(week_date) %>%
   pull(week_id_donut)
 

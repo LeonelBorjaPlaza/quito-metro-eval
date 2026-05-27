@@ -57,19 +57,19 @@ read_remmaq <- function(filepath, sheet_name, var_suffix) {
   # Read with row 1 as column names (readxl default)
   # Blank date header gets auto-named; station names become column headers
   # Units row ("ug/m3" etc.) becomes first data row -- we drop it below
-  df <- read_excel(filepath, sheet = sheet_name, col_types = "text")
+  hdr <- read_excel(filepath, sheet = 1, n_max = 0)
+  df  <- read_excel(filepath, sheet = 1,
+                    col_types = c("date", rep("numeric", ncol(hdr) - 1L)))
   
-  # Row 1 of data is the units row -- remove it
-  df <- df[-1, ]
+
   
   # First column is fecha; remaining are stations
   station_names_raw <- names(df)[-1]
   station_names <- sapply(station_names_raw, standardize_name, USE.NAMES = FALSE)
   names(df) <- c("fecha", station_names)
   
-  # Coerce fecha to POSIXct (read as text = Excel serial number)
-  df$fecha <- as.POSIXct(as.numeric(df$fecha) * 86400,
-                         origin = "1899-12-30", tz = "UTC")
+  # AFTER  -- fecha is already a datetime from the typed read
+  df$fecha <- as.POSIXct(df$fecha, tz = "UTC")
   
   # Coerce station columns to numeric (handles whitespace strings -> NA)
   for (stn in station_names) {

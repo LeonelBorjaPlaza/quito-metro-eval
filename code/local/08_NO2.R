@@ -152,6 +152,35 @@ run_augsynth <- function(df_input, treatment_var, model_label,
 #  HELPER: Run SDID
 #=========================================================
 
+#=========================================================
+#  HELPER: permutation p-value for local SDID
+#=========================================================
+#  The Wald p-value (pnorm of att/se) is invalid for the local design:
+#  with a donor pool this small the placebo distribution has finite
+#  support and cannot justify Gaussian tails. This builds the placebo
+#  distribution of ATTs (each donor station in turn as placebo-treated)
+#  and returns a rank-based p-value. The smallest p the design can
+#  return is 1/(N0 + 1); n_placebo reports N0 so that floor is explicit.
+#  Single-treated specs only; co-treated specs return NA.
+local_placebo_p <- function(Y, N0, T0) {
+  est_one  <- function(M, n0, t0) as.numeric(synthdid_estimate(M, n0, t0))
+  att_real <- est_one(Y, N0, T0)
+  placebo  <- rep(NA_real_, N0)
+  for (j in seq_len(N0)) {
+    ctrl <- setdiff(seq_len(N0), j)        # N0 - 1 controls
+    Yj   <- Y[c(ctrl, j), , drop = FALSE]  # donor j placebo-treated, real treated dropped
+    placebo[j] <- tryCatch(est_one(Yj, N0 - 1L, T0),
+                           error = function(e) NA_real_)
+  }
+  pa <- placebo[is.finite(placebo)]
+  n  <- length(pa)
+  list(
+    p_1s      = if (att_real < 0) (1 + sum(pa <= att_real)) / (1 + n) else NA_real_,
+    p_2s      = (1 + sum(abs(pa) >= abs(att_real))) / (1 + n),
+    n_placebo = n
+  )
+}
+
 run_sdid <- function(df_input, treatment_var, model_label,
                      exclude_station = NULL, multi_treated = FALSE) {
 
@@ -176,15 +205,23 @@ run_sdid <- function(df_input, treatment_var, model_label,
   att <- as.numeric(est)
   pct <- (exp(att) - 1) * 100
   
-  # Inference: placebo SE; 2-sided always; 1-sided only if negative
-  z_stat <- att / se
-  p_2s   <- 2 * (1 - pnorm(abs(z_stat)))
-  p_1s   <- if (att < 0) pnorm(z_stat) else NA_real_
+  # Inference: permutation (placebo) test over donor stations.
+  if (multi_treated) {
+    p_1s <- NA_real_; p_2s <- NA_real_; n_placebo <- NA_integer_
+    cat("  (co-treated spec: permutation p not computed)\n")
+  } else {
+    perm      <- local_placebo_p(pm$Y, pm$N0, pm$T0)
+    p_1s      <- perm$p_1s
+    p_2s      <- perm$p_2s
+    n_placebo <- perm$n_placebo
+  }
   
   cat(sprintf("ATT: %.4f (%.1f%%), SE: %.4f\n", att, pct, se))
   cat(sprintf("95%% CI: (%.4f, %.4f)\n", att - 1.96*se, att + 1.96*se))
-  cat(sprintf("p-value: %s (1-sided), %.4f (2-sided)\n",
-              ifelse(is.na(p_1s), "  --  ", sprintf("%.4f", p_1s)), p_2s))
+  cat(sprintf("p-value: %s (1-sided), %s (2-sided)  [perm, N0=%s]\n",
+              ifelse(is.na(p_1s), "  --  ", sprintf("%.4f", p_1s)),
+              ifelse(is.na(p_2s), "  --  ", sprintf("%.4f", p_2s)),
+              ifelse(is.na(n_placebo), "--", as.character(n_placebo))))
 
   # Trajectory
   omega <- attr(est, "weights")$omega
@@ -213,7 +250,7 @@ run_sdid <- function(df_input, treatment_var, model_label,
   list(label = model_label, method = "SDID",
        att = att, pct = pct, se = se,
        ci_lo = att - 1.96*se, ci_hi = att + 1.96*se,
-       p_1s = p_1s, p_2s = p_2s,
+       p_1s = p_1s, p_2s = p_2s, n_placebo = n_placebo,
        traj = traj, omega = omega_df, T0 = pm$T0)
 }
 

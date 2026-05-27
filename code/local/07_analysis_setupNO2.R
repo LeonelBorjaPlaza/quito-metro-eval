@@ -73,7 +73,7 @@ df <- df %>%
   )
 
 t_int <- df %>%
-  filter(week_date >= TREATMENT_DATE) %>%
+  filter(week_date >= floor_date(TREATMENT_DATE, "week", week_start = 1)) %>%
   pull(week_id) %>%
   min()
 
@@ -189,7 +189,7 @@ df_donut <- df_donut %>%
   select(-week_id_donut)
 
 t_int_donut <- donut_week_map %>%
-  filter(week_date >= TREATMENT_DATE) %>%
+  filter(week_date >= floor_date(TREATMENT_DATE, "week", week_start = 1)) %>%
   slice_min(week_date) %>%
   pull(week_id_donut)
 
