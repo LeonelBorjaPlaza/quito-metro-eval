@@ -337,12 +337,15 @@ build_weekly_panel <- function(daily_data, covars, pollutant,
         pivot_wider(names_from = estacion, values_from = all_of(pol_imp),
                     names_prefix = paste0(pol_imp, "_"))
 
-      # Add covariates from Guamani (a control station with good coverage)
-      gua_covars <- covars %>%
-        filter(estacion == "guamani") %>%
+      # Add San Antonio's own weather covariates as regression predictors.
+      # (Prior versions used Guamani's weather as a workaround; San Antonio
+      # has complete weather coverage on the analysis window, so using its
+      # own is both more accurate and methodologically cleaner.)
+      sa_covars <- covars %>%
+        filter(estacion == "sanantonio") %>%
         select(week_date, tmp_imp, hum_imp, vel_imp, dir_imp,
                llu_imp, rs_imp, pre_imp)
-      wide <- wide %>% left_join(gua_covars, by = "week_date")
+      wide <- wide %>% left_join(sa_covars, by = "week_date")
 
       # Regression: predict San Antonio from other control stations + weather
       # Exclude Centro and Belisario (potentially treated)
