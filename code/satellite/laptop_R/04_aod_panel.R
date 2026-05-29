@@ -43,9 +43,9 @@ OUTFILE  <- file.path(ROOT_DIR, "data", "processed", "satellite", "panel_aod.csv
 stopifnot(file.exists(AOD_IN), file.exists(ERA5_IN))
 
 # ---- Constants used throughout ---------------------------------------------
-# Treatment: Metro opened ISO week 49 of 2023
+# Treatment: Metro opened ISO week 48 of 2023 (week containing Dec 1, Fri)
 POST_YEAR <- 2023
-POST_WEEK <- 49
+POST_WEEK <- 48
 
 # Event flags (informational; Stage 5 decides whether to filter)
 BLACKOUT_YEAR  <- 2024

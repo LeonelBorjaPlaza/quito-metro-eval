@@ -40,7 +40,7 @@ stopifnot(file.exists(NO2_IN), file.exists(ERA5_IN))
 
 # ---- Constants -------------------------------------------------------------
 POST_YEAR <- 2023
-POST_WEEK <- 49
+POST_WEEK <- 48
 
 BLACKOUT_YEAR  <- 2024
 BLACKOUT_WEEKS <- 16:18

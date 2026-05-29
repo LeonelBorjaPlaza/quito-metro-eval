@@ -526,6 +526,34 @@ two_sided_wald <- function(att, se) {
   2 * (1 - pnorm(abs(att / se)))
 }
 
+# ============================================================================
+#  RANK-BASED PLACEBO PERMUTATION P-VALUE (two-sided)
+# ============================================================================
+#  ADDITIVE robustness diagnostic reported ALONGSIDE the Wald p_2s -- it does
+#  NOT replace it. SDID/SC only; AugSynth keeps conformal inference.
+#  Abadie-style leave-one-out placebo: each donor j in 1:N0 is designated
+#  placebo-treated, the remaining N0-1 donors are its controls, the real
+#  treated unit is excluded, and the estimator is re-run. The p-value is the
+#  share of placebo |ATT| at least as large as the real |ATT|. Smallest
+#  attainable p is 1/(N0+1). Deterministic given Y (no RNG); does not touch
+#  the set.seed stream used by the placebo SE.
+# ============================================================================
+placebo_inference_perm <- function(Y, N0, T0, estimator) {
+  est_fun  <- if (estimator == "sdid") synthdid_estimate else sc_estimate
+  att_real <- as.numeric(est_fun(Y, N0, T0))
+  placebo  <- rep(NA_real_, N0)
+  for (j in seq_len(N0)) {
+    ctrl <- setdiff(seq_len(N0), j)
+    Y_j  <- Y[c(ctrl, j), , drop = FALSE]   # placebo-treated last; real treated dropped
+    placebo[j] <- tryCatch(as.numeric(est_fun(Y_j, N0 - 1L, T0)),
+                           error = function(e) NA_real_)
+  }
+  pa <- placebo[is.finite(placebo)]
+  n  <- length(pa)
+  list(p_2s_perm = (1 + sum(abs(pa) >= abs(att_real))) / (1 + n),
+       n_placebo = n)
+}
+
 run_sdid <- function(Y, N0, T0, label = "SDID") {
   cat(sprintf("\n  [%s] Y: %d units x %d blocks (N0=%d, T0=%d)\n",
               label, nrow(Y), ncol(Y), N0, T0))
@@ -533,6 +561,7 @@ run_sdid <- function(Y, N0, T0, label = "SDID") {
   fit <- synthdid_estimate(Y, N0, T0)
   att <- as.numeric(fit)
   se  <- sqrt(vcov(fit, method = "placebo", replications = 300))
+  perm <- placebo_inference_perm(Y, N0, T0, "sdid")
 
   omega <- attr(fit, "weights")$omega
   Y_tr  <- Y[nrow(Y), ]
@@ -561,6 +590,8 @@ run_sdid <- function(Y, N0, T0, label = "SDID") {
        pct = (exp(att) - 1) * 100,
        p_1s = one_sided_wald(att, se),
        p_2s = two_sided_wald(att, se),
+       p_2s_perm = perm$p_2s_perm,
+       n_placebo = perm$n_placebo,
        ci_lo = att - 1.96 * se,
        ci_hi = att + 1.96 * se,
        omega = weights_df,
@@ -572,6 +603,7 @@ run_sc <- function(Y, N0, T0, label = "SC") {
   fit <- sc_estimate(Y, N0, T0)
   att <- as.numeric(fit)
   se  <- sqrt(vcov(fit, method = "placebo", replications = 300))
+  perm <- placebo_inference_perm(Y, N0, T0, "sc")
   omega <- attr(fit, "weights")$omega
 
   Y_tr <- Y[nrow(Y), ]
@@ -599,6 +631,8 @@ run_sc <- function(Y, N0, T0, label = "SC") {
        pct = (exp(att) - 1) * 100,
        p_1s = one_sided_wald(att, se),
        p_2s = two_sided_wald(att, se),
+       p_2s_perm = perm$p_2s_perm,
+       n_placebo = perm$n_placebo,
        ci_lo = att - 1.96 * se,
        ci_hi = att + 1.96 * se,
        omega = weights_df,
@@ -888,6 +922,8 @@ save_iteration_outputs <- function(out_tables, out_graphs, tag,
       ci_hi        = safe_num(r$ci_hi),
       p_1s         = safe_num(r$p_1s),
       p_2s         = safe_num(r$p_2s),
+      p_2s_perm    = safe_num(r$p_2s_perm),
+      n_placebo    = safe_num(r$n_placebo),
       l2_imbalance = safe_num(r$l2_imbalance)
     )
   })
