@@ -1,0 +1,4 @@
+Data/
+*.csv
+!docs/paper/results/*.csv
+.Rhistory
