@@ -5,3 +5,4 @@ Data/
 .Rhistory
 .RData
 Output/Waze/_environment/
+Output/Waze/_cache/
