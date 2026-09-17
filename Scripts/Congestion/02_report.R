@@ -81,5 +81,6 @@ lines <- c("# Waze descriptives and pre-period diagnostics", "", "Date: 2026-09-
   "## Numeric ledger and independent hostile-review audit", "",
   "This ledger exposes numerical claims for reproducibility. The audit draws ten entries without replacement from this fixed ledger with seed 20260918, then recomputes them in a fresh R process from the deduplicated source blocks using independent DuckDB queries. It does not read the completed panel, group-series objects, or report-generation calculations. The accepted Phase B audit already checked original raw counts; this audit follows the author's new clean-block-only rule.", "",md_table(facts),"",md_table(audit),"",
   "All ten regenerated values match at tolerance 1e-9 times max(1, absolute reported value). No mismatch remains. This is a spot audit, not proof against every aggregation error. Scripts also assert the missing-month mask and unique cleaned keys. No post-opening regression, ATT, event-study coefficient, synthetic-control fit or SDID fit was computed.", "")
+while (length(lines) && tail(lines,1)=="") lines <- head(lines,-1)
 writeLines(lines,"reports/waze_descriptives.md")
 message("Wrote reports/waze_descriptives.md")

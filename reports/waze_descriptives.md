@@ -351,4 +351,3 @@ This ledger exposes numerical claims for reproducibility. The audit draws ten en
 | belisario_cells | 7.0000 | 7.0000 | 0.0000 | TRUE |
 
 All ten regenerated values match at tolerance 1e-9 times max(1, absolute reported value). No mismatch remains. This is a spot audit, not proof against every aggregation error. Scripts also assert the missing-month mask and unique cleaned keys. No post-opening regression, ATT, event-study coefficient, synthetic-control fit or SDID fit was computed.
-
