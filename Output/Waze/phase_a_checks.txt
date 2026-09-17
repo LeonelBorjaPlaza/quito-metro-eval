@@ -1,0 +1,308 @@
+List of 22
+ $ date                              : chr "2026-09-17"
+ $ R                                 : chr "R version 4.5.2 (2025-10-31)"
+ $ distro                            : chr "resolute"
+ $ packages                          : Named chr [1:11] "25.0.1" "1.5.5" "1.18.6.1" "1.2.1" ...
+  ..- attr(*, "names")= chr [1:11] "arrow" "duckdb" "data.table" "dplyr" ...
+ $ package_installation              :List of 38
+  ..$ assertthat : chr "Installed Posit Linux binary 0.2.1 Built: R 4.5.0; ; 2026-08-12 19:40:31 UTC; unix archive MD5: 81ab3eb048706ee"| __truncated__
+  ..$ bit64      : chr "Installed Posit Linux binary 4.8.6 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-09-02 03:50:38 UTC; unix archive M"| __truncated__
+  ..$ purrr      : chr "Installed Posit Linux binary 1.2.2 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:45:20 UTC; unix archive M"| __truncated__
+  ..$ tidyselect : chr "Installed Posit Linux binary 1.2.1 Built: R 4.5.0; ; 2026-08-12 19:45:21 UTC; unix archive MD5: 3427cd6693e8f79"| __truncated__
+  ..$ arrow      : chr "Installed Posit Linux binary 25.0.1 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-24 04:33:36 UTC; unix archive "| __truncated__
+  ..$ duckdb     : chr "Installed Posit Linux binary 1.5.5 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-07-27 07:28:41 UTC; unix archive M"| __truncated__
+  ..$ data.table : chr "Installed Posit Linux binary 1.18.6.1 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-25 04:20:11 UTC; unix archiv"| __truncated__
+  ..$ generics   : chr "Installed Posit Linux binary 0.1.4 Built: R 4.5.0; ; 2026-08-12 19:40:33 UTC; unix archive MD5: 35388a35519cf6a"| __truncated__
+  ..$ pillar     : chr "Installed Posit Linux binary 1.11.1 Built: R 4.5.0; ; 2026-08-12 19:46:24 UTC; unix archive MD5: 288d6a9507b3b4"| __truncated__
+  ..$ tibble     : chr "Installed Posit Linux binary 3.3.1 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:47:28 UTC; unix archive M"| __truncated__
+  ..$ dplyr      : chr "Installed Posit Linux binary 1.2.1 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:49:44 UTC; unix archive M"| __truncated__
+  ..$ sf         : chr "Already installed 1.0.24"
+  ..$ geojsonsf  : chr "Installed Posit Linux binary 2.0.5 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:45:50 UTC; unix archive M"| __truncated__
+  ..$ tidyr      : chr "Installed Posit Linux binary 1.3.2 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:50:57 UTC; unix archive M"| __truncated__
+  ..$ V8         : chr "unable to load shared object '/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/V8/libs/V8."| __truncated__
+  ..$ h3jsr      : chr "Not installed; unavailable or unapproved dependencies: V8"
+  ..$ ggplot2    : chr "Already installed 4.0.2"
+  ..$ patchwork  : chr "Installed Posit Linux binary 1.3.2 Built: R 4.5.0; ; 2026-04-24 02:10:16 UTC; unix archive MD5: c84995f5e80b187"| __truncated__
+  ..$ numDeriv   : chr "Installed Posit Linux binary 2016.8.1.1 Built: R 4.5.0; ; 2026-08-12 19:40:40 UTC; unix archive MD5: 60b04f298c"| __truncated__
+  ..$ sandwich   : chr "Installed Posit Linux binary 3.1.3 Built: R 4.5.0; ; 2026-08-04 04:53:13 UTC; unix archive MD5: 9e7ba66774a0885"| __truncated__
+  ..$ dreamerr   : chr "Installed Posit Linux binary 1.5.0 Built: R 4.5.0; ; 2026-04-23 21:06:14 UTC; unix archive MD5: 1bf6b74cfed6aa1"| __truncated__
+  ..$ stringmagic: chr "Installed Posit Linux binary 1.3.0 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-09-09 06:51:34 UTC; unix archive M"| __truncated__
+  ..$ fixest     : chr "Installed Posit Linux binary 0.14.2 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-07-06 14:12:29 UTC; unix archive "| __truncated__
+  ..$ synthdid   : chr "Unavailable in the requested Posit CRAN repository."
+  ..$ augsynth   : chr "Unavailable in the requested Posit CRAN repository."
+  ..$ bit        : chr "Installed Posit Linux binary 4.6.0 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:40:44 UTC; unix archive M"| __truncated__
+  ..$ utf8       : chr "Installed Posit Linux binary 1.2.6 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:42:07 UTC; unix archive M"| __truncated__
+  ..$ pkgconfig  : chr "Installed Posit Linux binary 2.0.3 Built: R 4.5.0; ; 2026-08-12 19:40:43 UTC; unix archive MD5: 930106c50f78ab3"| __truncated__
+  ..$ geometries : chr "Installed Posit Linux binary 0.2.5 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-09-09 06:56:23 UTC; unix archive M"| __truncated__
+  ..$ rapidjsonr : chr "Installed Posit Linux binary 1.2.1 Built: R 4.5.0; ; 2026-08-12 19:40:46 UTC; unix archive MD5: a3f619ffa28f17f"| __truncated__
+  ..$ jsonify    : chr "Installed Posit Linux binary 1.2.3 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:42:28 UTC; unix archive M"| __truncated__
+  ..$ sfheaders  : chr "Installed Posit Linux binary 0.4.5 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:43:39 UTC; unix archive M"| __truncated__
+  ..$ stringi    : chr "Installed Posit Linux binary 1.8.9 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:40:54 UTC; unix archive M"| __truncated__
+  ..$ stringr    : chr "Installed Posit Linux binary 1.6.0 Built: R 4.5.0; ; 2026-08-12 19:45:32 UTC; unix archive MD5: a208a0a2ee1a386"| __truncated__
+  ..$ jsonlite   : chr "Installed Posit Linux binary 2.0.0 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:40:28 UTC; unix archive M"| __truncated__
+  ..$ curl       : chr "Installed Posit Linux binary 8.0.0 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-26 04:20:39 UTC; unix archive M"| __truncated__
+  ..$ zoo        : chr "Installed Posit Linux binary 1.9.0 Built: R 4.5.0; x86_64-pc-linux-gnu; 2026-08-12 19:42:09 UTC; unix archive M"| __truncated__
+  ..$ Formula    : chr "Installed Posit Linux binary 1.2.6 Built: R 4.5.0; ; 2026-08-12 19:40:28 UTC; unix archive MD5: 7b27b6875dd1fa9"| __truncated__
+ $ h3_fallback                       :'data.frame':	1 obs. of  2 variables:
+  ..$ valid     : logi TRUE
+  ..$ resolution: int 8
+ $ paper_files                       :'data.frame':	22 obs. of  4 variables:
+  ..$ file   : chr [1:22] "att_weekly_CO.csv" "att_weekly_NO2.csv" "att_weekly_PM25.csv" "att_weekly_SO2.csv" ...
+  ..$ rows   : int [1:22] 1072 1072 928 1072 4 58 3742 5 63 63 ...
+  ..$ columns: int [1:22] 10 10 10 10 10 10 4 7 5 5 ...
+  ..$ bytes  : num [1:22] 132474 134455 114675 133650 312 ...
+ $ frozen_input_md5                  : Named chr [1:24] "a9783241cb6f08091627bdaf30f5d545" "cd6a954783fc8680855cdf83acbc0bd9" "4aa8e814c5b10b9cc0d7a3c3870c5a72" "7c4e21ad9ab287c08e71651e166b4a3a" ...
+  ..- attr(*, "names")= chr [1:24] "docs/Documentacion_Indicadores_Waze.docx" "docs/paper/Underground-relief.pdf" "docs/paper/results/att_weekly_CO.csv" "docs/paper/results/att_weekly_NO2.csv" ...
+ $ result_table_consistency          : Named logi [1:4] TRUE TRUE TRUE TRUE
+  ..- attr(*, "names")= chr [1:4] "PM25" "CO" "NO2" "SO2"
+ $ primary_consistency               : logi TRUE
+ $ raw_file_sizes                    : Named num [1:3] 7.61e+05 5.61e+09 9.39e+08
+  ..- attr(*, "names")= chr [1:3] "grids_polygons.csv" "grids_quito_hourly_2019-2025.csv" "grids_quito_hourly_2019-2025.parquet"
+ $ parquet                           :List of 3
+  ..$ metadata:'data.frame':	1 obs. of  4 variables:
+  .. ..$ num_rows       : num 15080765
+  .. ..$ num_row_groups : num 15
+  .. ..$ file_size_bytes: num 9.39e+08
+  .. ..$ created_by     : chr "parquet-cpp-arrow version 20.0.0"
+  ..$ schema  :'data.frame':	24 obs. of  6 variables:
+  .. ..$ column_name: chr [1:24] "date" "grid_id" "hour_of_day" "roadtype" ...
+  .. ..$ column_type: chr [1:24] "BIGINT" "VARCHAR" "BIGINT" "VARCHAR" ...
+  .. ..$ null       : chr [1:24] "YES" "YES" "YES" "YES" ...
+  .. ..$ key        : chr [1:24] NA NA NA NA ...
+  .. ..$ default    : chr [1:24] NA NA NA NA ...
+  .. ..$ extra      : chr [1:24] NA NA NA NA ...
+  ..$ sample  :'data.frame':	1 obs. of  24 variables:
+  .. ..$ date                       : num 202011
+  .. ..$ grid_id                    : chr "8866d3ad07fffff"
+  .. ..$ hour_of_day                : num 11
+  .. ..$ roadtype                   : chr "large"
+  .. ..$ avg_jam_speedkmh           : num 30.6
+  .. ..$ avg_jam_speed_ratio        : num 43.2
+  .. ..$ avg_freeflow               : num 71
+  .. ..$ tci                        : num 104
+  .. ..$ tci_severe                 : num 0
+  .. ..$ tci_osm_ratio              : num 0.271
+  .. ..$ tci_waze_ratio             : num 0.636
+  .. ..$ tci_severe_osm_ratio       : num 0
+  .. ..$ tci_severe_waze_ratio      : num 0
+  .. ..$ tc_spread                  : num 34.8
+  .. ..$ tc_severe_spread           : num 0
+  .. ..$ tc_spread_osm_ratio        : num 1.08
+  .. ..$ tc_spread_waze_ratio       : num 2.54
+  .. ..$ tc_severe_spread_osm_ratio : num 0
+  .. ..$ tc_severe_spread_waze_ratio: num 0
+  .. ..$ tc_persistance_ratio       : num 25
+  .. ..$ tc_severe_persistance_ratio: num 0
+  .. ..$ freeflow_speed             : num 71
+  .. ..$ speed                      : num 70.8
+  .. ..$ t_speed_ratio              : num 99.8
+ $ stations                          :'data.frame':	15 obs. of  13 variables:
+  ..$ OBJECTID  : num [1:15] 1 2 3 4 5 6 7 8 9 10 ...
+  ..$ OID_      : int [1:15] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ Name      : chr [1:15] "Labrador" "Jipijapa" "Iñaquito" "La Carolina" ...
+  ..$ FolderPath: chr [1:15] "Estaciones Metro" "Estaciones Metro" "Estaciones Metro" "Estaciones Metro" ...
+  ..$ SymbolID  : int [1:15] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ AltMode   : int [1:15] -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ...
+  ..$ Base      : num [1:15] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ Snippet   : chr [1:15] " " " " " " " " ...
+  ..$ PopupInfo : chr [1:15] " " " " " " " " ...
+  ..$ HasLabel  : int [1:15] -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ...
+  ..$ LabelID   : int [1:15] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ X         : num [1:15] -78.5 -78.5 -78.5 -78.5 -78.5 ...
+  ..$ Y         : num [1:15] -0.154 -0.165 -0.177 -0.191 -0.194 ...
+ $ monitors                          :'data.frame':	9 obs. of  9 variables:
+  ..$ Station         : chr [1:9] "Carapungo" "Cotocollao" "Belisario" "Centro" ...
+  ..$ Code            : chr [1:9] "Car" "Cot" "Bel" "Cen" ...
+  ..$ Elevation..msnm.: num [1:9] 2660 2739 2835 2820 2840 ...
+  ..$ Longitude       : num [1:9] -78.4 -78.5 -78.5 -78.5 -78.5 ...
+  ..$ Latitude        : num [1:9] -0.0983 -0.1078 -0.18 -0.22 -0.25 ...
+  ..$ HubName         : chr [1:9] "Labrador" "Labrador" "Iñaquito" "San Francisco" ...
+  ..$ HubDist         : num [1:9] 7.637 5.212 0.768 0.61 1.206 ...
+  ..$ X               : num [1:9] -78.4 -78.5 -78.5 -78.5 -78.5 ...
+  ..$ Y               : num [1:9] -0.0983 -0.1078 -0.18 -0.22 -0.25 ...
+ $ station_shapefile_rows            : int 0
+ $ alignment_features                : int 1
+ $ station_source_crs                : chr "PROJCRS[\"WGS_1984_SIRES_TMQ\",\n    BASEGEOGCRS[\"WGS 84\",\n        DATUM[\"World Geodetic System 1984\",\n  "| __truncated__
+ $ station_original_empty            : int 0
+ $ station_2d_empty                  : int 0
+ $ san_francisco_prompt_discrepancy_m: num 146
+ $ git_state                         : chr [1:8] "## main" " M .gitignore" "?? AGENTS.md" "?? Output/" ...
+ $ session                           :List of 13
+  ..$ R.version  :List of 14
+  .. ..$ platform      : chr "x86_64-pc-linux-gnu"
+  .. ..$ arch          : chr "x86_64"
+  .. ..$ os            : chr "linux-gnu"
+  .. ..$ system        : chr "x86_64, linux-gnu"
+  .. ..$ status        : chr ""
+  .. ..$ major         : chr "4"
+  .. ..$ minor         : chr "5.2"
+  .. ..$ year          : chr "2025"
+  .. ..$ month         : chr "10"
+  .. ..$ day           : chr "31"
+  .. ..$ svn rev       : chr "88974"
+  .. ..$ language      : chr "R"
+  .. ..$ version.string: chr "R version 4.5.2 (2025-10-31)"
+  .. ..$ nickname      : chr "[Not] Part in a Rumble"
+  ..$ platform   : chr "x86_64-pc-linux-gnu"
+  ..$ locale     : chr "LC_CTYPE=C.UTF-8;LC_NUMERIC=C;LC_TIME=C.UTF-8;LC_COLLATE=C.UTF-8;LC_MONETARY=C.UTF-8;LC_MESSAGES=C.UTF-8;LC_PAP"| __truncated__
+  ..$ tzone      : chr "America/New_York"
+  ..$ tzcode_type: chr "system (glibc)"
+  ..$ running    : chr "Ubuntu 26.04 LTS"
+  ..$ RNGkind    : chr [1:3] "Mersenne-Twister" "Inversion" "Rejection"
+  ..$ basePkgs   : chr [1:7] "stats" "graphics" "grDevices" "utils" ...
+  ..$ loadedOnly :List of 50
+  .. ..$ bit         :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/bit/Meta/package.rds"
+  .. ..$ gtable      :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/gtable/Meta/package.rds"
+  .. ..$ dplyr       :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/dplyr/Meta/package.rds"
+  .. ..$ compiler    :List of 10
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/compiler/Meta/package.rds"
+  .. ..$ tidyselect  :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/tidyselect/Meta/package.rds"
+  .. ..$ Rcpp        :List of 23
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/Rcpp/Meta/package.rds"
+  .. ..$ assertthat  :List of 18
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/assertthat/Meta/package.rds"
+  .. ..$ arrow       :List of 27
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/arrow/Meta/package.rds"
+  .. ..$ scales      :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/scales/Meta/package.rds"
+  .. ..$ lattice     :List of 23
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/lattice/Meta/package.rds"
+  .. ..$ ggplot2     :List of 27
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/ggplot2/Meta/package.rds"
+  .. ..$ R6          :List of 21
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/R6/Meta/package.rds"
+  .. ..$ generics    :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/generics/Meta/package.rds"
+  .. ..$ patchwork   :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/patchwork/Meta/package.rds"
+  .. ..$ classInt    :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/classInt/Meta/package.rds"
+  .. ..$ Formula     :List of 20
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/Formula/Meta/package.rds"
+  .. ..$ s2          :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/s2/Meta/package.rds"
+  .. ..$ sf          :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/sf/Meta/package.rds"
+  .. ..$ tibble      :List of 29
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/tibble/Meta/package.rds"
+  .. ..$ units       :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/units/Meta/package.rds"
+  .. ..$ DBI         :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/DBI/Meta/package.rds"
+  .. ..$ pillar      :List of 27
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/pillar/Meta/package.rds"
+  .. ..$ RColorBrewer:List of 15
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/RColorBrewer/Meta/package.rds"
+  .. ..$ rlang       :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/rlang/Meta/package.rds"
+  .. ..$ stringmagic :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/stringmagic/Meta/package.rds"
+  .. ..$ S7          :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/S7/Meta/package.rds"
+  .. ..$ bit64       :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/bit64/Meta/package.rds"
+  .. ..$ fixest      :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/fixest/Meta/package.rds"
+  .. ..$ cli         :List of 22
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/cli/Meta/package.rds"
+  .. ..$ magrittr    :List of 23
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/magrittr/Meta/package.rds"
+  .. ..$ class       :List of 19
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/class/Meta/package.rds"
+  .. ..$ wk          :List of 21
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/wk/Meta/package.rds"
+  .. ..$ grid        :List of 12
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/grid/Meta/package.rds"
+  .. ..$ sandwich    :List of 20
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/sandwich/Meta/package.rds"
+  .. ..$ nlme        :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/nlme/Meta/package.rds"
+  .. ..$ lifecycle   :List of 23
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/lifecycle/Meta/package.rds"
+  .. ..$ vctrs       :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/vctrs/Meta/package.rds"
+  .. ..$ KernSmooth  :List of 19
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/KernSmooth/Meta/package.rds"
+  .. ..$ proxy       :List of 18
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/proxy/Meta/package.rds"
+  .. ..$ glue        :List of 24
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/glue/Meta/package.rds"
+  .. ..$ data.table  :List of 21
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/data.table/Meta/package.rds"
+  .. ..$ numDeriv    :List of 18
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/numDeriv/Meta/package.rds"
+  .. ..$ farver      :List of 20
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/farver/Meta/package.rds"
+  .. ..$ duckdb      :List of 26
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/duckdb/Meta/package.rds"
+  .. ..$ zoo         :List of 21
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/zoo/Meta/package.rds"
+  .. ..$ e1071       :List of 16
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/site-library/e1071/Meta/package.rds"
+  .. ..$ dreamerr    :List of 20
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/dreamerr/Meta/package.rds"
+  .. ..$ purrr       :List of 27
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/purrr/Meta/package.rds"
+  .. ..$ tools       :List of 12
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/usr/lib/R/library/tools/Meta/package.rds"
+  .. ..$ pkgconfig   :List of 18
+  .. .. ..- attr(*, "class")= chr "packageDescription"
+  .. .. ..- attr(*, "file")= chr "/home/leonelb/projects/waze-metroq/Output/Waze/_environment/R-library/pkgconfig/Meta/package.rds"
+  ..$ matprod    : chr "default"
+  ..$ BLAS       : chr "/usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1"
+  ..$ LAPACK     : chr "/usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1"
+  ..$ LA_version : chr "3.12.0"
+  ..- attr(*, "class")= chr "sessionInfo"

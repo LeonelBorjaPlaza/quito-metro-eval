@@ -1,0 +1,1286 @@
+                                        Underground Relief:
+          The Air Pollution Effects of Quito’s First Metro Line∗
+
+                Leonel Borja Plaza                                           Luis Quintero
+       Inter-American Development Bank                        Inter-American Development Bank
+               leonelb@iadb.org                                          luisqui@iadb.org
+
+                                                May 31, 2026
+
+
+
+                                                     Abstract
+
+            This paper studies whether the early air-quality effects of urban rail can be spatially concen-
+        trated within a city. We examine Quito Metro Line 1, Ecuador’s first metro line, which opened in
+        December 2023 and provides direct access to the city’s historic center, a dense destination where
+        car access is difficult. The main analysis uses weekly peak-hour data from Quito’s monitoring
+        network and estimates station-level effects with augmented synthetic control and conformal
+        inference. A complementary citywide analysis uses satellite data for Latin American urban
+        areas and synthetic difference-in-differences with placebo inference. In the preferred local
+        specification, PM2.5 at the historic-center station, Centro, falls by 0.130 log points, equivalent to
+        12.2 percent, in the first months of operation, before the late-2024 energy crisis. The estimate is
+        nearly unchanged when later post-opening weeks are added but blackout and wildfire weeks are
+        excluded. We show that Centro is the only station with a statistically significant negative PM2.5
+        estimate in a spatial placebo exercise. The response is particulate-specific: local gas pollutants
+        do not show comparable reductions. The citywide analysis finds that satellite aerosol optical
+        depth (AOD) moves in the same particulate direction, while satellite gas outcomes do not show
+        a consistent pattern. The findings show that, in this setting, the air-quality benefits of a metro
+        are concentrated at a destination where car access is difficult, a pattern that simple corridor
+        proximity cannot explain. The results suggest that large transit investments may deliver stronger
+        environmental gains when complemented by policies that make car access less attractive in
+        dense destinations.
+   ∗
+   The views expressed are those of the authors and do not necessarily reflect those of the Inter-American Development
+Bank, its Board of Directors, or the countries they represent.
+
+
+
+                                                          1
+JEL Codes: Q53, R41, C21
+Keywords: Air quality, transport infrastructure, synthetic control, Quito
+
+
+1   Introduction
+Cities invest heavily in urban rail partly because cleaner mass transit is expected to reduce congestion,
+fuel combustion, and exposure to traffic-related pollution. Yet the environmental returns to these
+investments are not automatic. A new metro can shift some travelers away from cars and road-based
+public transport, but it can also free road space for other vehicles, affect some neighborhoods more
+than others, and operate in cities where weather, topography, and non-transport shocks also shape
+air quality. The relevant policy question is therefore not only whether urban rail improves air quality
+on average, but where within the city these gains appear and what urban conditions make them more
+likely.
+    This paper studies that question in Quito, Ecuador, using the opening of the city’s first metro line
+in December 2023. The setting is useful because Quito Metro Line 1 connects the city’s north-south
+corridor to the historic center, a dense UNESCO World Heritage site where narrow streets, limited
+parking, and high pedestrian activity make car access difficult. This geography creates a sharp
+local test. If the metro reduces pollution mainly through proximity to the rail corridor, then nearby
+monitoring stations should show similar changes. If instead the effect depends on destination access,
+then the response should be strongest where the metro changes the cost of reaching a dense, car-
+constrained destination. In Quito, Centro and Belisario provide this contrast. Centro, the monitoring
+station inside the historic center, lies 0.61 kilometers from the nearest metro stop. Belisario, outside
+the historic center, lies 0.77 kilometers from the nearest stop. The two stations are similarly close
+to the metro, but only Centro captures access to the destination where the mechanism predicts the
+clearest early effect.
+    Existing evidence shows that urban rail and related transport policies can improve air quality.
+Gendron-Carrier et al. (2022) estimate pollution effects around metro stations across cities and find
+larger gains in more polluted settings. Other studies examine transit expansions, traffic restrictions,
+or transport and emissions shocks at corridor or city scales (Chen and Whalley 2012; Li et al. 2019;
+Goel and Gupta 2017; Lin et al. 2021; Chen et al. 2013). We build on this literature by asking
+a more spatially specific question: when a large transit investment changes access to particular
+destinations, do pollution gains concentrate in places where car access is difficult and rail becomes
+a more attractive substitute? This distinction matters for both interpretation and policy. A null or
+modest citywide average can still mask meaningful local gains, while a local gain near a destination
+need not imply a smooth distance gradient around the entire corridor.
+    We combine two empirical designs that match these two spatial scales. The main analysis uses
+
+
+                                                   2
+weekly peak-hour readings from Quito’s ground-based air-quality monitoring network and constructs
+synthetic counterfactuals for exposed stations. Because the local donor pool contains only a small
+number of monitoring stations, the preferred local estimator is augmented synthetic control with
+station fixed effects, and inference relies on two-sided conformal p-values. We then place the local
+evidence in broader context using satellite retrievals for Latin American urban areas. The citywide
+analysis compares Quito to similar cities using synthetic difference-in-differences. The two designs
+therefore answer different questions: the local design tests whether pollution changed at the predicted
+destination, while the citywide design asks whether Quito experienced a detectable aggregate change
+relative to a counterfactual constructed from comparable urban areas.
+    The results show a localized particulate response at Quito’s historic center. In the preferred
+local specification, PM2.5 at Centro falls significantly, by about 12 percent, during the first months
+of operation, before Ecuador’s late-2024 blackout and wildfire disruptions. The estimate is nearly
+unchanged when later post-opening weeks are added, as long as the blackout and wildfire weeks are
+excluded. Belisario, the similarly close station outside the historic center, does not show comparable
+evidence of a post-opening PM2.5 reduction. A leave-one-station-out spatial placebo exercise shows
+that Centro is the only station with a statistically significant negative PM2.5 estimate during this
+early period. The local pollutant pattern is also particulate-specific: NO2 is a well-fit null, CO
+is uninformative, and SO2 turns positive only when weeks affected by the energy crisis enter the
+estimation window.
+    The citywide satellite evidence points in the same particulate direction, but we interpret it as
+complementary rather than as the paper’s main causal test. In the preferred 100-city donor pool,
+aerosol optical depth falls by 0.113 log points during the first months of operation, before Ecuador’s
+late-2024 blackout and wildfire disruptions. The estimate is also negative across alternative donor
+pools. Satellite gas outcomes do not show a consistent pattern. These results suggest that the local
+particulate finding is not contradicted at the city scale, but they do not establish the mechanism.
+Aerosol optical depth measures aerosol loading in the atmospheric column rather than surface PM2.5 ,
+and the citywide comparison is more exposed to national shocks, regional atmospheric conditions,
+and non-transport sources.
+    The paper makes two contributions. First, it shows that the early air-quality benefits of a metro can
+be concentrated at a destination where car access is difficult, rather than following simple proximity to
+the rail corridor. This complements evidence on average pollution effects around transit stations and
+at the city scale by showing why the location of effects within the city matters. The result also has a
+direct policy implication: large transit investments may generate stronger environmental gains when
+they are complemented by measures that make car use less attractive in dense destinations. Second,
+the paper illustrates an empirical strategy for studying transport investments when exposure is local
+but citywide shocks are important. A small-donor local synthetic-control design with conformal
+
+
+                                                   3
+inference provides the main evidence, while the citywide comparison asks whether Quito’s aggregate
+pollution changed relative to similar Latin American cities after the metro opened. The findings
+document where the particulate response appears and are consistent with destination-based mode
+substitution, while leaving the direct traffic channel for future evidence on ridership, congestion,
+and vehicle flows.
+    The rest of the paper proceeds as follows. Section 2 describes the institutional setting. Section 3
+describes the data and estimation samples. Section 4 presents the empirical strategy. Section 5
+reports the local and citywide results. The final section discusses interpretation and implications for
+transport policy and air-quality evaluation.
+
+2   Institutional Background
+Quito is located in a narrow Andean valley on the eastern slopes of the Pichincha volcano, at
+roughly 2,850 meters above sea level. Its topography matters for air quality. Steep terrain, frequent
+temperature inversions, and stagnant-air episodes can limit dispersion and trap pollutants near the
+surface (Encyclopaedia Britannica 2026; Cazorla 2016; Zalakeviciute et al. 2024). These conditions
+make traffic-related emissions especially relevant for local exposure, particularly for fine particulate
+matter. Prior air-quality research on Quito emphasizes that basin topography, diesel traffic, and
+meteorological conditions have contributed to persistent particulate pollution above international
+health guidelines (Cazorla 2016; Zalakeviciute et al. 2024).
+    Quito’s historic center is central to the paper’s mechanism. The Centro Histórico is a UNESCO
+World Heritage site, with dense activity, narrow colonial streets, limited parking, and high pedestrian
+flows (Encyclopaedia Britannica 2026; UNESCO World Heritage Centre n.d.). These features make
+automobile access costly even though the area is geographically central. A metro can therefore
+affect pollution in the historic center by moving travelers along a corridor, and also by changing the
+relative cost of reaching a dense destination where car access is difficult. This distinction motivates
+the empirical design: Centro and Belisario are both close to Metro Line 1, but only Centro is located
+in the historic center.
+    Quito Metro Line 1 is the city’s first metro line. Commercial service began on December 1,
+2023, after earlier trial operations were suspended. The line runs entirely underground for about
+22.6 kilometers along Quito’s north-south valley corridor, connecting Quitumbe in the south with
+El Labrador in the north through 15 stations (Transdev 2023). The end-to-end trip takes roughly 34
+minutes, and the system was planned for several hundred thousand daily passengers once mature
+(Oliver Wyman Forum 2024). One station, San Francisco, is located in the historic center, providing
+direct metro access to the area monitored by the Centro station. Because the system opened only at
+the end of 2023 and ridership was still ramping up during 2024, the estimates in this paper capture
+early operational effects rather than long-run impacts.
+
+
+                                                   4
+    The first year of operation also coincided with an unusually disruptive national context. In 2024,
+Ecuador experienced a severe drought that constrained hydroelectric generation and led to scheduled
+electricity rationing beginning in September. The crisis intensified in October, and households and
+firms responded by using diesel generators, a source of local combustion emissions unrelated to
+the metro. Wildfires around Quito during the same period further degraded air quality (Vallejo et
+al. 2025; Zalakeviciute et al. 2024). This institutional shock is important for the empirical design.
+It motivates estimating a pre-disruption window that ends before the blackout and wildfire period,
+a donut window that excludes the disruption weeks, and a full window that shows how estimates
+change when those weeks are retained.
+
+3       Data
+We assemble two panels at two spatial scales. The first is a panel of ground-based air-quality monitors
+in Quito. It measures surface pollution at fixed monitoring stations across the metropolitan area and
+provides the main local evidence in the paper. The second is a panel of satellite retrievals across Latin
+American urban areas. The city-level panel treats Quito’s transport system as a whole, recognizing
+that a metro can affect surface traffic near stations and also indirectly across the broader urban
+network. Given the broader Ecuadorian context of 2024, which combined a security emergency,
+fiscal contraction, and a drought-driven energy crisis that may confound city-level comparisons,
+we interpret the citywide analysis as complementary to the local station analysis rather than as the
+paper’s primary estimate of exposure changes.
+    We describe the treatment timing and the 2024 disruption that shapes the estimation windows
+(Section 3.1), the air-quality monitoring station panel (Section 3.2), and the satellite-derived urban-
+center panel (Section 3.3). We discuss the estimators in the empirical strategy section.
+
+3.1      Treatment timing and the 2024 disruption
+Quito Metro Line 1 opened to passengers on Friday, December 1, 2023. Treatment is defined at the
+weekly level, with the post-opening indicator turning on in the ISO week1 that contains the opening
+date, beginning November 27, 2023.
+    The post-opening period is heterogeneous, so we divide it into three blocks. The first, P1 ,
+runs from the opening week through the week beginning September 9, 2024. The second is a
+disruption block spanning the weeks beginning September 16 through December 16, 2024, when
+national electricity rationing pushed households and firms onto diesel generators and wildfires
+burned around the capital. These shocks increased ambient pollution in Quito for reasons unrelated
+to the metro (Vallejo et al. 2025; Zalakeviciute et al. 2024). The final post-opening block, P2 , begins
+1
+    ISO weeks follow the international week-date convention: weeks begin on Monday, and week 1 is the week containing
+    the first Thursday of the calendar year. Under this convention, the week containing December 1, 2023 begins on
+    Monday, November 27, 2023 and is labeled ISO 2023-W48.
+
+
+                                                           5
+                                  Table 1. Local and citywide analyses at a glance
+                                 Local ground-monitor analysis                Citywide satellite analysis
+Treated unit                     REMMAQ monitoring stations, with             Quito urban center, UCDB identifier 2544
+                                 Centro as the main treated station
+Comparison pool                  Other REMMAQ stations reporting the          Latin American urban areas ranked by
+                                 same pollutant                               similarity to Quito
+Geographic unit                  Monitoring station                           UCDB urban-center polygon
+Pollutants                       PM2.5 , CO, NO2 , SO2                        AOD, CO, NO2 , SO2
+Temporal resolution              Weekly averages of weekday peak-hour         Weekly satellite retrievals, aggregated to
+                                 readings                                     four-week blocks for estimation
+Pre-treatment period             52 weeks before the opening week             100 weeks before the opening week
+Post-opening windows             Pre-disruption, donut, and full              Pre-disruption, donut, and full
+Panel size before estimation     PM2.5 : 8 stations × 116 weeks; gases: 7     Pollutant-specific balanced panels, with
+                                 stations × 134 weeks                         227 weekly observations per city
+Primary role                     Main test of localized air-quality effects   Citywide benchmark for aggregate
+                                 near the historic center                     pollution changes in Quito
+      Local PM2.5 covers all eight monitoring stations. CO, NO2 , and SO2 cover seven stations because San Antonio does
+      not report those series. The satellite panels are balanced separately by pollutant.
+
+in January 2025. The two weeks beginning December 23 and December 30, 2024 fall after the main
+rationing period but before the beginning of P2 , and are kept in the full post-opening window.
+     We use this partition to define three estimation windows. The pre-disruption window uses only
+P1 . The donut window drops the disruption weeks and retains the post-opening weeks before and
+after the disruption. The full window retains every post-opening week. These are not data-cleaning
+exclusions. They are estimand choices that allow us to distinguish the early post-opening period
+from a later period contaminated by large citywide shocks. Table 1 summarizes the two empirical
+designs.
+
+3.2      Local analysis: ground-based air monitoring data
+The REMMAQ2 data consist of validated hourly station readings published by Quito’s municipal
+environmental authority (REMMAQ 2026). They cover pollutant concentrations and meteorological
+conditions across the metropolitan area. We use all eight stations with available data for the analysis
+period: Belisario, Carapungo, Centro, Cotocollao, Guamaní, Los Chillos, San Antonio, and Tumbaco.
+We study four pollutants, PM2.5 , CO, NO2 , and SO2 , and use temperature, humidity, wind speed,
+wind direction, rainfall, solar radiation, and surface pressure as meteorological controls.
+    Two stations are especially important for the design. Centro is located inside Quito’s historic
+center, where narrow streets, limited parking, and high pedestrian activity make automobile access
+unusually costly. Belisario is located near the Metro corridor but outside the historic center. Centro is
+0.61 km from the nearest Line 1 stop, while Belisario is 0.77 km away. The two stations are therefore
+similarly close to the metro but differ sharply in the urban setting most relevant to the mechanism.
+2
+    Quito’s Metropolitan Atmospheric Monitoring Network.
+
+
+
+                                                             6
+This geography helps separate a simple corridor-proximity interpretation from a destination-access
+interpretation centered on the historic center. Figure 1 maps the REMMAQ stations and Line 1
+corridor and stations.
+    PM2.5 is the preferred local outcome because all eight monitoring stations report it, preserving
+the largest donor pool for the station-level counterfactual. CO, NO2 , and SO2 provide robustness
+and mechanism checks, but each is estimated with a smaller donor pool because San Antonio does
+not report those series. Table 2 lists the stations, their distance to the nearest stop, and the pollutant
+series each reports.
+                                           Table 2. Air-quality monitoring stations
+                Station                Distance (km)a            PM2.5           CO             NO2            SO2
+                Centro                        0.61                   ✓            ✓              ✓              ✓
+                Belisario                     0.77                   ✓            ✓              ✓              ✓
+                Guamaní                       4.04                   ✓            ✓              ✓              ✓
+                Cotocollao                    5.21                   ✓            ✓              ✓              ✓
+                Carapungo                     7.64                   ✓            ✓              ✓              ✓
+                Los Chillos                   8.62                   ✓            ✓              ✓              ✓
+                Tumbaco                       9.56                   ✓            ✓              ✓              ✓
+                San Antonio                  16.65                   ✓
+                Stations in balanced panel                           8             7             7              7
+           a
+               Straight-line distance from the monitoring station to the nearest Metro Line 1 stop.
+               Source: REMMAQ, Secretaría de Ambiente, Municipio de Quito. Stations are ordered by distance to
+               the nearest metro stop. Centro is the main treated station in the local analysis. Belisario is the nearest
+               station and the key comparison for distinguishing proximity from destination access. San Antonio
+               reports PM2.5 only.
+
+    We restrict the hourly data to weekday morning and evening peak hours, 7–9 a.m. and 5–7 p.m.,
+when traffic-related emissions are most likely to contribute to short-run variation in local pollution.
+For each station and week, we average the peak-hour readings into a weekly mean concentration
+and use the natural log of that weekly mean as the outcome. The PM2.5 panel begins in the week of
+November 28, 2022 and runs through March 2025, yielding 116 balanced station-weeks per station.
+The gas panels run through June 2025, yielding 134 balanced station-weeks per station.
+    Because synthetic-control estimators construct donor weights by matching the treated unit’s
+pre-treatment trajectory, the optimization requires a rectangular panel with no missing station-week
+observations in the estimation window. We therefore use limited imputation only to recover otherwise
+usable short gaps before balancing the panel. Short gaps of one or two weeks are linearly interpolated
+within station. Longer gaps are left unfilled, except for a longer San Antonio PM2.5 segment that
+is predicted using other stations and weather covariates.3 Imputation is limited in the balanced
+panels: 3.0 percent of PM2.5 observations, 1.0 percent of CO observations, 0.7 percent of NO2
+3
+    The prediction regression excludes Centro and Belisario, the two stations closest to the line, so that imputed control
+    values do not mechanically incorporate changes from the locations most likely to reflect metro-related effects.
+
+
+                                                                 7
+observations, and 1.3 percent of SO2 observations. Centro has no imputed PM2.5 observations.
+Table 3 summarizes the balanced panels and estimation windows. The full sample-construction
+funnel is reported in Appendix A.
+                Table 3. Estimation samples: balanced weekly panel composition by pollutant
+                                                    Post-treatment weeks                     Estimation samples (weeks)
+              Pollutant     Stations      Pre      P1     Blackout        Trans.     P2     pre_blackout         donut       full
+                      a
+              PM2.5              8         52      42         14            2         6            94             102       116
+              CO                 7         52      42         14            2        24            94             120       134
+              NO2                7         52      42         14            2        24            94             120       134
+              SO2                7         52      42         14            2        24            94             120       134
+                Notes. Balanced weekly panels of peak-hour, weekday pollutant concentrations. Peak hours are 07:00–09:00 and
+                17:00–19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begins in ISO 2023-W48,
+                the week containing the December 1, 2023 opening of Quito Metro Line 1. “Blackout” denotes the Phase 3
+                power-outage and wildfire disruption weeks, which are excluded from the donut sample and occur after the
+                pre_blackout sample ends. “Trans.” is the post-outage transition fortnight in late December 2024. pre_blackout
+                equals pre-treatment plus P1; donut equals the full sample minus blackout weeks; full uses all weeks. San Antonio
+                is unavailable for CO, NO2 , and SO2 and is dropped from those panels. Short station-level gaps of up to two weeks
+                are linearly interpolated, and San Antonio’s PM2.5 series is regression-imputed where needed; these observations
+                are filled values, not absent weeks.
+              a PM
+                    2.5 contains a 7-week interior gap, from the week of January 13 to the week of February 24, 2025, that is absent
+                from the balanced panel for all stations, so the PM2.5 panel jumps from the week of January 6, 2025 to the week of
+                March 3, 2025. This accounts for PM2.5 ’s shorter Period 2. CO, NO2 , and SO2 have contiguous weekly sequences.
+
+
+    Figure 2 plots the weekly pollutant series around the opening. The figure is descriptive, but it
+previews two design features that guide the empirical analysis. First, Centro and Belisario are the
+two closest stations to Line 1, yet they do not move together uniformly after the opening. Second,
+the late-2024 disruption generates visible changes in several series, motivating the use of separate
+post-opening windows rather than a single average over the entire post-treatment period.
+
+3.3    City-level analysis: satellite retrievals
+The city-level panel uses satellite retrievals to compare Quito with other Latin American urban areas.
+This analysis asks whether Quito experienced a detectable aggregate change in pollution relative to
+comparable cities after Metro Line 1 opened.
+    We define cities using the Global Human Settlement Urban Centre Database, 2024A release,
+which provides consistently delineated urban-center polygons across countries (Schiavina et al.
+2024).4 The Latin American UCDB sample contains 1,036 urban areas. Quito is UCDB identifier
+2544 and is the treated city. We retrieve and aggregate weekly pollutant measures for each urban
+center through Google Earth Engine (Gorelick et al. 2017), and merge them with weekly meteoro-
+logical covariates from ERA5-Land (Muñoz-Sabater et al. 2021).5 The weather controls include
+4
+  The UCDB follows the Degree of Urbanisation methodology, which defines urban centers as high-density population
+  clusters using harmonized grid-cell criteria rather than administrative boundaries (Dijkstra et al. 2021).
+5
+  For each pollutant and ISO week, we compute the mean of all valid satellite pixels intersecting each UCDB urban-center
+  polygon. Product-specific quality filters are applied before aggregation. The resulting observation is therefore a weekly
+  urban-area average of valid retrieved pixels.
+
+
+                                                                      8
+                                              Table 4. Citywide satellite panels
+                                                                                                Quito
+                                                                    Balanced Weeks             imputed Pre-treatment
+             Outcome       Product                 Transform         cities  per city           weeks       diff.
+             AOD           MODIS MAIAC                 Log                572          227             6              0.196
+             CO            S5P TROPOMI                 Log              1,035          227             0             -0.386
+             NO2           S5P TROPOMI                 Log                906          227             7              0.616
+             SO2           S5P TROPOMI                Asinh               861          227            15             -0.050
+                The initial satellite sample contains 1,036 Latin American urban areas and 227 weekly observations per city.
+                Balanced cities are retained after pollutant-specific coverage, short-gap imputation, and balance requirements.
+                Quito imputed weeks report the total number of pre- and post-opening weeks imputed for the treated city. The
+                pre-treatment difference is the normalized difference between Quito and the preferred 100-city donor pool in the
+                transformed outcome mean before the opening week.
+
+temperature, relative humidity, surface pressure, precipitation, solar radiation, evaporation, soil
+temperature and moisture, and wind conditions.
+    The satellite outcomes are AOD, CO, NO2 , and SO2 . AOD comes from the MODIS MAIAC
+MCD19A2 product at ∼1.1 km resolution (Lyapustin et al. 2018). It measures aerosol loading
+in the atmospheric column and is a proxy for particulate pollution.6 CO, NO2 , and SO2 come
+from Sentinel-5P TROPOMI (Veefkind et al. 2012). CO and NO2 are traffic-related atmospheric
+indicators, while SO2 is used mainly as a falsification outcome because urban SO2 is less directly
+tied to passenger transport.
+    We process all satellite products to weekly city-level means and then construct balanced pollutant-
+specific panels. AOD, CO, and NO2 are transformed using logs. SO2 is transformed using the
+inverse hyperbolic sine because TROPOMI SO2 retrievals can be zero or negative over low-emission
+cities (Bellemare and Wichman 2020); these values are valid noisy retrievals rather than missing
+observations. As in the local analysis, the synthetic-control estimators require a rectangular city-week
+panel: each donor city must have a valid outcome in every week used for estimation. Short gaps of
+one or two weeks are imputed before balancing. The balanced panels retain 572 cities for AOD,
+1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. Table 4
+summarizes the satellite data used in the citywide analysis.
+    For donor-pool construction, we rank Latin American urban areas by Mahalanobis distance
+to Quito using pre-treatment and time-invariant city characteristics that affect pollutant levels,
+atmospheric dispersion, and satellite retrieval.7 Restricting the donor pool to cities closest to Quito
+in pre-treatment characteristics reduces the scope for overfitting in synthetic-control designs (Abadie
+and Vives-i Bastida 2024). The estimation uses a sequence of donor pools, including the 50, 100,
+6
+  In Quito’s high-altitude basin, thermal inversions and vertical mixing can weaken the relationship between column
+  aerosol loading and surface exposure (Boyouk et al. 2010; Cazorla 2016).
+7
+  The Mahalanobis distance is computed using the extended UCDB covariate set: elevation; annual mean temperature;
+  temperature seasonality; annual precipitation; log population; log urban area; road density; average building height;
+  NOx emissions per capita; PM2.5 emissions per capita; the transport share of NOx emissions; and average GDP.
+
+
+
+                                                                    9
+150, and 200 nearest cities, as well as balanced panels with all available cities. The preferred citywide
+specification uses the 100 nearest donor cities, while the alternative donor pools are reported as
+robustness checks. The last column of Table 4 reports the normalized pre-treatment difference in
+the transformed outcome between Quito and the preferred donor pool. Full pre-treatment outcome
+and weather-covariate diagnostics are reported in Appendix A.1.
+    Figures 3 and 4 summarize the citywide panel. The outcome figure shows that Quito’s satellite
+series are more volatile than the donor-pool median, particularly for NO2 and SO2 , which motivates
+interpreting the satellite estimates as a broad aggregate benchmark rather than as the primary test of
+local exposure changes. The coverage figure shows that donor-pool coverage is high for CO and
+generally high for NO2 and SO2 , while AOD has lower and more variable coverage. Quito’s missing
+weeks are limited and are filled only through short-gap imputation. Detailed coverage, imputation,
+and balance diagnostics are reported in Appendix A.1.
+
+4    Empirical Strategy
+We estimate the effect of Quito’s first metro line on air pollution by constructing counterfactual
+pollution paths for exposed locations after the start of commercial operations. Let Yit denote pollution
+in unit i in week t, where the unit is a REMMAQ monitoring station in the local analysis or an urban
+area in the citywide analysis. For each treated unit, the object of interest is the average post-opening
+difference between observed pollution and the pollution path that would have occurred absent the
+metro:
+                                            1 X                   
+                                      τi =            Yit − Yit (0) ,
+                                                            b
+                                           T1 t≥T
+                                                 0
+
+
+where τi is the treatment effect, T0 is the week of the metro opening, T1 is the number of post-
+opening periods used in the estimate, and Ybit (0) is a synthetic counterfactual constructed from units
+not assigned to treatment. The identifying assumption is that, after conditioning on pre-opening
+pollution dynamics and weather, the synthetic comparison path approximates the untreated potential
+outcome of the treated unit. This logic follows the synthetic-control tradition of constructing a
+comparison path from weighted untreated units rather than relying on a single untreated comparison
+unit (Abadie et al. 2010).
+    The local station analysis is designed to distinguish two mechanisms. A corridor-proximity
+mechanism predicts that pollution changes should be strongest at monitors close to Metro Line 1.
+The destination-access mechanism predicts that effects should be more pronounced where the metro
+changes the relative cost of reaching the historic center. This distinction is central in Quito because
+Centro and Belisario are both close to Line 1, but only Centro lies inside the historic center, where
+narrow colonial streets, limited parking, and high pedestrian activity make car access unusually
+costly. We therefore first examine whether the data support a proximity interpretation. Belisario
+
+
+                                                     10
+provides the key discriminating comparison: if proximity to the line is sufficient to reduce pollution,
+Belisario should also experience a decline; if the effect operates through mode substitution for trips
+bound for the historic center, Belisario should not.
+    We operationalize this test using the other REMMAQ stations as the local comparison group.
+For each station, we construct a synthetic counterfactual from the remaining stations and examine
+whether the post-opening deviation is unusual. This leave-one-out exercise serves two purposes.
+First, it tests whether effects trace a general proximity pattern across the monitoring network. Second,
+it verifies whether Belisario behaves as an untreated comparison station before it is used as part
+of the donor pool for Centro. Thus, the role of Belisario is not circular: its null response is first a
+diagnostic against the corridor-proximity hypothesis and then a validation of its inclusion as a donor
+for the Centro counterfactual.
+    We implement two related counterfactual estimators. The first is augmented synthetic control,
+implemented with the augsynth package (Ben-Michael et al. 2021a,b). The second is synthetic
+difference-in-differences, implemented with the synthdid package (Arkhangelsky et al. 2021, 2024).
+Both estimators construct a counterfactual pollution path using untreated comparison units, but they
+differ in how they use pre-treatment information, how they incorporate covariates, and in the type of
+inference that is most credible in our two empirical settings.8
+    Augmented synthetic control starts from the synthetic-control idea of approximating the treated
+unit with a weighted average of untreated units, but adds an outcome model to correct remaining
+pre-treatment imbalance (Ben-Michael et al. 2021a). Let X1 denote the vector of pre-treatment
+outcomes and covariates for the treated unit, and let X0 denote the corresponding matrix for donor
+units. Standard synthetic control chooses weights w   b to make X0 w b close to X1 . Augmented synthetic
+control adjusts the post-treatment synthetic-control contrast by an estimate of the remaining bias:
+                                                             "                              #
+                                              X                             X
+                             τbtaug = Y1t −         bj Yjt − b
+                                                    w        m(X1 ) −             w m(Xj ) ,
+                                                                                  bj b
+                                              j∈D                           j∈D
+
+
+where D is the donor pool and b   m(·) is an outcome model estimated from pre-treatment data. In
+our preferred local implementation, b    m(·) is estimated using ridge regression with station fixed
+effects. The fixed effects absorb persistent level differences across monitors, while the ridge outcome
+model uses pre-treatment variation to adjust remaining imbalance between the treated station and
+8
+    The two estimators handle controls differently. The synthdid implementation operates on an outcome matrix and does
+    not directly include covariates, so we partial out weather controls and calendar effects before estimation and run SDID
+    on the adjusted outcome. In the local station analysis, this adjustment residualizes log pollution on weather controls
+    and month indicators, estimated on the control stations, excluding both Centro and Belisario. In the citywide satellite
+    analysis, we use an analogous split-FWL procedure: the SDID outcome is fully residualized on weather covariates
+    and urban-area-by-month fixed effects, while the AugSynth outcome is adjusted only for those fixed effects and the
+    residualized covariates are passed directly to the ridge outcome model. AugSynth can incorporate covariates directly,
+    so the ridge adjustment learns the covariate-outcome relationship within the estimator.
+
+
+                                                             11
+its synthetic counterfactual. The ridge adjustment is useful because exact pre-treatment balance is
+difficult when the donor pool is small. It improves fit while regularization limits extrapolation and
+overfitting.
+     Synthetic difference-in-differences combines synthetic-control unit weights with difference-in-
+differences time weights (Arkhangelsky et al. 2021). In a single-treated-unit setting, the estimator
+can be written intuitively as
+                                                             !                                      !
+                                         X                           X                   X
+                 τbsdid =   Ȳ1,post −         w
+                                               bj Ȳj,post       −          λ
+                                                                            bt   Y1t −         w
+                                                                                               bj Yjt ,
+                                         j∈D                         t<T0                j∈D
+
+
+where w  bj are donor weights and λ  bt are pre-treatment time weights. The first term compares the
+treated unit to a synthetic control after the metro opens. The second term subtracts the weighted
+pre-treatment gap between the treated unit and the same synthetic control. This makes SDID
+less dependent on exact pre-treatment matching than standard synthetic control, while retaining a
+data-driven comparison group.
+     The two estimators play different roles because the comparison sets differ sharply across analyses.
+In the local REMMAQ analysis, the donor pool contains only the other Quito monitoring stations.
+With such a small donor pool, the inference procedures recommended for SDID in larger panels are
+not reliable as the main inferential basis: placebo and large-sample approximations have very little
+information when there are only a few untreated units. Accordingly, local SDID results are reported
+only as point-estimate robustness checks, without p-values. We therefore use augmented synthetic
+control with station fixed effects as the preferred local estimator and use SDID as a robustness check.
+This local hierarchy is design-based: augmented synthetic control gives a transparent station-level
+counterfactual, and conformal inference can be applied directly to the prediction errors of that
+counterfactual.
+     Inference for the local augmented synthetic-control estimates is based on conformal methods for
+counterfactual and synthetic-control settings (Chernozhukov et al. 2021). The intuition is simple.
+Under the null hypothesis of no treatment effect, the post-opening prediction error should not look
+unusually large relative to the prediction errors observed before the metro opened. Conformal
+inference tests candidate treatment effects by shifting the post-treatment outcomes and asking which
+shifts make the full sequence of prediction errors look consistent with the pre-treatment errors. This
+is attractive in the local setting because it does not require a large number of donor stations.
+     We use a leave-one-out spatial placebo exercise to assess whether the conformal procedure
+over-rejects and whether the estimated reduction is specific to Centro. We shift treatment status
+across the monitoring network by treating each station in turn as if it were exposed, construct
+its synthetic counterfactual from the remaining stations, and apply the same conformal inference
+
+
+                                                         12
+procedure. This exercise is not the main source of statistical inference for Centro. With only eight
+stations, any rank-based comparison is coarse and has a natural lower bound of 1/8. Instead, it
+checks the design’s internal logic: the method should not find significant reductions at stations where
+the destination-access mechanism predicts none, and the reduction should appear only at Centro.
+Belisario is the key placebo because it is nearly as close to Line 1 as Centro but outside the historic
+center.
+     As described in the data section, we estimate effects on three post-opening windows for all
+pollutants. The full post-opening window keeps all available weeks after the metro began operating,
+including the late-2024 disruption period. We also report a clean pre-disruption window because
+Ecuador’s energy crisis generated citywide pollution shocks that could mask or confound metro-
+related changes in air quality. This is not a sample-cleaning exclusion, but an estimand choice: it
+isolates the period after the metro opened and before the major citywide disruption. Alternative win-
+dows show how the estimates change when the disruption period and the more limited post-disruption
+coverage are included. PM2.5 is the preferred local outcome because all eight monitoring stations
+report it, preserving the largest donor pool. Other pollutants provide robustness and mechanism
+checks, but are estimated with a smaller donor pool because San Antonio does not report those
+series.
+     The satellite analysis estimates a separate, city-level estimand. Instead of comparing monitors
+within Quito, it compares Quito as an urban area to a synthetic combination of other Latin American
+urban areas. This design asks whether the metro generated a detectable aggregate change in pollution
+at the city scale. It is not designed to detect localized changes inside the historic center. In this setting,
+the comparison set is much larger. Quito is compared to a donor pool of Latin American urban
+areas ranked by similarity, and the primary specification uses synthetic difference-in-differences.
+This choice follows the structure of the method: with many candidate donor cities and repeated pre-
+treatment observations, SDID can use both unit weights and time weights to construct an aggregate
+counterfactual for Quito (Arkhangelsky et al. 2021).
+     For SDID and synthetic-control estimates in the satellite analysis, we report placebo standard
+errors and Wald-type tests, complemented by rank-based placebo diagnostics. The placebo standard
+errors are computed by repeatedly reassigning treatment to donor units and using the dispersion of
+those placebo estimates as the sampling variability of the estimator. The Wald tests then compare the
+estimated effect to this placebo-based standard error. This approximation is more informative in the
+city-level analysis than in the local station analysis because the satellite donor pool is large enough to
+generate a meaningful distribution of placebo estimates. We retain rank-based permutation p-values
+as a secondary check reported in the appendix; they lead to the same substantive conclusions.
+     We also estimate augmented synthetic-control specifications in the satellite analysis, but interpret
+them as robustness checks. The same flexibility that makes augmented synthetic control useful
+
+
+                                                     13
+in the local station setting can become less desirable when the donor pool is large and the pre-
+treatment satellite panel is high-dimensional. In that setting, ridge regularization helps, but we still
+prefer SDID as the primary estimator because it imposes a more transparent weighting structure for
+the aggregate city-level comparison. The hierarchy is therefore reversed across the two analyses:
+augmented synthetic control is primary locally and robustness at the city level, while synthetic
+difference-in-differences is primary at the city level and robustness locally.
+    The two designs answer different questions. The satellite analysis asks whether Quito experienced
+a detectable citywide pollution change relative to comparable Latin American urban areas. The local
+station analysis asks whether PM2.5 changed at the car-constrained destination where the mechanism
+predicts the strongest early effect, and whether the same pattern is absent at an almost equidistant
+non-historic center monitor. The empirical strategy therefore does not require a smooth distance
+gradient from the metro corridor. With only eight monitoring stations, a short post-opening period,
+and a major late-2024 disruption, the local design is better suited to testing the sharper prediction
+that the response should appear at Centro rather than at Belisario. Evidence on the full spatial extent
+of the effect remains an open question.
+
+5     Results
+The results support one main claim: Metro Line 1 is associated with a localized reduction in fine-
+particulate pollution at Quito’s historic center, where the urban form makes car access difficult and
+metro access especially valuable. The evidence is strongest for PM2.5 at Centro. Belisario, which is
+almost as close to the metro corridor but outside the historic center, does not show the same pattern.
+This contrast points to a localized particulate effect at the predicted destination, rather than a generic
+proximity effect along the corridor. The results do not establish the full spatial extent of the effect,
+and they do not by themselves prove the traffic channel.
+    The empirical prediction is specific. Evidence for a destination-access mechanism should show
+a PM2.5 decline at Centro, no comparable decline at Belisario, and no similar pattern across the rest
+of the monitoring network. Evidence for a simple corridor-proximity mechanism would instead
+predict similar declines at both Centro and Belisario. We organize the results around this distinction.
+
+5.1   Local PM2.5 effects at Centro
+Figure 5 shows the weekly event-study estimates for the preferred Centro specification. The pre-
+opening gaps fluctuate around zero, while the post-opening estimates move below zero during the
+first months of operation and deepen through 2024. During the early post-opening period before
+the blackout and wildfire disruptions, the average effect is −0.130 log points. The estimate is
+nearly identical, −0.132 log points, when later post-opening weeks are added but the disruption
+weeks are excluded. The figure therefore shows that the preferred estimate is not driven by a single
+
+
+                                                   14
+post-opening week or by the late-2024 disruption. The gradual deepening of the effect is consistent
+with a response that builds as metro ridership grows rather than a discrete shift at opening.
+    Table 5 reports the local PM2.5 estimates. The table is organized around the identification logic.
+The first column treats Centro and Belisario jointly as the two monitoring stations closest to Line 1.
+This proximity-based specification produces negative estimates in the clean windows, but the effects
+are not statistically significant. This suggests that the PM2.5 result is concentrated at the predicted
+historic-center destination rather than simply tracing proximity to the metro corridor.
+    The second column treats Belisario as the affected station and excludes Centro from the donor
+pool. Belisario is almost as close to the metro corridor as Centro, but its estimates are small,
+imprecise, and not statistically significant in the clean windows. This first establishes Belisario as
+a placebo-treated station with no comparable response, which in turn supports using it as a valid
+donor for Centro.
+    The third column treats Centro as the affected station and removes Belisario from the donor
+pool. This conservative specification produces larger negative point estimates, 17.0 percent in
+the pre-disruption window and 14.2 percent in the donut window, but the estimates are imprecise.
+The lack of precision is informative: removing Belisario also removes the closest and most useful
+comparison station for Centro.
+    The preferred specification, in the final column, treats Centro as the affected station and retains
+Belisario in the donor pool. This specification estimates a 12.2 percent reduction in PM2.5 in the pre-
+disruption window, with a two-sided conformal p-value of 0.011. The estimate is nearly unchanged
+in the donut window, at 12.4 percent. The full post-opening window gives a larger reduction of 15.1
+percent, but because it includes the late-2024 disruption, we interpret the pre-disruption estimate as
+the cleanest local effect.
+    The preferred specification delivers the statistically significant Centro effect while also providing
+the strongest pre-opening fit. Its pre-treatment RMSPE is 0.129, compared with 0.185 to 0.205 in
+the other specifications, and its post-to-pre RMSPE ratio rises to 1.98 in the pre-disruption window.
+This means that retaining Belisario improves the counterfactual fit before treatment and reveals a
+post-opening divergence that is large relative to the pre-opening prediction error. The next section
+broadens the test to the full monitoring network, asking whether the Centro result is unique among
+Quito’s monitors and whether other stations show comparable evidence of a post-opening PM2.5
+reduction.
+
+5.2   Spatial placebo evidence
+The spatial placebo exercise broadens the Centro-Belisario comparison to the full monitoring network.
+We treat each REMMAQ station in turn as if it were affected, construct a synthetic counterfactual
+from the remaining stations, and apply the same two-sided conformal inference procedure. This
+
+
+                                                  15
+                                      Table 5. Local PM2.5 identification sequence
+                               Centro + Belisario         Belisario treated         Centro treated     Centro treated
+                                  co-treated              Centro excluded          Belisario excluded Belisario retained
+        Panel A. Pre-disruption window: Nov. 27, 2023 to Sept. 9, 2024
+        Log effect               -0.124            -0.062              -0.186                                        -0.130
+        Percent effect            -11.7              -6.0               -17.0                                         -12.2
+        Conformal p               0.610             0.729               0.392                                         0.011
+        Pre RMSPE                 0.185             0.188               0.205                                        0.129
+        Post RMSPE                0.230             0.218               0.308                                        0.255
+        Post/pre RMSPE             1.24              1.16                1.50                                         1.98
+        Panel B. Donut window: excluding Sept. 16 to Dec. 16, 2024
+        Log effect             -0.089              -0.024                                  -0.153                    -0.132
+        Percent effect           -8.5                -2.3                                   -14.2                     -12.4
+        Conformal p             0.809               0.849                                   0.486                     0.041
+        Pre RMSPE               0.185               0.188                                   0.205                    0.129
+        Post RMSPE              0.253               0.259                                   0.308                    0.244
+        Post/pre RMSPE           1.37                1.38                                    1.50                     1.89
+        Panel C. Full post-opening window: Nov. 27, 2023–Mar. 2025
+        Log effect               0.040              0.140                                  -0.060                    -0.164
+        Percent effect             4.1               15.1                                    -5.8                     -15.1
+        Conformal p              0.807              0.698                                   0.506                     0.006
+        Pre RMSPE                0.185              0.188                                   0.205                    0.129
+        Post RMSPE               0.581              0.671                                   0.534                    0.272
+        Post/pre RMSPE            3.14               3.58                                    2.61                     2.10
+          Notes. All specifications use augmented synthetic control with station fixed effects and meteorological controls. Effects
+          are reported in logs and percent terms. p-values are two-sided conformal p-values. The preferred specification is the final
+          column: Centro treated, Belisario retained in the donor pool. The table is ordered to distinguish a corridor-proximity
+          interpretation from a destination-access interpretation. Belisario is first tested as a treated station with Centro excluded;
+          after showing no comparable effect at Belisario, the preferred specification retains Belisario as the key donor for Centro.
+
+exercise is not used as the main source of statistical significance. With only eight stations, any
+rank-based statistic is mechanically coarse. Instead, the exercise is a spatial diagnostic: it asks
+whether the significant PM2.5 effect appears at the station predicted by the design, and whether other
+stations show comparable evidence of a post-opening reduction.
+    Table 6 reports the station-level placebo estimates for the pre-disruption window. Because the
+placebo re-estimates every station, including Centro, through the same leave-one-out routine, the
+Centro estimate differs trivially from the configured estimate in Table 5. Centro is the only station
+with a statistically significant negative effect. Its estimated reduction is 12.2 percent, with a two-sided
+conformal p-value of 0.012. Belisario, despite being almost equidistant from the metro corridor,
+has a positive and statistically insignificant estimate of 8.5 percent. This connects directly to the
+identification sequence in Table 5: the same station that anchors Centro’s preferred counterfactual
+does not show a comparable response when treated as the exposed station.
+    The remaining stations do not show comparable evidence of a post-opening PM2.5 reduction.
+The only other estimate approaching conventional significance is Cotocollao, but its point estimate
+is positive, so it is not a competing pollution-reduction result. Tumbaco has a large negative point
+
+
+                                                                    16
+                                 Table 6. Spatial placebo estimates for PM2.5
+                      Station             Distance (km)           Effect (%)         Conformal p-value
+                      Centro                     0.61                -12.2                   0.012
+                      Belisario                  0.77                 8.5                    0.452
+                      Guamaní                    4.04                 -7.8                   0.523
+                      Cotocollao                 5.21                 4.5                    0.061
+                      Carapungo                  7.64                 -8.9                   1.000
+                      Los Chillos                8.62                21.8                    0.135
+                      Tumbaco                    9.56                -17.7                   0.785
+                      San Antonio               16.65                 9.2                    0.574
+                        Notes. Entries report leave-one-station-out placebo estimates for weekly peak-hour
+                        PM2.5 in the pre-disruption window. Each row treats the listed station as if it were
+                        exposed and uses the remaining stations as the donor pool. Effects are estimated using
+                        augmented synthetic control with station fixed effects and meteorological controls.
+                        Distance is the straight-line distance from the monitoring station to the nearest Metro
+                        Line 1 stop. The p-values are two-sided conformal p-values. The rank-based placebo
+                        statistic is not used as the inferential test because the local placebo sample contains
+                        only eight stations. We also do not rank stations by post-to-pre fit ratios, because
+                        with eight stations those ratios can be sensitive to a single station’s pre-period noise;
+                        the conformal procedure instead uses the full sequence of prediction errors.
+
+estimate, but its two-sided conformal p-value is 0.785, meaning that its post-opening deviation is not
+statistically distinguishable from its pre-opening prediction errors. The evidence therefore supports
+a localized effect at the historic center rather than a simple distance-to-corridor interpretation.
+    This result should not be read as evidence that the metro had no effects elsewhere. The monitoring
+network has only eight stations, the post-opening period is short, ridership was still growing, and the
+late-2024 disruption reduces power to detect broader spatial responses. The local design is strongest
+for the destination-access test: whether the particulate response appears at Centro and not at the
+almost equidistant non-historic center station.
+
+5.3   Local pollutant pattern
+Table 7 reports the preferred local specification for all four ground-monitored pollutants. The pattern
+is particulate-specific. PM2.5 falls significantly in every window, with the cleanest estimate in the
+pre-disruption period. NO2 provides the cleanest null result. It has the best pre-treatment fit of
+any pollutant in the table, with a pre-RMSPE of 0.089, and its post-to-pre RMSPE ratio is 1.02
+in the pre-disruption window. The synthetic counterfactual therefore tracks NO2 tightly before
+treatment and shows essentially no post-opening divergence. CO is different: it also has negative
+point estimates, but the conformal p-values equal 1.000 and the post-to-pre RMSPE ratios are below
+one, so the CO estimates do not provide evidence of a post-opening divergence.
+    SO2 behaves differently. It is close to zero and statistically insignificant in the pre-disruption
+window, but turns positive once later post-opening weeks are included. The donut estimate is
+13.1 percent, with a two-sided conformal p-value of 0.055, and the full-window estimate is 10.0
+percent. This pattern is consistent with the diesel-combustion signature expected from widespread
+generator use during the late-2024 energy crisis. Rather than supporting a metro effect, the SO2
+
+                                                               17
+                                 Table 7. Local pollutant effects at Centro
+                                                   PM2.5          CO          NO2           SO2
+                          Panel A. Pre-disruption window
+                          Log effect           -0.130   -0.056               -0.064       -0.025
+                          Percent effect        -12.2     -5.4                 -6.2         -2.5
+                          Conformal p           0.011    1.000                0.967        0.187
+                          Pre RMSPE             0.129    0.248                0.089        0.214
+                          Post RMSPE            0.255    0.163                0.090        0.293
+                          Post/pre RMSPE         1.98     0.66                 1.02         1.37
+                          Panel B. Donut window
+                          Log effect         -0.132              -0.082      -0.055        0.123
+                          Percent effect      -12.4                -7.9        -5.4         13.1
+                          Conformal p         0.041               1.000       0.610        0.055
+                          Pre RMSPE           0.129               0.248       0.089        0.214
+                          Post RMSPE          0.244               0.168       0.138        0.403
+                          Post/pre RMSPE       1.89                0.68        1.56         1.89
+                          Panel C. Full post-opening window
+                          Log effect           -0.164   -0.108               -0.060        0.095
+                          Percent effect        -15.1    -10.2                 -5.8         10.0
+                          Conformal p           0.006    1.000                0.716        0.124
+                          Pre RMSPE             0.129    0.248                0.089        0.214
+                          Post RMSPE            0.272    0.189                0.131        0.381
+                          Post/pre RMSPE         2.10     0.76                 1.48         1.78
+                           Notes. All columns use the preferred local specification: Centro treated,
+                           Belisario retained in the donor pool, augmented synthetic control with
+                           station fixed effects and meteorological controls. Effects are reported in
+                           logs and percent terms. p-values are two-sided conformal p-values. Panel A
+                           is the primary local window and covers the post-opening period before the
+                           late-2024 blackout and wildfire disruption, from Nov. 27, 2023 to Sept. 9,
+                           2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024.
+                           Panel C retains all available post-opening weeks, through Mar. 2025 for
+                           PM2.5 and through June 2025 for CO, NO2 , and SO2 . Pre RMSPE is
+                           identical across panels within each pollutant because all three windows use
+                           the same pre-treatment period. PM2.5 is available for eight stations. CO,
+                           NO2 , and SO2 are available for seven stations because San Antonio does
+                           not report these pollutants.
+
+results corroborate the decision to isolate the pre-disruption window as the primary local estimand.
+    Taken together, the local pollutant results point to a particulate-specific response rather than a
+broad reduction across all pollutants. This pattern is consistent with changes in local traffic activity,
+congestion, resuspended road dust, or other activity around the historic center, but it does not identify
+the exact emissions channel. The absence of comparable reductions in CO and NO2 means that the
+direct traffic mechanism should be tested with ridership, congestion, vehicle-flow, or parking data
+rather than inferred from the pollutant pattern alone.
+    The PM2.5 result is qualitatively robust to alternative estimators. Augmented synthetic control
+without station fixed effects gives reductions of 9.5 percent in the pre-disruption window, 10.1 percent
+in the donut window, and 13.3 percent in the full window, all significant under two-sided conformal
+inference. Synthetic difference-in-differences gives larger negative point estimates, ranging from
+
+
+                                                            18
+14.3 to 20.7 percent across windows, with a pre-disruption estimate of 14.5 percent. Because valid
+local inference was not computed for SDID, we use these estimates only as robustness checks for
+sign and magnitude. We report the full specification set in the appendix A.2.
+
+5.4   Citywide satellite estimates
+The satellite analysis is not designed to identify the historic-center mechanism directly. It asks a
+broader question: whether Quito as an urban area experienced a detectable aggregate change in
+pollution relative to comparable Latin American urban areas. Table 8 reports the citywide SDID
+estimates for AOD, the satellite particulate proxy, across donor pools. The estimates are negative
+across all donor pools and windows. In the preferred 100-city donor pool, selected using the
+pre-specified Mahalanobis-distance rule, AOD falls by 0.113 log points during the first months of
+operation before the blackout and wildfire disruptions. The corresponding two-sided Wald p-value
+from placebo standard errors is 0.035.
+    The pool-walk supports the same conclusion. In the primary pre-disruption window, the AOD
+estimate is negative in every donor pool, ranging from −0.100 to −0.145 log points. The 95 percent
+confidence intervals exclude zero in every pool, although the upper bound in the 50-city pool sits
+essentially at zero, indicating that precision is weakest in the most restrictive donor pool. The donut
+and full-window estimates are also negative and generally larger in magnitude. The result therefore
+does not depend on selecting the 100-city pool because it is significant; that pool is the preferred
+specification because it follows the pre-specified donor-selection rule.
+    The AOD results point in the same particulate direction as the local PM2.5 evidence, but they
+should not be interpreted as a clean citywide metro effect. The satellite estimand is different from the
+local station estimand. AOD measures aerosol loading in the atmospheric column rather than surface
+PM2.5 , and the broader Ecuadorian environment in 2024 may have affected Quito differently from
+other Latin American cities. The magnitude of the citywide AOD estimates is also large relative to
+what a single metro line would likely produce at the urban scale. For these reasons, we interpret the
+satellite analysis as a bounded regional benchmark: it corroborates the direction of the particulate
+result, but it is not the main causal test.
+    Table 9 reports the preferred 100-city SDID specification for all satellite outcomes. The particu-
+late proxy is the only outcome that moves consistently. CO is small and statistically insignificant in
+all windows. NO2 changes sign across windows and is not statistically significant. SO2 is negligible
+in magnitude. These gas-pollutant estimates are shown for transparency, but they are not load-
+bearing for the mechanism. At the urban-center scale, weekly TROPOMI gas retrievals average over
+the entire city polygon and are affected by atmospheric transport, retrieval noise, vertical-column
+measurement, and non-transport sources. Their null or inconsistent estimates therefore limit what
+the satellite analysis can say about channels, but they do not overturn the local PM2.5 evidence.
+
+
+                                                  19
+                           Table 8. Citywide AOD estimates across donor pools
+                   Donor pool                 Pre-disruption               Donut                    Full
+                   50 nearest cities   -0.100 (0.049)                -0.089 (0.247) -0.107 (0.142)
+                                       [-0.200, -0.000]               [-0.240, 0.062] [-0.250, 0.036]
+                   100 nearest cities† -0.113 (0.035)                -0.171 (0.016) -0.188 (0.006)
+                                       [-0.218, -0.008]              [-0.309, -0.032] [-0.323, -0.054]
+                   150 nearest cities  -0.145 (0.008)                -0.133 (0.099) -0.155 (0.037)
+                                       [-0.252, -0.038]               [-0.290, 0.025] [-0.301, -0.010]
+                   200 nearest cities  -0.138 (0.016)                -0.156 (0.018) -0.175 (0.035)
+                                       [-0.250, -0.026]              [-0.286, -0.027] [-0.338, -0.013]
+                   All balanced cities -0.143 (0.011)                -0.170 (0.009) -0.185 (0.006)
+                                       [-0.253, -0.033]              [-0.299, -0.042] [-0.318, -0.053]
+                     Notes. Entries are log-point effects on AOD from synthetic difference-in-differences. Two-
+                     sided p-values from placebo standard errors using the normal approximation are in paren-
+                     theses; 95 percent confidence intervals are in brackets. Donor pools are ranked by Maha-
+                     lanobis distance to Quito using pre-treatment and time-invariant city characteristics. The
+                     pre-disruption window is the primary citywide window because it uses the post-opening
+                     period before the late-2024 blackout and wildfire disruption. † The preferred citywide speci-
+                     fication uses the 100 nearest donor cities, following the pre-specified Mahalanobis-distance
+                     donor-selection rule. Permutation p-values are retained as a secondary appendix check and
+                     lead to the same substantive interpretation, with weaker precision in the smallest donor pools.
+
+    The results section therefore indicates a localized particulate response at Quito’s historic center.
+PM2.5 falls at Centro, the station predicted by the destination-access mechanism, while Belisario,
+the similarly close non-center station, does not show the same pattern. The satellite AOD estimates
+move in the same particulate direction at the city scale, but the satellite gases are not informative
+enough to establish a mechanism. We therefore interpret the findings as evidence that Quito Metro
+Line 1 reduced fine-particulate pollution at the historic center, consistent with destination-based
+mode substitution, while leaving the full spatial extent and direct traffic channel for future mobility
+evidence.
+
+6   Conclusion
+This paper studies whether the air-quality effects of a new metro line can be concentrated within a
+city. Using the opening of Quito Metro Line 1, we compare pollution changes at the historic center
+with changes at other monitoring stations and then place the local evidence in a broader citywide
+comparison using satellite data. The main result is a localized decline in fine particulate pollution
+at Centro, the monitoring station inside Quito’s historic center. PM2.5 falls significantly, by about
+12 percent, during the first months of operation before Ecuador’s late-2024 blackout and wildfire
+disruptions. The effect is not mirrored at Belisario, a station that is nearly as close to the metro
+corridor but outside the historic center.
+    The spatial pattern is central to the interpretation. The results do not support a simple proximity
+story in which pollution falls mechanically near the rail corridor. Instead, the evidence points to a
+destination-based response: the metro appears to matter most where it changes access to a dense
+
+
+                                                               20
+                           Table 9. Citywide satellite estimates by pollutant
+                                            AOD           CO           NO2           SO2
+                              Panel A. Pre-disruption window
+                              Effect     -0.113    -0.018    0.034                 -0.000
+                              Wald p      0.035     0.303    0.571                  0.250
+                              Panel B. Donut window
+                              Effect    -0.171    -0.013              -0.033       -0.000
+                              Wald p     0.016     0.310               0.606        0.292
+                              Panel C. Full post-opening window
+                              Effect    -0.188     -0.005    -0.032                -0.000
+                              Wald p     0.006      0.710     0.606                 0.079
+                               Notes. Entries are treatment-effect estimates from the preferred
+                               100-city SDID specification. p-values are two-sided p-values
+                               from placebo standard errors using the normal approximation.
+                               AOD, CO, and NO2 are log-transformed, so coefficients are
+                               log-point effects. SO2 is transformed using the inverse hyper-
+                               bolic sine; its estimated magnitudes are close to zero. The
+                               pre-disruption window is the primary citywide window. Per-
+                               mutation p-values are retained as a secondary appendix check
+                               and lead to the same substantive interpretation.
+
+area in which car use is already costly. This distinction matters because urban rail investments are
+often evaluated as citywide infrastructure projects, while their environmental benefits may be highly
+local. A modest or ambiguous citywide effect can coexist with meaningful gains in places where the
+transport intervention changes the relative attractiveness of driving.
+    The satellite analysis supports this interpretation only in a limited sense. Aerosol optical depth
+moves in the same particulate direction as the local PM2.5 result, while satellite gas outcomes do
+not show a consistent pattern. We therefore interpret the citywide evidence as complementary,
+not as the paper’s main causal test. Satellite measures capture pollution at a different spatial and
+atmospheric scale, and Quito’s broader post-opening period coincided with national shocks that
+complicate citywide comparisons. The strongest evidence remains the station-level result at the
+location where the mechanism predicts the clearest early effect.
+    These findings have two implications for policy. First, large transit investments may not generate
+broad environmental benefits on their own. Their local air-quality effects are more likely to appear
+where the new system makes car use less attractive relative to public transport. In dense destinations,
+especially places with limited parking, constrained street networks, and high pedestrian activity,
+rail access may produce cleaner local environments even before broader citywide changes are
+visible. Second, transport policy may need to pair supply-side investments, such as metros, with
+complementary measures that limit the convenience of driving in the areas where modal shift is
+most valuable.
+    The paper also points to the limits of the current evidence. The results document where the
+early particulate response appears, but they do not directly measure the traffic channel. Future work
+
+
+                                                          21
+should combine air-quality data with ridership, congestion, vehicle counts, parking behavior, and
+origin-destination travel patterns to test whether the observed pollution changes reflect reduced
+vehicle access to the historic center, changes in bus circulation, lower congestion, or other local
+activity responses. As Quito’s metro matures and ridership grows, these data will be important for
+understanding whether the early localized gains expand, persist, or depend on additional policies
+that reshape travel behavior.
+
+
+
+
+                                                22
+                                                                            San Antonio de Pichincha
+                                  Equator 0°
+                                                                                   16.65 km          N
+
+
+
+
+                                                                             Metro Line 1
+                                                                             Metro station
+
+                                                                             Monitor, near corridor (< 1 km)
+                                                                             Monitor, far from corridor
+
+
+
+
+                                                Cotocollao
+                                                 5.21 km
+                                                                     Carapungo
+                                                                      7.64 km
+
+
+
+
+                                                Belisario
+                                                0.77 km
+
+
+                                                                                                  Tumbaco
+                                           Centro                                                  9.56 km
+                                           0.61 km
+
+
+
+
+                                                              Los Chillos
+                                                               8.62 km
+
+                        Guamaní
+                        4.04 km
+
+
+
+                                  4 km
+
+
+Figure 1. Air-quality monitoring stations and Metro Line 1. The black line traces Metro Line 1 along Quito’s
+north-south valley corridor; black dots mark its stations. Orange dots mark the two REMMAQ monitors
+within 1 km of the corridor, Centro and Belisario; blue dots mark the six monitors farther from the corridor.
+Labels give each monitor’s straight-line distance to the nearest metro stop. The inset locates Quito within
+South America.
+                                                             23
+Figure 2. Weekly peak-hour pollution at REMMAQ monitoring stations. The figure plots weekday peak-hour
+weekly means for PM2.5 , CO, NO2 , and SO2 . Centro, the treated station, is shown in red; Belisario is shown
+in blue; all other stations are shown in gray. The vertical dashed line marks the opening of Metro Line 1 on
+December 1, 2023. The shaded region marks the Phase 3 power-outage and wildfire disruption weeks used to
+define the donut window.
+
+
+
+
+                                                     24
+Figure 3. Weekly satellite outcomes for Quito and the donor pool. Red lines plot Quito. Blue lines plot the
+donor-pool median, and shaded bands show the 10th to 90th percentiles of the donor pool. The vertical dashed
+line marks the Metro Line 1 opening week, ISO 2023-W48. The shaded region marks the 2024 disruption
+period.
+
+
+
+
+                                                    25
+Figure 4. Satellite coverage over time. Blue lines show the percentage of donor-pool cities with a valid
+observation in each week. Red ticks mark weeks with no valid raw observation for Quito before short-gap
+imputation. The vertical dashed line marks the Metro Line 1 opening week, ISO 2023-W48.
+
+
+
+
+                                                  26
+                                                                                                     P1                                        P2
+                    0.5
+
+
+
+
+                    0.0
+
+
+
+
+ATT (log points)
+
+
+                   −0.5
+
+
+
+
+                   −1.0
+
+
+                                   23       02
+                                               3
+                                                       02
+                                                          3
+                                                                  02
+                                                                     3            24            24                 24        02
+                                                                                                                                4
+                                                                                                                                        02
+                                                                                                                                           5
+                                                                                                                                                      02
+                                                                                                                                                         5
+                             n   20       r2         l2         t2          n   20        r   20             l   20       t2          n2            r2
+                          Ja            Ap         Ju         Oc         Ja            Ap                 Ju            Oc          Ja         Ap
+
+                                    Figure 5. Effect of Quito Metro Line 1 on PM2.5 : event-study estimates.
+                   Notes. The figure reports estimates from augmented synthetic control with station fixed effects and weather
+                   covariates. The solid line shows the weekly treatment effect in log points, and the shaded ribbon shows the
+                   pointwise conformal confidence interval. The vertical dashed line marks the opening of Quito Metro Line 1 in
+                   December 2023. The gray region marks the blackout and wildfire disruption period. Average treatment effects by
+                   window are: pre-disruption, P1 , −0.130 log points (p = 0.011); donut, P1 + P2 , −0.132 log points (p = 0.041);
+                   and full post-opening, −0.164 log points (p = 0.006). All p-values are two-sided conformal p-values. Period 2
+                   (post-disruption) contains only 6 PM2.5 weeks: data are absent for all stations from the week of 13 Jan to the
+                   week of 24 Feb 2025, so the panel jumps from the week of 6 Jan 2025 to the week of 3 Mar 2025. The break in
+                   the series in early 2025 marks this gap.
+
+
+
+
+                                                                                 27
+References
+Abadie, Alberto, Alexis Diamond, and Jens Hainmueller, “Synthetic Control Methods for
+  Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program,”
+ Journal of the American Statistical Association, 2010, 105 (490), 493–505.
+
+   and Jaume Vives i Bastida, “Synthetic controls in action,” arXiv preprint arXiv:2203.06279,
+  2024. Forthcoming in Advances in Economics and Econometrics: Twelfth World Congress.
+
+Arkhangelsky, Dmitry, Susan Athey, David A. Hirshberg, Guido W. Imbens, and Stefan Wager,
+ “Synthetic Difference-in-Differences,” American Economic Review, 2021, 111 (12), 4088–4118.
+
+  , , , , and         , synthdid: Synthetic Difference-in-Difference Estimation 2024. R package,
+  version 0.0.9.
+
+Bellemare, Marc F. and Casey J. Wichman, “Elasticities and the inverse hyperbolic sine transfor-
+  mation,” Oxford Bulletin of Economics and Statistics, 2020, 82 (1), 50–61.
+
+Ben-Michael, Eli, Avi Feller, and Jesse Rothstein, “The Augmented Synthetic Control Method,”
+  Journal of the American Statistical Association, 2021, 116 (536), 1789–1803.
+
+  ,   , and   , augsynth: The Augmented Synthetic Control Method 2021. R package.
+
+Boyouk, Neda, Jean-François Léon, Hervé Delbarre, T. Podvin, and C. Deroo, “Impact of
+  the mixing boundary layer on the relationship between PM2.5 and aerosol optical thickness,”
+  Atmospheric Environment, 2010, 44 (2), 271–277.
+
+Cazorla, Maria, “Air quality over a populated Andean region: Insights from measurements of
+  ozone, NO, and boundary layer depths,” Atmospheric Pollution Research, 2016, 7, 66–74.
+
+Chen, Yihsu and Alexander Whalley, “Green Infrastructure: The Effects of Urban Rail Transit on
+ Air Quality,” American Economic Journal: Economic Policy, 2012, 4 (1), 58–97.
+
+Chen, Yuyu, Ginger Zhe Jin, Naresh Kumar, and Guang Shi, “The Promise of Beijing: Evaluating
+  the Impact of the 2008 Olympic Games on Air Quality,” Journal of Environmental Economics
+  and Management, 2013, 66 (3), 424–443.
+
+Chernozhukov, Victor, Kaspar Wüthrich, and Yinchu Zhu, “An Exact and Robust Conformal
+ Inference Method for Counterfactual and Synthetic Controls,” Journal of the American Statistical
+ Association, 2021, 116 (536), 1849–1864.
+
+
+
+
+                                               28
+Dijkstra, Lewis, Aneta J. Florczyk, Sergio Freire, Thomas Kemper, Michele Melchiorri,
+  Martino Pesaresi, and Marcello Schiavina, “Applying the Degree of Urbanisation to the globe:
+  a new harmonised definition reveals a different picture of global urbanisation,” Journal of Urban
+  Economics, 2021, 125, 103312.
+
+Encyclopaedia Britannica, “Quito,” https://www.britannica.com/place/Quito 2026. Ac-
+  cessed May 31, 2026.
+
+Gendron-Carrier, Nicolas, Marco Gonzalez-Navarro, Stefano Polloni, and Matthew A. Turner,
+ “Subways and Urban Air Pollution,” American Economic Journal: Applied Economics, 2022, 14
+ (1), 164–196.
+
+Goel, Deepti and Sonam Gupta, “The Effect of Metro Expansions on Air Pollution in Delhi,” The
+ World Bank Economic Review, 2017, 31 (1), 271–294.
+
+Gorelick, Noel, Matt Hancher, Mike Dixon, Simon Ilyushchenko, David Thau, and Rebecca
+ Moore, “Google Earth Engine: planetary-scale geospatial analysis for everyone,” Remote Sensing
+ of Environment, 2017, 202, 18–27.
+
+Li, Shanjun, Yanyan Liu, Avralt-Od Purevjav, and Lin Yang, “Does Subway Expansion Improve
+  Air Quality?,” Journal of Environmental Economics and Management, 2019, 96, 213–235.
+
+Lin, Yatang, Yu Qin, Jing Wu, and Mandi Xu, “Impact of High-Speed Rail on Road Traffic and
+  Greenhouse Gas Emissions,” Nature Climate Change, 2021, 11 (11), 952–957.
+
+Lyapustin, Alexei, Yujie Wang, Sergey Korkin, and Dong Huang, “MODIS Collection 6 MAIAC
+  algorithm,” Atmospheric Measurement Techniques, 2018, 11 (10), 5741–5765.
+
+Muñoz-Sabater, Joaquín, Emanuel Dutra, Anna Agustí-Panareda, Clément Albergel, Gabriele
+ Arduini, Gianpaolo Balsamo et al., “ERA5-Land: a state-of-the-art global reanalysis dataset for
+ land applications,” Earth System Science Data, 2021, 13 (9), 4349–4383.
+
+Oliver Wyman Forum, “How Quito Performs Across Urban Mobility Targets,” https://www.
+  oliverwymanforum.com/mobility/urban-mobility-readiness-index/quito.html
+  2024. Accessed May 31, 2026.
+
+REMMAQ, “Datos Históricos de la Red Metropolitana de Monitoreo Atmosférico de Quito (REM-
+ MAQ),” Dataset, Secretaría de Ambiente del Distrito Metropolitano de Quito 2026. Available at
+ http://datosambiente.quito.gob.ec/. Accessed 2026.
+
+Schiavina, Marcello, Michele Melchiorri, and Martino Pesaresi, “GHS Urban Centre Database
+  2024 (R2024A),” 2024.
+
+                                                29
+Transdev, “Commissioning of Quito’s first metro line, jointly operated by Trans-
+  dev,”         https://www.transdev.com/en/news/south-america/press-release/
+  commissioning-of-quitos-first-metro-line-jointly-operated-by-transdev
+  December 2023. Accessed May 31, 2026.
+
+UNESCO World Heritage Centre, “City of Quito,” https://whc.unesco.org/en/list/2/
+ n.d. Accessed May 31, 2026.
+
+Vallejo, Fidel, Patricio Villacrés, Diana Yánez, Lady Espinoza, Elba Bodero-Poveda,
+  Luis Alonso Díaz-Robles, Marcelo Oyaneder, Valeria Campos, Paúl Palmay, Alejandro
+  Cordovilla-Pérez, Valeria Díaz, Jorge Leiva-González, and Serguei Alejandro-Martin, “Pro-
+  longed Power Outages and Air Quality: Insights from Quito’s 2023–2024 Energy Crisis,” Atmo-
+  sphere, 2025, 16 (3), 274.
+
+Veefkind, J. P., I. Aben, K. McMullan, H. Förster, J. de Vries, G. Otter, J. Claas, H. J. Eskes,
+  J. F. de Haan, Q. Kleipool, M. van Weele, O. Hasekamp, R. Hoogeveen, J. Landgraf, R. Snel,
+  P. Tol, P. Ingmann, R. Voors, B. Kruizinga, R. Vink, H. Visser, and P. F. Levelt, “TROPOMI
+  on the ESA Sentinel-5 Precursor: a GMES mission for global observations of the atmospheric
+  composition for climate, air quality and ozone layer applications,” Remote Sensing of Environment,
+  2012, 120, 70–83.
+
+Zalakeviciute, Rasa, Valeria Diaz, and Yves Rybarczyk, “Impact of City-Wide Diesel Generator
+  Use on Air Quality in Quito, Ecuador, during a Nationwide Electricity Crisis,” Atmosphere, 2024,
+  15 (10), 1192.
+
+
+
+
+                                                30
+                                        Table A.1. Local sample construction
+      Pollutant   Stations   Raw hourly        Peak-hour        Weekday peak-hour            Balanced panel         Imputed (%)
+      PM2.5              8       198,778           49,697                        35,427                       928           3.0
+      CO                 7       167,214           43,457                        30,973                       938           1.0
+      NO2                7       176,580           45,622                        32,560                       938           0.7
+      SO2                7       177,295           45,378                        32,370                       938           1.3
+        The table reports non-missing observations at each step. Peak hours are 7–9 a.m. and 5–7 p.m.; weekday
+        peak-hour observations restrict these to Monday through Friday. Balanced panel counts are station-week
+        observations after weekly aggregation and limited imputation. The PM2.5 panel spans 116 weeks; the gas
+        panels span 134 weeks.
+
+A     Additional Data Construction Details
+A.1   Satellite coverage, imputation, and balance diagnostics
+
+              Table A.2. Satellite pre-treatment diagnostics for the preferred 100-city donor pool
+                             Variable                        AOD            CO        NO2          SO2
+                             Transformed outcome             0.196      -0.386       0.616      -0.050
+                             Calm hours                      1.688       1.294       1.573       1.684
+                             Evaporation                     0.224       0.217       0.259       0.249
+                             Rain frequency                  2.242       1.739       1.971       2.025
+                             Relative humidity               1.413       1.219       1.353       1.384
+                             Soil temperature               -2.364      -1.935      -2.405      -2.540
+                             Soil moisture                   1.714       1.524       1.657       1.685
+                             Solar radiation                -1.365      -1.269      -1.333      -1.352
+                             Surface pressure               -2.433      -2.036      -2.568      -2.642
+                             Temperature                    -2.465      -2.077      -2.569      -2.652
+                             Precipitation                   1.656       1.277       1.353       1.369
+                             Wind direction                  2.140       2.162       2.152       2.158
+                             Maximum wind speed             -1.647      -1.290      -1.502      -1.638
+                             Mean wind speed                -1.071      -1.195      -1.169      -1.217
+                               Notes. Entries are normalized pre-treatment differences between Quito and
+                               the preferred 100-city donor pool. Outcomes are transformed as in the
+                               estimation: log for AOD, CO, and NO2 , and inverse hyperbolic sine for SO2 .
+                               Weather covariates are weekly ERA5-Land controls. These diagnostics
+                               describe the raw donor pool before estimator weighting and residualization,
+                               so they should be interpreted as sample diagnostics rather than as final
+                               synthetic-control fit.
+
+
+
+A.2   Full local PM2.5 specification battery
+This appendix reports the complete local PM2.5 specification battery behind the identification
+sequence in Table 5 and the robustness statement in the main text. The battery crosses three
+estimators, synthetic difference-in-differences and augmented synthetic control with and without
+station fixed effects, with four treated-unit configurations and three post-opening windows. The main
+pattern is clear: the Centro-treated, Belisario-retained configuration is the only one that combines a
+tight pre-treatment fit with statistically significant negative estimates across the augmented synthetic
+control specifications. The synthetic difference-in-differences estimates are also negative for this
+
+                                                                31
+configuration, but we do not report inferential tests for the local SDID estimates because neither large-
+sample approximations nor donor-placebo permutation tests are credible with this small monitoring
+network, and conformal inference was not computed for SDID.
+
+
+
+
+                                                  32
+Table A.3. Local PM2.5 : full specification battery across estimators, treated-unit configurations, and
+windows
+                                                       Log effect, p-value beneath            Pre-disruption fit
+ M       Configuration                             Pre-disruption†    Donut       Full     RMSPEpre       Post/pre
+ Panel A. Synthetic difference-in-differences
+ M1     Centro + Belisario co-treated                  -0.123         -0.092      0.005       0.261         0.95
+                                                        n.a.           n.a.        n.a.
+ M3      Belisario treated, Centro dropped             -0.038         0.001      0.118        0.258         0.88
+                                                        n.a.           n.a.        n.a.
+ M2      Centro treated, Belisario dropped             -0.208         -0.184     -0.108       0.281         1.13
+                                                        n.a.           n.a.        n.a.
+ M2b     Centro treated, Belisario retained            -0.157         -0.154     -0.232       0.234         1.23
+                                                        n.a.           n.a.        n.a.
+ Panel B. Augmented synthetic control, no station fixed effects
+ M4     Centro + Belisario co-treated                 -0.063           -0.033      0.084      0.198         0.98
+                                                     (0.906)          (0.952)    (0.860)
+ M6     Belisario treated, Centro dropped             -0.006           0.028      0.177       0.195         0.95
+                                                     (0.871)          (0.884)    (0.670)
+ M5     Centro treated, Belisario dropped             -0.121           -0.095     -0.007      0.221         1.24
+                                                     (0.836)          (0.858)    (0.764)
+ M5b Centro treated, Belisario retained               -0.100           -0.106     -0.143      0.132         1.83
+                                                     (0.011)          (0.020)    (0.003)
+ Panel C. Augmented synthetic control with station fixed effects
+ M7     Centro + Belisario co-treated                 -0.124           -0.089      0.040      0.185         1.24
+                                                     (0.610)          (0.809)    (0.807)
+ M9     Belisario treated, Centro dropped             -0.062           -0.024     0.140       0.188         1.16
+                                                     (0.729)          (0.849)    (0.698)
+ M8     Centro treated, Belisario dropped             -0.186           -0.154     -0.060      0.205         1.50
+                                                     (0.392)          (0.486)    (0.506)
+ M8b Centro treated, Belisario retained‡             -0.130           -0.132     -0.164       0.129         1.98
+                                                     (0.011)          (0.041)    (0.006)
+ Notes. Each cell reports the treatment effect on log weekly peak-hour weekday PM2.5 , with the two-sided p-value
+in parentheses beneath when valid inference is available. Every specification is re-estimated separately on each
+window. Rows are labeled by treated-unit configuration; the M code is retained for traceability and matches the
+estimation script.
+ †
+   Pre-disruption is the primary window, ending before the onset of the 2024 electricity-rationing and wildfire
+disruption. RMSPEpre is the pre-treatment root mean squared prediction error. The post-to-pre RMSPE ratio is
+reported for the pre-disruption window only. A ratio near or below one indicates little post-period divergence from
+the synthetic control, which is why the co-treated and Belisario-treated specifications are insignificant despite, in
+some cases, sizable point estimates.
+ ‡
+   Preferred specification: augmented synthetic control with station fixed effects, Centro treated with Belisario
+retained in the donor pool. This row is also the final column of the main identification table, Table 5.
+ Panel A reports SDID point estimates only. We do not report p-values for the local SDID estimates because
+large-sample approximations are not credible with this small monitoring network, donor-placebo permutation
+inference is mechanically coarse, and conformal inference was not computed for SDID. The SDID estimates are
+therefore used only to assess robustness of sign and magnitude.
+ Panels B and C use two-sided conformal inference. Co-treated specifications pool Centro and Belisario into a
+single treated aggregate. Belisario-treated specifications place treatment on the more distant Belisario station and
+serve as placebo-style checks.
+ All specifications condition on meteorology. The augmented synthetic control specifications adjust for meteoro-
+logical covariates within the estimator. Synthetic difference-in-differences uses the meteorology-residualized log
+outcome. The fixed-effects distinction applies only to the augmented synthetic control panels.
+                                                        33
+
