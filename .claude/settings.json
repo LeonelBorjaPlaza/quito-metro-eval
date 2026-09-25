@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(~/data/quito-metro-eval/**)",
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git diff)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git switch *)",
+      "Bash(git worktree *)",
+      "Bash(git rev-parse *)",
+      "Bash(Rscript *)",
+      "Bash(python3 *)",
+      "Bash(duckdb *)",
+      "Bash(sha256sum *)",
+      "Bash(wc *)",
+      "Bash(du *)",
+      "Bash(df *)"
+    ],
+    "deny": [
+      "Edit(**/raw/**)",
+      "Edit(**/frozen_*/**)",
+      "Edit(~/data/quito-metro-eval/**)",
+      "Bash(chmod *)",
+      "Bash(sudo *)",
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)",
+      "Bash(git filter-repo *)",
+      "Bash(git filter-branch *)"
+    ]
+  },
+  "worktree": {
+    "baseRef": "head"
+  }
+}
