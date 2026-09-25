@@ -1,0 +1,54 @@
+# Root rules for the Quito Metro evaluation. Module folders keep their own .gitignore files.
+
+# Claude Code
+.claude/worktrees/
+.claude/settings.local.json
+
+# Logs and scratch
+logs/
+**/scratch/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+**/renv/library/
+**/renv/staging/
+**/renv/local/
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data safety net. Raw data live in the data store, never in git.
+# Symlinks into the store are committed on purpose with `git add -f`.
+# Files already tracked by the old repositories stay tracked; these rules only stop new ones.
+road_safety/data/
+*.xlsx
+*.xls
+*.msg
+*.parquet
+*.feather
+*.duckdb
+*.duckdb.wal
+*.dta
+*.sav
+*.rds
+*.rda
+*.RData
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.nc
+*.tif
+*.zip
+*.7z
