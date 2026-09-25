@@ -52,3 +52,4 @@ road_safety/data/
 *.tif
 *.zip
 *.7z
+congestion/reports/waze_sample*.csv
