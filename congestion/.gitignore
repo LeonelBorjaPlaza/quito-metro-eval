@@ -1,0 +1,8 @@
+Data/
+*.csv
+!docs/paper/results/*.csv
+!reports/waze_sample.csv
+.Rhistory
+.RData
+Output/Waze/_environment/
+Output/Waze/_cache/

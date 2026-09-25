@@ -1,0 +1,5 @@
+pollutant,n_stations,raw_hourly_obs,after_peak_hour_filter,after_weekday_filter,balanced_obs,balanced_stations,balanced_weeks,imputed_obs,pct_imputed
+pm25,8,198778,49697,35427,928,8,116,28,3
+co,7,167214,43457,30973,938,7,134,9,1
+no2,7,176580,45622,32560,938,7,134,7,0.7
+so2,7,177295,45378,32370,938,7,134,12,1.3
