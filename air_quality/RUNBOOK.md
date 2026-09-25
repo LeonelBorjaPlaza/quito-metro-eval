@@ -118,4 +118,19 @@ These files sit in the frozen reference (`/home/leonelb/data/quito-metro-eval/ai
 
 Measured in the Phase 6 replication gate (`reports/migration/06_replication_gate.md`) on the WSL machine described in `ENVIRONMENT.md`:
 
-<!-- RUNTIMES -->
+The gate ran PM2.5 and the three gas blocks at the same time as each other and as the verifier's PM2.5 run: five R processes on 8 cores, each single-threaded. A block run alone should be somewhat faster.
+
+| Step | Script(s) | Wall time |
+|---|---|---|
+| 0 | `renv::restore()` with a warm cache (63 packages linked) | under 1 s; about 5 s more for the map packages |
+| 1 | `01_read_and_merge.R` | 27 s |
+| 2 | `02_build_weekly_panels.R` | 4 s |
+| 3 | `03` setup / `04_PM2.5.R` / `04_PM2_5_crosssample.R` / `04b` / `04c` / `fig_pm25_eventstudy_pub.R` | 1 s / 8.6 min / 29.9 min / 10.2 min / 7.2 min / under 1 s; block total 56 min |
+| 4 | CO: `05` + `06_CO.R` / `06_CO_crosssample.R` | 14.2 min / 33.5 min; block 47.7 min |
+| 4 | NO2: `07` + `08_NO2.R` / `08_NO2_crosssample.R` | 12.7 min / 31.8 min; block 44.5 min |
+| 4 | SO2: `09` + `10_SO2.R` / `10_SO2_crosssample.R` | 14.4 min / 35.4 min; block 49.9 min |
+| 5 | `99_missingness_diagnostic.R` / `11_descriptives.R` | 5 s / 7 s |
+| 6 | `12_cross_pollutant_master.R` | 4 s |
+| 7 | `fig1_metro_airquality_map.R` | 34 s |
+
+The first specification of `04_PM2.5.R` (M1, SDID) takes about 1 s; each augmented synthetic control fit takes 25 s to 1.5 min, depending on load. With steps 3 and 4 in parallel, the whole pipeline from raw data took 57 minutes (22:42 to 23:40 on 2026-09-24).

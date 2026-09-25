@@ -1,0 +1,66 @@
+file,status,class,max_abs_diff,rows_frozen,rows_new,cols_frozen,cols_new,structure,note
+data/processed/CO_completepanel_peakweekly.csv,compared,noise,2.842170943040401e-14,938,938,26,26,same,
+data/processed/NO2_completepanel_peakweekly.csv,compared,noise,2.842170943040401e-14,938,938,26,26,same,
+data/processed/SO2_completepanel_peakweekly.csv,compared,noise,2.842170943040401e-14,938,938,26,26,same,
+data/processed/hourly_panel.csv,compared,identical,0.0,195024,195024,94,94,same,
+data/processed/pm25_completepanel_peakweekly.csv,compared,noise,2.842170943040401e-14,928,928,26,26,same,
+output/local/blackout_comparison/augsynth_vs_sdid_comparison.csv,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/blackout_comparison/sdid_blackout_comparison.pdf,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/blackout_comparison/sdid_blackout_comparison.png,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/crosssample/CrossSample_Summary_CO.csv,compared,noise,8.673617379884035e-19,36,36,19,19,same,
+output/local/crosssample/CrossSample_Summary_NO2.csv,compared,identical,0.0,36,36,19,19,same,
+output/local/crosssample/CrossSample_Summary_PM25.csv,compared,noise,1.3877787807814457e-17,36,36,19,19,same,
+output/local/crosssample/CrossSample_Summary_SO2.csv,compared,identical,0.0,36,36,19,19,same,
+output/local/diagnostics/missingness_CO.csv,compared,identical,0.0,1225,1225,9,9,same,
+output/local/diagnostics/missingness_NO2.csv,compared,identical,0.0,1225,1225,9,9,same,
+output/local/diagnostics/missingness_PM25.csv,compared,identical,0.0,1400,1400,9,9,same,
+output/local/diagnostics/missingness_SO2.csv,compared,identical,0.0,1225,1225,9,9,same,
+output/local/figures/descriptives_time_series.pdf,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/descriptives_time_series.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/descriptives_time_series_edit.png,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/figures/event_study_CO_M2b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_CO_M5b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_CO_M8b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_NO2_M2b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_NO2_M5b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_NO2_M8b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_PM25_M2b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_PM25_M5b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_PM25_M8b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_SO2_M2b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_SO2_M5b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/event_study_SO2_M8b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/fig_pm25_eventstudy.pdf,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/fig_pm25_eventstudy.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/headline_event_study_M5b.pdf,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/figures/headline_event_study_M5b.png,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/local/spatial_placebo/spatial_placebo_PM25_M5b_conformalp.csv,compared,noise,1.0658141036401503e-14,16,16,13,13,same,
+output/local/spatial_placebo/spatial_placebo_PM25_M5b_conformalp_log.txt,compared,identical,,,,,,,text log compared line by line (CRLF ignored)
+output/local/spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,compared,noise,1.1546319456101628e-14,16,16,14,14,same,
+output/local/spatial_placebo/spatial_placebo_PM25_M8b_conformalp_log.txt,compared,identical,,,,,,,text log compared line by line (CRLF ignored)
+output/local/spatial_placebo/spatial_placebo_PM25_M8b_noCentroDonor.pdf,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/tables.zip,not regenerable,,,,,,,,no script in the repository writes this file
+output/local/tables/att_weekly_CO.csv,compared,noise,5.551115123125783e-17,1072,1072,10,10,same,
+output/local/tables/att_weekly_NO2.csv,compared,identical,0.0,1072,1072,10,10,same,
+output/local/tables/att_weekly_PM25.csv,compared,identical,0.0,928,928,10,10,same,
+output/local/tables/att_weekly_SO2.csv,compared,identical,0.0,1072,1072,10,10,same,
+output/local/tables/descriptives_sample_construction.csv,compared,identical,0.0,4,4,10,10,same,
+output/local/tables/descriptives_summary_stats.csv,compared,identical,0.0,58,58,10,10,same,
+output/local/tables/descriptives_time_series_data.csv,compared,identical,0.0,3742,3742,4,4,same,
+output/local/tables/descriptives_treatment_timeline.csv,compared,identical,0.0,5,5,7,7,same,
+output/local/tables/donor_weights_CO.csv,compared,identical,0.0,63,63,5,5,same,
+output/local/tables/donor_weights_NO2.csv,compared,identical,0.0,63,63,5,5,same,
+output/local/tables/donor_weights_PM25.csv,compared,identical,0.0,75,75,5,5,same,
+output/local/tables/donor_weights_SO2.csv,compared,identical,0.0,63,63,5,5,same,
+output/local/tables/results_CO.csv,compared,noise,8.673617379884035e-19,12,12,24,24,same,
+output/local/tables/results_NO2.csv,compared,identical,0.0,12,12,24,24,same,
+output/local/tables/results_PM25.csv,compared,noise,3.469446951953614e-18,12,12,24,24,same,
+output/local/tables/results_SO2.csv,compared,identical,0.0,12,12,24,24,same,
+output/local/tables/results_all_pollutants.csv,compared,noise,1.0408340855860843e-17,48,48,27,27,same,
+output/local/tables/results_primary_specs.csv,compared,identical,0.0,12,12,27,27,same,
+output/local/tables/trajectories_CO.csv,compared,noise,5.551115123125783e-17,1552,1552,9,9,same,
+output/local/tables/trajectories_NO2.csv,compared,identical,0.0,1552,1552,9,9,same,
+output/local/tables/trajectories_PM25.csv,compared,identical,0.0,1336,1336,9,9,same,
+output/local/tables/trajectories_SO2.csv,compared,noise,2.220446049250313e-16,1552,1552,9,9,same,
+output/maps/fig1_metro_airquality_map.pdf,produced,n/a,,,,,,,figure or binary; existence and freshness only
+output/maps/fig1_metro_airquality_map.png,produced,n/a,,,,,,,figure or binary; existence and freshness only

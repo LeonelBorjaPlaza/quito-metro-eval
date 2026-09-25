@@ -98,6 +98,10 @@ def compare_csv(fa, fb):
     B = pd.read_csv(fb, dtype=str, keep_default_na=False)
     res = {"rows_frozen": len(A), "rows_new": len(B), "cols_frozen": len(A.columns), "cols_new": len(B.columns)}
     cols = []
+    if open(fa, "rb").read() == open(fb, "rb").read():  # byte-identical: nothing to classify
+        res.update(structure="same", max_abs_diff=0.0)
+        res["class"] = "identical"
+        return res, cols
     if list(A.columns) != list(B.columns) or len(A) != len(B):
         res["structure"] = "MISMATCH"
         res["missing_cols"] = ";".join(c for c in A.columns if c not in B.columns)
@@ -111,8 +115,9 @@ def compare_csv(fa, fb):
     for c in common:
         pcol = bool(PVAL.match(c))
         cw, cmax, ndiff, kinds, example = "identical", 0.0, 0, set(), ""
-        for i in range(n):
-            k, d, kind = compare_cell(A[c].iat[i], B[c].iat[i], pcol)
+        a_col, b_col = A[c].iloc[:n].to_numpy(), B[c].iloc[:n].to_numpy()
+        for i in (a_col != b_col).nonzero()[0]:  # equal strings are identical; only check the rest
+            k, d, kind = compare_cell(a_col[i], b_col[i], pcol)
             if k != "identical":
                 ndiff += 1
                 kinds.add(kind)
@@ -121,7 +126,7 @@ def compare_csv(fa, fb):
                 if d is not None:
                     cmax = max(cmax, d)
                 if not example:
-                    example = f"row {i + 2}: frozen={A[c].iat[i][:60]!r} new={B[c].iat[i][:60]!r}"
+                    example = f"row {i + 2}: frozen={a_col[i][:60]!r} new={b_col[i][:60]!r}"
         if ndiff:
             cols.append({"column": c, "p_value_column": pcol, "cells_differing": ndiff, "class": cw,
                          "max_abs_diff": cmax, "kinds": ";".join(sorted(kinds)), "first_example": example})
