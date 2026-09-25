@@ -37,7 +37,7 @@ suppressPackageStartupMessages({
 })
 
 ## ---- 1. Parameters ----------------------------------------------------------
-PROJECT_ROOT <- "C:/Users/LEONELB/OneDrive - Inter-American Development Bank Group/quito-metro-airquality-2026"
+PROJECT_ROOT <- here::here()  # was the absolute OneDrive path; relative to the module root since 2026-09-24
 DATA_MAPS    <- file.path(PROJECT_ROOT, "data", "for_maps")
 OUT_DIR      <- file.path(PROJECT_ROOT, "output", "maps")
 dir.create(OUT_DIR, recursive = TRUE, showWarnings = FALSE)

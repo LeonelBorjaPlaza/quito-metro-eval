@@ -30,7 +30,7 @@ OUTCOME_RAW <- "co_imp"
 ROOT_DIR <- here::here()
 DATA_DIR <- file.path(ROOT_DIR, "data", "processed")
 
-INFILE <- file.path(DATA_DIR, "co_completepanel_peakweekly.csv")
+INFILE <- file.path(DATA_DIR, "CO_completepanel_peakweekly.csv")
 
 TREATMENT_DATE <- as.Date("2023-12-01")
 
