@@ -1,0 +1,10 @@
+M5b conformal-p placebo across stations  [windows: pre_blackout=P1, donut=P1+P2]
+================================================================
+Estimator: AugSynth NO FE (M5b). Canonical pools (each station vs other 7).
+Rank statistic: two-sided conformal p, most significant NEGATIVE = rank 1.
+
+[pre_blackout] Centro conf_p = 0.0030, rank 2/8 (2x set), spatial-placebo p = 0.250
+[donut] Centro conf_p = 0.0170, rank 2/8 (2x set), spatial-placebo p = 0.250
+
+P2-driven (sig p<0.05 & neg in donut, NOT in pre_blackout): none
+Floor: N=8 -> min rank p = 0.125 (corroborative, not significance).
