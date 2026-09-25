@@ -1,0 +1,211 @@
+category,path,max_blob_bytes,tracked_now
+BLOCKER: raw Waze records (500 rows) in congestion history,congestion/reports/waze_sample.csv,196217,yes
+BLOCKER: raw Waze records (500 rows) in congestion history,reports/waze_sample.csv,196217,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/cell_eligibility.rds,140572,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/cell_month_blocks.rds,14768340,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/descriptive_summary.rds,42015,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/group_series.rds,99711,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/independent_audit.rds,445,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/negative_spread_adjacent_months.rds,36468,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/period_descriptive_levels.rds,776,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/report_numeric_facts.rds,593,history only
+allowed: aggregated output in an output folder,Output/Waze/descriptives/rest_decomposition.rds,28096,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/cell_groups.rds,262318,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/cell_month_coverage.rds,2451056,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/csv_parquet_certificate.rds,1825,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/independent_audit.rds,923,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/inventory_summary.rds,241787,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/monthly_coverage.rds,16708,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/monthly_roadtype_coverage.rds,3231,history only
+allowed: aggregated output in an output folder,Output/Waze/inventory/report_numeric_facts.rds,572,history only
+allowed: aggregated output in an output folder,Output/Waze/phase_a_checks.rds,38470,history only
+allowed: aggregated output in an output folder,Output/Waze/planning/preperiod_power.rds,36689,history only
+allowed: aggregated output in an output folder,air_quality/output/local/blackout_comparison/augsynth_vs_sdid_comparison.csv,493,yes
+allowed: aggregated output in an output folder,air_quality/output/local/diagnostics/missingness_CO.csv,66296,yes
+allowed: aggregated output in an output folder,air_quality/output/local/diagnostics/missingness_NO2.csv,66385,yes
+allowed: aggregated output in an output folder,air_quality/output/local/diagnostics/missingness_PM25.csv,78340,yes
+allowed: aggregated output in an output folder,air_quality/output/local/diagnostics/missingness_SO2.csv,69483,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/att_weekly_CO.csv,132474,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/att_weekly_NO2.csv,134455,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/att_weekly_PM25.csv,114675,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/att_weekly_SO2.csv,133650,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/descriptives_sample_construction.csv,312,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/descriptives_summary_stats.csv,2903,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/descriptives_time_series_data.csv,147163,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/descriptives_treatment_timeline.csv,406,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/donor_weights_CO.csv,4843,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/donor_weights_NO2.csv,4914,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/donor_weights_PM25.csv,5938,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/donor_weights_SO2.csv,4915,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_CO.csv,4383,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_NO2.csv,4382,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_PM25.csv,4362,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_SO2.csv,4384,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_all_pollutants.csv,18730,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/results_primary_specs.csv,4979,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/trajectories_CO.csv,204870,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/trajectories_NO2.csv,201041,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/trajectories_PM25.csv,174663,yes
+allowed: aggregated output in an output folder,air_quality/output/local/tables/trajectories_SO2.csv,201641,yes
+allowed: aggregated output in an output folder,air_quality/output/satellite/diagnostics/imputation_sample_size_effect.csv,110,yes
+allowed: aggregated output in an output folder,air_quality/output/satellite/diagnostics/quito_imputation_by_period.csv,62,yes
+allowed: aggregated output in an output folder,air_quality/output/satellite/diagnostics/quito_imputation_summary.csv,134,yes
+allowed: aggregated output in an output folder,air_quality/output/satellite/diagnostics/quito_imputed_weeks.csv,359,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/cell_eligibility.rds,140572,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/cell_month_blocks.rds,14768340,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/descriptive_summary.rds,42015,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/group_series.rds,99711,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/independent_audit.rds,444,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/negative_spread_adjacent_months.rds,36468,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/period_descriptive_levels.rds,776,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/report_numeric_facts.rds,593,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/descriptives/rest_decomposition.rds,28096,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/cell_groups.rds,262318,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/cell_month_coverage.rds,2451056,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/csv_parquet_certificate.rds,1825,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/independent_audit.rds,923,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/inventory_summary.rds,241787,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/monthly_coverage.rds,16708,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/monthly_roadtype_coverage.rds,3231,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/inventory/report_numeric_facts.rds,572,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/phase_a_checks.rds,38470,yes
+allowed: aggregated output in an output folder,congestion/Output/Waze/planning/preperiod_power.rds,36689,yes
+allowed: aggregated output in an output folder,output/blackout_comparison/augsynth_vs_sdid_comparison.csv,493,history only
+allowed: aggregated output in an output folder,output/diagnostics/missingness_CO.csv,64131,history only
+allowed: aggregated output in an output folder,output/diagnostics/missingness_NO2.csv,64284,history only
+allowed: aggregated output in an output folder,output/diagnostics/missingness_PM25.csv,75424,history only
+allowed: aggregated output in an output folder,output/diagnostics/missingness_SO2.csv,64742,history only
+allowed: aggregated output in an output folder,output/local/blackout_comparison/augsynth_vs_sdid_comparison.csv,493,history only
+allowed: aggregated output in an output folder,output/local/diagnostics/missingness_CO.csv,66296,history only
+allowed: aggregated output in an output folder,output/local/diagnostics/missingness_NO2.csv,66385,history only
+allowed: aggregated output in an output folder,output/local/diagnostics/missingness_PM25.csv,78340,history only
+allowed: aggregated output in an output folder,output/local/diagnostics/missingness_SO2.csv,69483,history only
+allowed: aggregated output in an output folder,output/local/tables/att_weekly_CO.csv,132474,history only
+allowed: aggregated output in an output folder,output/local/tables/att_weekly_NO2.csv,134455,history only
+allowed: aggregated output in an output folder,output/local/tables/att_weekly_PM25.csv,114675,history only
+allowed: aggregated output in an output folder,output/local/tables/att_weekly_SO2.csv,133650,history only
+allowed: aggregated output in an output folder,output/local/tables/descriptives_sample_construction.csv,312,history only
+allowed: aggregated output in an output folder,output/local/tables/descriptives_summary_stats.csv,2914,history only
+allowed: aggregated output in an output folder,output/local/tables/descriptives_time_series_data.csv,147163,history only
+allowed: aggregated output in an output folder,output/local/tables/descriptives_treatment_timeline.csv,406,history only
+allowed: aggregated output in an output folder,output/local/tables/donor_weights_CO.csv,4843,history only
+allowed: aggregated output in an output folder,output/local/tables/donor_weights_NO2.csv,4914,history only
+allowed: aggregated output in an output folder,output/local/tables/donor_weights_PM25.csv,5950,history only
+allowed: aggregated output in an output folder,output/local/tables/donor_weights_SO2.csv,4926,history only
+allowed: aggregated output in an output folder,output/local/tables/results_CO.csv,4452,history only
+allowed: aggregated output in an output folder,output/local/tables/results_NO2.csv,4382,history only
+allowed: aggregated output in an output folder,output/local/tables/results_PM25.csv,4386,history only
+allowed: aggregated output in an output folder,output/local/tables/results_SO2.csv,4416,history only
+allowed: aggregated output in an output folder,output/local/tables/results_all_pollutants.csv,18843,history only
+allowed: aggregated output in an output folder,output/local/tables/results_primary_specs.csv,4992,history only
+allowed: aggregated output in an output folder,output/local/tables/trajectories_CO.csv,204878,history only
+allowed: aggregated output in an output folder,output/local/tables/trajectories_NO2.csv,201047,history only
+allowed: aggregated output in an output folder,output/local/tables/trajectories_PM25.csv,174689,history only
+allowed: aggregated output in an output folder,output/local/tables/trajectories_SO2.csv,201641,history only
+allowed: aggregated output in an output folder,output/satellite/diagnostics/imputation_sample_size_effect.csv,110,history only
+allowed: aggregated output in an output folder,output/satellite/diagnostics/quito_imputation_by_period.csv,62,history only
+allowed: aggregated output in an output folder,output/satellite/diagnostics/quito_imputation_summary.csv,134,history only
+allowed: aggregated output in an output folder,output/satellite/diagnostics/quito_imputed_weeks.csv,359,history only
+allowed: aggregated output in an output folder,output/tables/att_weekly_CO.csv,132244,history only
+allowed: aggregated output in an output folder,output/tables/att_weekly_NO2.csv,134123,history only
+allowed: aggregated output in an output folder,output/tables/att_weekly_PM25.csv,114279,history only
+allowed: aggregated output in an output folder,output/tables/att_weekly_SO2.csv,133343,history only
+allowed: aggregated output in an output folder,output/tables/descriptives_sample_construction.csv,309,history only
+allowed: aggregated output in an output folder,output/tables/descriptives_summary_stats.csv,2914,history only
+allowed: aggregated output in an output folder,output/tables/descriptives_time_series_data.csv,147025,history only
+allowed: aggregated output in an output folder,output/tables/descriptives_treatment_timeline.csv,331,history only
+allowed: aggregated output in an output folder,output/tables/donor_weights_CO.csv,4840,history only
+allowed: aggregated output in an output folder,output/tables/donor_weights_NO2.csv,4914,history only
+allowed: aggregated output in an output folder,output/tables/donor_weights_PM25.csv,5950,history only
+allowed: aggregated output in an output folder,output/tables/donor_weights_SO2.csv,4926,history only
+allowed: aggregated output in an output folder,output/tables/results_CO.csv,4452,history only
+allowed: aggregated output in an output folder,output/tables/results_NO2.csv,4364,history only
+allowed: aggregated output in an output folder,output/tables/results_PM25.csv,4386,history only
+allowed: aggregated output in an output folder,output/tables/results_SO2.csv,4416,history only
+allowed: aggregated output in an output folder,output/tables/results_all_pollutants.csv,18843,history only
+allowed: aggregated output in an output folder,output/tables/results_primary_specs.csv,4992,history only
+allowed: aggregated output in an output folder,output/tables/trajectories_CO.csv,204878,history only
+allowed: aggregated output in an output folder,output/tables/trajectories_NO2.csv,201047,history only
+allowed: aggregated output in an output folder,output/tables/trajectories_PM25.csv,174577,history only
+allowed: aggregated output in an output folder,output/tables/trajectories_SO2.csv,201569,history only
+"migration record (file paths and hashes, no data)",reports/migration/03_data_map.csv,471999,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/att_weekly_CO.csv,132474,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/att_weekly_NO2.csv,134455,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/att_weekly_PM25.csv,114675,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/att_weekly_SO2.csv,133650,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/descriptives_sample_construction.csv,312,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/descriptives_summary_stats.csv,2903,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/descriptives_time_series_data.csv,147163,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/descriptives_treatment_timeline.csv,406,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/donor_weights_CO.csv,4843,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/donor_weights_NO2.csv,4914,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/donor_weights_PM25.csv,5938,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/donor_weights_SO2.csv,4915,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_CO.csv,4383,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_NO2.csv,4382,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_PM25.csv,4362,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_SO2.csv,4384,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_all_pollutants.csv,18730,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/results_primary_specs.csv,4979,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/trajectories_CO.csv,204870,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/trajectories_NO2.csv,201041,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/trajectories_PM25.csv,174663,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",congestion/docs/paper/results/trajectories_SO2.csv,201641,yes
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/att_weekly_CO.csv,132474,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/att_weekly_NO2.csv,134455,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/att_weekly_PM25.csv,114675,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/att_weekly_SO2.csv,133650,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/descriptives_sample_construction.csv,312,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/descriptives_summary_stats.csv,2903,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/descriptives_time_series_data.csv,147163,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/descriptives_treatment_timeline.csv,406,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/donor_weights_CO.csv,4843,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/donor_weights_NO2.csv,4914,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/donor_weights_PM25.csv,5938,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/donor_weights_SO2.csv,4915,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_CO.csv,4383,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_NO2.csv,4382,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_PM25.csv,4362,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_SO2.csv,4384,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_all_pollutants.csv,18730,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/results_primary_specs.csv,4979,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/trajectories_CO.csv,204870,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/trajectories_NO2.csv,201041,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/trajectories_PM25.csv,174663,history only
+"review: copy of air quality output tables, outside an output folder (congestion history)",docs/paper/results/trajectories_SO2.csv,201641,history only
+"review: raw input (blackout dates compiled from news; air quality history, already on the private GitHub repo)",air_quality/data/raw/ecuador_blackouts_2024.xlsx,22985,history only
+"review: raw input (blackout dates compiled from news; air quality history, already on the private GitHub repo)",data/raw/ecuador_blackouts_2024.xlsx,22985,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_ids_top100.csv,499,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_ids_top150.csv,743,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_ids_top200.csv,988,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_ids_top50.csv,256,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_ids_top75.csv,378,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_list.csv,1334,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_100_with_rationales.csv,13420,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_balance_table.csv,3342,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_top100.csv,6205,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_top150.csv,9238,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_top200.csv,12266,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_top50.csv,3131,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/donor_pool_top75.csv,4681,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/ucdb_donor_distances_all.csv,330850,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/ucdb_lac.dbf,195061,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/ucdb_lac.geojson,1390580,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",air_quality/data/working/ucdb_lac.shp,483580,yes
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_ids_top100.csv,499,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_ids_top150.csv,743,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_ids_top200.csv,988,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_ids_top50.csv,256,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_ids_top75.csv,378,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_list.csv,1334,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_100_with_rationales.csv,13420,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_balance_table.csv,3342,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_top100.csv,6205,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_top150.csv,9238,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_top200.csv,12266,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_top50.csv,3131,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/donor_pool_top75.csv,4681,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/ucdb_donor_distances_all.csv,330850,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/ucdb_lac.dbf,195061,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/ucdb_lac.geojson,1390641,history only
+"review: satellite donor tables and GHS-UCDB shapes (air quality history, already on the private GitHub repo)",data/working/ucdb_lac.shp,483580,history only
