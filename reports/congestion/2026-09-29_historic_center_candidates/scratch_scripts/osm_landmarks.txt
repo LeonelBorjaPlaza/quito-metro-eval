@@ -1,0 +1,8 @@
+[out:json][timeout:120];
+(
+  nwr["name"~"Plaza Grande|Plaza de la Independencia|San Francisco|Santo Domingo|Compañía|San Blas|San Juan|Tejar|San Roque",i]["amenity"~"place_of_worship"](-0.245,-78.535,-0.195,-78.495);
+  nwr["name"~"Plaza Grande|Plaza de la Independencia|San Francisco|Santo Domingo|San Blas",i]["place"="square"](-0.245,-78.535,-0.195,-78.495);
+  nwr["name"~"Plaza Grande|Plaza de la Independencia|Plaza San Francisco|Plaza de San Francisco|Plaza Santo Domingo|Plaza de Santo Domingo|Plaza San Blas",i]["highway"="pedestrian"](-0.245,-78.535,-0.195,-78.495);
+  nwr["name"~"San Blas|San Juan|El Tejar|San Roque",i]["place"~"neighbourhood|quarter|suburb"](-0.245,-78.535,-0.195,-78.495);
+);
+out center tags;

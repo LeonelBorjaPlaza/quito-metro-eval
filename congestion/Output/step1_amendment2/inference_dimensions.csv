@@ -1,0 +1,17 @@
+rule,pool,target,pre_months,p1_months_assumed,total_periods,smallest_attainable_p,donors
+amended,primary_screened,CENTER,23,9,32,0.03125,165
+amended,primary_unscreened,CENTER,23,9,32,0.03125,269
+amended,primary_screened,CORE,23,9,32,0.03125,165
+amended,primary_unscreened,CORE,23,9,32,0.03125,269
+amended,primary_screened,RING7,23,9,32,0.03125,165
+amended,primary_unscreened,RING7,23,9,32,0.03125,269
+amended,primary_screened,BELISARIO_RW,23,9,32,0.03125,165
+amended,primary_unscreened,BELISARIO_RW,23,9,32,0.03125,269
+amended,primary_screened,BELISARIO_EQ,23,9,32,0.03125,165
+amended,primary_unscreened,BELISARIO_EQ,23,9,32,0.03125,269
+amended,primary_screened,CORRIDOR,23,9,32,0.03125,165
+amended,primary_unscreened,CORRIDOR,23,9,32,0.03125,269
+amended,low_exposure_screened,CENTER,23,9,32,0.03125,126
+amended,low_exposure_unscreened,CENTER,23,9,32,0.03125,214
+plan,primary_screened,CENTER,20,9,29,0.0344827586206897,135
+plan,primary_unscreened,CENTER,20,9,29,0.0344827586206897,196

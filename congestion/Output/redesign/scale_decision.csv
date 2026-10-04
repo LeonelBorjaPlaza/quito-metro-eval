@@ -1,0 +1,2 @@
+units,tiles,changes_per_tile,slope,ci95_low,ci95_high,rule,decision,interval_type
+"main-pool donor tiles (DMQ, quality rule, complete peak index)",22,19,1.049040447886,0.840745215210519,1.25733568056148,proportions if slope > 0.5 or the 95% interval includes 0.5; levels only if the whole interval lies below 0.5,proportions,classical OLS t interval across tiles

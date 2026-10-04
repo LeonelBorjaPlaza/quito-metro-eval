@@ -6,3 +6,9 @@ Data/
 .RData
 Output/Waze/_environment/
 Output/Waze/_cache/
+!Output/step1_freeze/*.csv
+!Output/step1_amendment2/*.csv
+!Output/redesign/*.csv
+!Output/restart_diagnostics/*.csv
+!docs/calendar_shocks.csv
+!docs/belisario_address_check.csv

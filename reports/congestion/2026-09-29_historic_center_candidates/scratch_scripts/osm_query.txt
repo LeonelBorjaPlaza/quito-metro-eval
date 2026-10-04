@@ -1,0 +1,9 @@
+[out:json][timeout:120];
+(
+  wr["heritage"](-0.245,-78.535,-0.195,-78.495);
+  wr["boundary"="protected_area"](-0.245,-78.535,-0.195,-78.495);
+  wr["name"~"Centro Hist",i](-0.245,-78.535,-0.195,-78.495);
+  wr["place"~"neighbourhood|quarter|suburb"]["name"~"Centro|Hist",i](-0.245,-78.535,-0.195,-78.495);
+  wr["boundary"="administrative"]["name"~"Centro",i](-0.245,-78.535,-0.195,-78.495);
+);
+out tags;

@@ -1,0 +1,2 @@
+scale,tiles,cutoffs,default,winner,rule
+proportions,22,12 to 20,sc,sc,"default (sc) stands unless another estimator lowers mean squared error (fitting scale) by at least 10 percent; among such challengers, those within a factor 1/0.9 of the best count as tied, and ties go to the simpler (did, sc, sdid, ridge)"

@@ -1,0 +1,7 @@
+ring,segment,units,complete
+1 to 2 km,centre,8,8
+1 to 2 km,north,6,6
+1 to 2 km,south,10,10
+corridor (up to 1 km),centre,3,3
+corridor (up to 1 km),north,5,5
+corridor (up to 1 km),south,6,6

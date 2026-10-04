@@ -1,0 +1,70 @@
+unit,grid_id,step1_group,road_m,kept,weight,weight_source
+CENTER,8866d338a9fffff,CENTER,15980.1,TRUE,0.179196,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d33885fffff,CENTER,15920.6,TRUE,0.178528,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338abfffff,CENTER,14823,TRUE,0.16622,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338a1fffff,CORRIDOR,9397.5,TRUE,0.10538,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d33887fffff,CENTER,8107.4,TRUE,0.090914,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338a3fffff,CORRIDOR,7051.7,TRUE,0.079075,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d33881fffff,CENTER,5113.2,TRUE,0.057337,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338bdfffff,RING,4906.3,TRUE,0.055018,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338e3fffff,CENTER,3249.9,TRUE,0.036444,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338b5fffff,RING,2902.7,TRUE,0.03255,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338a7fffff,CORRIDOR,848.3,TRUE,0.009513,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d338adfffff,RING,549.6,TRUE,0.006163,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d3388dfffff,CENTER,254.7,TRUE,0.002856,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d32a49fffff,CORRIDOR,44.7,TRUE,0.000501,OSM 2022-01-01 drivable road length inside the polygon
+CENTER,8866d3388bfffff,CORRIDOR,27.3,TRUE,0.000306,OSM 2022-01-01 drivable road length inside the polygon
+CORE,8866d33885fffff,CENTER,7079.7,TRUE,0.529227,OSM 2022-01-01 drivable road length inside the polygon
+CORE,8866d338abfffff,CENTER,3581,TRUE,0.267691,OSM 2022-01-01 drivable road length inside the polygon
+CORE,8866d338a9fffff,CENTER,1846.2,TRUE,0.13801,OSM 2022-01-01 drivable road length inside the polygon
+CORE,8866d33887fffff,CENTER,870.5,TRUE,0.065072,OSM 2022-01-01 drivable road length inside the polygon
+RING7,8866d33881fffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d33885fffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d33887fffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d3388dfffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d338a9fffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d338abfffff,CENTER,,TRUE,0.142857,equal weights
+RING7,8866d338e3fffff,CENTER,,TRUE,0.142857,equal weights
+BELISARIO_RW,8866d33abdfffff,BELISARIO,,TRUE,0.131579,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d33aabfffff,BELISARIO,,TRUE,0.19863,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d33aa1fffff,BELISARIO,,TRUE,0.149315,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d33ab5fffff,BELISARIO,,TRUE,0.122236,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d33aa7fffff,BELISARIO,,TRUE,0.058933,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d33aa3fffff,BELISARIO,,TRUE,0.183562,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_RW,8866d338c9fffff,BELISARIO,,TRUE,0.155745,provider 2022 all_roadtype OSM length of the whole cell
+BELISARIO_EQ,8866d338c9fffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33aa1fffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33aa3fffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33aa7fffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33aabfffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33ab5fffff,BELISARIO,,TRUE,0.142857,equal weights
+BELISARIO_EQ,8866d33abdfffff,BELISARIO,,TRUE,0.142857,equal weights
+CORRIDOR,8866d3284dfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a05fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a0dfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a21fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a27fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a29fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a2bfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a2dfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a41fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a43fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a45fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a47fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a4bfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a4dfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a63fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32a6bfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d32b1bfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33889fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d338c1fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d338c3fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d338c5fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d338c7fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d338cbfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33a85fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33a87fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33a8dfffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33ab7fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33ae3fffff,CORRIDOR,,TRUE,0.034483,equal weights
+CORRIDOR,8866d33aebfffff,CORRIDOR,,TRUE,0.034483,equal weights

@@ -1,0 +1,10 @@
+step,tiles
+tiles touching the delivered grid,384
+all seven cells in the grid,324
+quality: at least 4 of 7 cells saturated (mean >= 20 valid slots per month),44
+"and no cell in CENTER, its buffer, CORRIDOR, RING or BELISARIO",26
+"and complete peak, morning and evening index, January 2022 to November 2023",25
+main pool: in the DMQ (at least 4 cell centroids in the parish layers),22
+"  of which valleys (Tumbaco, Los Chillos, Calderón)",12
+  of which low exposure (every cell more than 4 km from any station),15
+check pool: neighbouring municipalities,3

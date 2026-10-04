@@ -1,0 +1,11 @@
+corner,streets,street_gap_m,dist_to_osm_whc_boundary_m,dist_if_trace_shifted_to_unesco_grid_m
+SW,^Chimborazo$ x 24 de Mayo,0,137,448
+NW,Mires x ^Olmedo$,0,82,45
+NW,Mej[ií]a x ^Chimborazo$,73,70,61
+NW,Mej[ií]a x Mires,0,76,55
+NW,Imbabura x ^Olmedo$,0,4,40
+NW,Imbabura x Manab,0,2,65
+NE,Manab x Mont[uú]far,0,2,29
+SE,Mont[uú]far x Vicente Rocafuerte,0,4,304
+SE,Vicente Rocafuerte x Paredes,0,40,321
+SE,Paredes x Morales,371,225,549

@@ -1,0 +1,9 @@
+rule,pool,target,pre_months,calendar_gaps,p1_months,total_periods,block_permutations,smallest_attainable_p,donors
+amended,primary_unscreened,CENTER,23,0,9,32,32,0.03125,270
+amended,primary_unscreened,BELISARIO,23,0,9,32,32,0.03125,270
+amended,primary_screened,CENTER,23,0,9,32,32,0.03125,166
+amended,primary_screened,BELISARIO,23,0,9,32,32,0.03125,166
+plan,primary_unscreened,CENTER,20,3,9,29,29,0.0344827586206897,197
+plan,primary_unscreened,BELISARIO,23,0,9,32,32,0.03125,197
+plan,primary_screened,CENTER,20,3,9,29,29,0.0344827586206897,136
+plan,primary_screened,BELISARIO,23,0,9,32,32,0.03125,136

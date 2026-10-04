@@ -1,0 +1,7 @@
+hour,window,expected_sign,cells_in_zone,cells_outside,in_zone_before_mean,change_in_gap,change_pct_of_in_zone_before,sign_matches_expected,placebo_splits,placebo_max_abs,abs_change_exceeds_all_placebos,placebos_at_least_as_large,rank_p,smallest_attainable_p_of_rank
+20,main,+,142,1342,2.42196289772886,0.81265799122153,33.5536928325195,TRUE,11,1.06786333214768,FALSE,1,0.166666666666667,0.0833333333333333
+20,without June 2022 and November 2023,+,142,1342,2.48966437758789,0.745185460335032,29.9311612859643,TRUE,,,,,,
+20,same calendar months,+,142,1342,2.42784971915983,0.73187359820426,30.1449299941649,TRUE,,,,,,
+21,main,-,142,1342,1.08023685127873,0.266580657759916,24.6779821892163,FALSE,11,0.487071794100246,FALSE,5,0.5,0.0833333333333333
+21,without June 2022 and November 2023,-,142,1342,1.10820282159133,0.224060405030181,20.2183572054473,FALSE,,,,,,
+21,same calendar months,-,142,1342,1.0763279006992,0.216350968204564,20.1008417661587,FALSE,,,,,,

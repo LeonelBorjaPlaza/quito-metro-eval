@@ -1,0 +1,5 @@
+[out:json][timeout:300][date:"2022-01-01T00:00:00Z"];
+(
+  way["highway"](-0.250,-78.540,-0.190,-78.485);
+);
+out geom tags;

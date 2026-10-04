@@ -1,0 +1,2 @@
+zone_area_ha,buffer_m,gap_closure,gap_m,stations_inside,stations_total,stations_outside,center_polygon_inside,center_area_share_inside,belisario_point_inside,status
+11992.1427661098,250,"assumed straight segment, 1207 m, from the eastern end of Av. Morán Valverde to the nearest point of Av. Simón Bolívar",1206.63303113883,14,15,Quitumbe,FALSE,0.906667029049392,TRUE,"approved by Leonel on 2026-10-01 as a record for a restart, with the straight-segment closure; used only by restart diagnostic 3 (45)"

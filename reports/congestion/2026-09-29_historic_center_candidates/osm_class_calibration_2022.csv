@@ -1,0 +1,4 @@
+set,cells,total_ratio_ours_over_provider,median_cell_ratio,p10,p90,corr
+drivable,33,1.026,1.005,1,1.089,0.996
+drivable_service,33,1.153,1.123,1.029,1.411,0.972
+all_highway,33,1.41,1.269,1.12,2.018,0.789

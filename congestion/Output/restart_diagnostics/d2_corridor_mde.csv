@@ -1,0 +1,7 @@
+unit,slope_row,slope_b_used,critical_value,mde_reduction_share,unit_pre_mean,mde_reduction_index_points,corridor_own_nine_month_mean_error
+tiles (as in mde_empirical.csv),,,0.692639102465599,0.916160433071948,,,
+CORRIDOR (tile errors rescaled to its road length; extrapolation beyond the tile size range),fitted,-0.331120870146682,0.379085948526418,0.49951119351337,9.50233544152536,4.74652291756073,-0.0182057801965621
+CORRIDOR (tile errors rescaled to its road length; extrapolation beyond the tile size range),slope 0,0,0.692639102465599,0.916160433071948,9.50233544152536,8.70566375330279,-0.0182057801965621
+CORRIDOR (tile errors rescaled to its road length; extrapolation beyond the tile size range),interval low,-0.759578286284767,0.11996120398852,0.168640085462297,9.50233544152536,1.60247466095025,-0.0182057801965621
+CORRIDOR (tile errors rescaled to its road length; extrapolation beyond the tile size range),interval high,0.0973365459914041,0.826927235383277,1.08720820050436,9.50233544152536,10.3310170159696,-0.0182057801965621
+CORRIDOR (tile errors rescaled to its road length; extrapolation beyond the tile size range),refit without largest-RMSE tile,-0.0628027281248659,0.617808311409412,0.820603125856907,9.50233544152536,7.79764616625659,-0.0182057801965621

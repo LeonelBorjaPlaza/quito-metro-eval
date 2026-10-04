@@ -1,0 +1,4 @@
+regression,n,slope,ci95_low,ci95_high,interval
+"log RMSE on log road length, tiles",22,-0.331120870146682,-0.759578286284767,0.0973365459914041,"classical OLS t interval, descriptive"
+"log RMSE on log cells with weight, tiles (not meaningful: 20 of 22 tiles have 7 cells)",22,-0.94509923832861,-4.20904874082812,2.3188502641709,"classical OLS t interval, descriptive"
+"log RMSE on 2022 share of cell-hour slots with a valid record, tiles",22,-2.27610742260454,-4.43305833866004,-0.119156506549037,"classical OLS t interval, descriptive"

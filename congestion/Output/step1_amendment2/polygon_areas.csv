@@ -1,0 +1,6 @@
+polygon,label,role,area_ha_sires_dmq,area_ha_wgs84_ellipsoid,crs_note,geoquito_starea_ha
+CENTER,GeoQuito Área Histórica Centro Histórico de Quito (feature 41),CENTER (primary),513.634122507909,513.16351204959,SIRES-DMQ: municipal transverse Mercator (planar). WGS 84 ellipsoid: Lambert azimuthal equal-area on WGS 84 centred on Quito,513.634122507761
+CORE,"OSM way 1077782502, World Heritage property (volunteer-traced)","secondary, descriptive",71.9919814057138,71.926020865693,SIRES-DMQ: municipal transverse Mercator (planar). WGS 84 ellipsoid: Lambert azimuthal equal-area on WGS 84 centred on Quito,
+parish,GeoQuito parish Centro Histórico (ordinance 002),not used,373.081478174717,372.73964603466,SIRES-DMQ: municipal transverse Mercator (planar). WGS 84 ellipsoid: Lambert azimuthal equal-area on WGS 84 centred on Quito,
+osm_parish,"OSM relation 89703, Centro Histórico (admin_level 9)",not used,369.90927190829,369.570347086742,SIRES-DMQ: municipal transverse Mercator (planar). WGS 84 ellipsoid: Lambert azimuthal equal-area on WGS 84 centred on Quito,
+plan,GeoQuito Plan de Acción boundary (limite_plan_chq_a),not used,1412.30515420071,1411.01110160202,SIRES-DMQ: municipal transverse Mercator (planar). WGS 84 ellipsoid: Lambert azimuthal equal-area on WGS 84 centred on Quito,

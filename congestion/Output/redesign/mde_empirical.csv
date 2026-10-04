@@ -1,0 +1,2 @@
+scale,method,tiles,fit_months,forecast_months,mean_error_sd,critical_value_q95_abs,mde_reduction,mde_increase,center_pre_mean,mde_reduction_index_points,mde_increase_index_points,definition
+proportions,sc,22,"usable months 1-12 (2022-01 to 2023-01, June 2022 out)",202302 to 202310,0.37291328635556,0.692639102465599,0.916160433071948,0.824544389764753,11.6693591648353,10.6910051461276,9.62190463151481,"smallest shift d with share of tiles |mean error + d| > c at least 0.8, c = 95th percentile of |mean error|; two-sided 5 percent, power 0.80, empirical over placebo tiles"

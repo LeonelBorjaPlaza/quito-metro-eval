@@ -35,6 +35,60 @@ Carried over from earlier work:
 
 ## congestion
 
+Added 2026-10-01 by workstream B (Amendment 5 redesign):
+
+- **Open, Leonel (from the verifier of 231a113, before any push).** Three committed files hold values that equal single cells' provider values:
+  - The coverage-range endpoints, 38.9701741964233 and 70.387631986531, are each one cell's 2022 `perc_waze_coverage` value (unnamed). They appear in `congestion/Output/step1_freeze/spec.json`, the freeze README, and `congestion/Output/Waze/step1/panel_summary.md` (4 decimals). Amendment 3, item 7 already discloses them.
+  - `congestion/reports/waze_inventory.md` (Phase B, 2026-09-17) holds 100.00000000000004, which equals one cell's value.
+  - `congestion/Output/step1_amendment2/unit_cells_weights.csv` gives the BELISARIO_RW weights as shares of the provider's per-cell 2022 OSM lengths. The lengths themselves are not written, but their ratios can be recovered.
+
+- **Closed (Leonel, 2026-10-01).** Monthly tile data give an empirical minimum detectable effect of 0.92 of CENTER's pre-period mean for a reduction (`congestion/Output/redesign/mde_empirical.csv`). Leonel stopped the analysis before any post-opening month (Amendment 6; `reports/congestion/2026-10-01_stop_report.md`).
+- **Closed (Leonel, 2026-10-01).** The pico y placa zone is approved as a record for a restart, with the 1.2 km south-east gap closed by a straight segment that is our assumption. With the segment the ring closes only at a 250 m buffer (`congestion/Output/redesign/zone_buffer_trace.csv`, `congestion/Output/redesign/map_pico_y_placa_zone.png`).
+
+Added 2026-10-01 by workstream B (restart diagnostics, Amendment 6):
+
+- **Open, restart.** The in-zone minus out-of-zone gap at hours 20 and 21 steps up from February to March 2023, a month before the pico y placa change of 10 April 2023, and no listed event explains it (`congestion/Output/restart_diagnostics/d3_event_time_gap.csv`, `congestion/docs/calendar_shocks.csv`).
+- **Note (rule 5).** While verifying `b31cc94`, the verifier ran `head` on `Data/Waze/raw/roadlengths_quito.csv` and saw the header and six cell rows dated 2024 (OSM and Waze road lengths, not congestion outcomes) in its own tool output. Nothing was used, stored or copied; every computation filters road lengths to 2022 or earlier. The file is not sorted by year, as noted on 2026-09-29.
+- **Open, provider.** The weekday profile's peaks (7:00 and 18:00) fit local time but cannot tell whether an hour label marks the start or the end of its hour (`congestion/docs/provider_questions.md`, item 11).
+- **Note.** The BELISARIO monitor cell from the Colegio San Gabriel campus (8866d338c9fffff) differs from the seed built from the published coordinates (8866d33aa3fffff), which look truncated rather than rounded to 0.01 degree; the redesign rebuilds the ring (`congestion/docs/belisario_address_check.csv`). Step 1 and Amendment 2 outputs keep the old ring.
+
+Added 2026-10-01 by workstream B (Amendments 2 to 4, item D):
+
+- **Open, Leonel.** The primary fit interpolates. CENTER (historic-center polygon) with the screened pool tunes the ridge penalty to the smallest value on augsynth's grid (2.07e-5). Its training RMSPE is 2.5e-7, its full pre-period RMSPE 3.0e-7, and its total negative weight -1.48 (`congestion/Output/step1_amendment2/fit_statistics.csv`, `weight_statistics.csv`).
+  - The leave-one-block-out curve is flat: 16 of 21 penalties come within 5 percent of the minimum (`lobo_grid.csv`).
+  - The same happens for CORE and RING7 with the screened pool and for CORRIDOR with the unscreened pool.
+  - Under conformal inference, such a fit leaves pre-period residuals near zero.
+  - The placebo floor (CENTER's own RMSPE) is degenerate in that pool; the scaled placebo statistics are withheld there.
+  - Not fixed: the tuning rule is the plan's. Options are listed in `reports/congestion/2026-10-01_historic_center_preperiod_report.md`.
+- **Fixed (by Leonel, 2026-10-01).** The parish delivery `road_safety/raw/2026-09-25_geoquito_parroquias/`, used by the congestion module for zonal administrations, is now in the store's `MANIFEST.sha256` (seven files; all hashes verify).
+- **Open, Leonel.** About 0.56 of the synthetic CENTER's weight sits on donor cells outside the DMQ's parish layers, in neighbouring cantons (`donor_geography_by_zonal_administration.csv`). The plan's donor rule does not restrict donors to the district.
+- **Open, Leonel (before any figure leaves the repository).** The UNESCO map image (document 173425) is embedded in `reports/congestion/2026-09-29_historic_center_candidates/map_candidates_over_unesco.png`. UNESCO's terms of use have not been checked.
+
+Added 2026-09-29 by workstream B (Amendments 2 and 3):
+
+- **Note (corrected 2026-10-01).** While preparing the historic-center weights, a `head -3` of `Data/Waze/raw/roadlengths_quito.csv` printed the header and two 2024 rows (the file is not sorted by year), against the structure-only rule for post-2023 rows.
+  - The rows hold OSM length, Waze length and their ratio. The Waze-length column is a running maximum of the jam segments Waze observed (provider answer 3), so it is derived from the outcome.
+  - The exposure is negligible: two rows of one cell-year each. They were not used or repeated.
+  - Every later read filtered to `year == 2022` before printing, and printed aggregates only.
+- **Open, Leonel.** The UNESCO map of the inscribed property (document 173425, 2019) carries a printed 1 km grid that is offset from SIRES-DMQ. Placed by that grid, its core sits 246 m east and 366 m north of the OSM trace, while the trace matches the official corner streets (`reports/congestion/2026-09-29_historic_center_candidates/unesco_map_shares.csv` and `core_corners_vs_osm_trace.csv`). The old PSAD56 datum shifts the other way, so the cause is unknown. Any use of that map's coordinates needs this correction.
+- **Open, Leonel.** No official polygon of the World Heritage core (70.43 ha) was found on GeoQuito. The proposed core is an OpenStreetMap volunteer trace (way 1077782502, ODbL). An official file from the municipality would replace it by amendment.
+- **Status update on the zero-coding question** (the item "Question to Juan Camilo on absent records" below). The provider answered on 2026-09-29 (`congestion/docs/2026-09-29_provider_answers.md`, saved in `1b3b1e0`). Zero coding is now the plan's rule (Amendment 3). The answer on severe persistence above 100 is still missing.
+- **Status update on the branch history item** (commits `2a9ac76`, `ab00117`, `2a3c931`, below). Leonel decided on 2026-09-29 not to rewrite them: the branch will be squash-merged and never pushed (Amendment 3, item 7).
+
+Added 2026-09-27 by workstream B (Step 1):
+
+- **Open, Leonel.** In Step 1, the ridge-penalty tuning (plan v2 section 6: leave-one-block-out, augsynth's own grid) lands on an edge of augsynth's lambda grid in 7 of the 8 fits (`congestion/Output/step1_freeze/weight_statistics.csv`, column `lambda_at_grid_edge`, and `spec.json`).
+  - Five fits take the largest penalty, where the ridge augmentation does least. These are all four unscreened-pool fits and BELISARIO's screened fit under the amended rule. It explains why augsynth and plain SCM score almost the same on the holdout.
+  - The two original-rule, screened-pool fits take the smallest penalty and interpolate their training months.
+  - Only CENTER with the screened pool under the amended rule chose an interior value.
+  - Widening the grid would change the specification, so it is Leonel's decision before the freeze becomes final.
+
+- **Open, Leonel.** The severe-persistence part of the flag rule (`tc_severe_persistance_ratio` above 100; plan v2 section 1) drives almost all pre-period missingness. It flags 1,408 of the 2,721 contaminated all_roadtype pre-period keys; the negative-ratio conditions flag the other 1,313 (one key trips both). All three missing CENTER peak unit-months (202201, 202304, 202307) come from this condition alone, in cell 8866d338e3fffff at one morning hour each (evidence: `congestion/Output/Waze/step1/panel_summary.md`, and the Step 1 report). It also accounts for every threshold-20 donor that is incomplete in the pre period. On persistence-flagged rows, primary TCI sits above the same cell-hour's unflagged median more often than on unflagged rows. That is consistent with contamination, and also with heavier congestion when jams persist.
+- **Open, provider.** In `Data/Waze/raw/roadlengths_quito.csv` (data-auditor, 2026-09-27), Waze length is not capped at OSM length, although the documentation says it is (`docs/waze_documentation.md:69`). In 2022, 163 all_roadtype cells have `perc_waze_coverage` above 100. When OSM length is 0, `perc_waze_coverage` is coded 100. The roadtype lengths do not add up to all_roadtype, against line 127. 86 cells have 2022 jam records but no 2022 Waze length. Waze length is jam-based (line 67), so it is not an independent coverage measure. The Step 1 screen is labeled "jam-derived coverage". None of these cells can pass the current screen range.
+- **Open, Leonel.** The provider email of 2026-09-17 that confirms Monday-to-Friday hourly profiles and the severe definition (plan v2 section 1, "saved in docs/") is not in the repository yet. Leonel will save it in `congestion/docs/`.
+- **Open, Leonel (before any push of `worktree-congestion-step1`).** Commits `2a9ac76`, `ab00117` and `2a3c931` of this branch print the 2022 `perc_waze_coverage` value of each of the 14 CENTER and BELISARIO cells in `congestion/Output/Waze/step1/panel_summary.md`, and `2a3c931` prints it for 10 top donors per fit in `diagnostics.md`. These are cell-level provider values. From `798fcff` on, committed outputs carry only the target range and in-range flags. The branch has not been pushed, so whether to rewrite those commits before a merge is Leonel's decision.
+- **Note.** The data-auditor's first read of `roadlengths_quito.csv` printed the file's first two rows, which are 2024 records (the file is not sorted by year). Their values were not used or repeated. All later checks of years after 2023 were structural only, as Leonel instructed.
+
 Added 2026-09-24 during the consolidation:
 
 - **Open, Leonel (blocks the GitHub push).** `congestion/reports/waze_sample.csv` holds 500 record-level rows of the raw Waze delivery (date, grid_id, hour, roadtype and every indicator). It was committed in `16fbfa9` (Phase B, 2026-09-17) and is in the imported history. Pushing the history to GitHub would publish provider records. Removing it from the history before the first push is Leonel's decision.

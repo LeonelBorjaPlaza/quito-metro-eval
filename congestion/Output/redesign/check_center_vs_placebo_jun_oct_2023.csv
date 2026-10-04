@@ -1,0 +1,3 @@
+scale,center_mean_error,center_rmse,center_mean_error_index_points,center_negative_months,tiles,tiles_mean_error_at_or_below_center,tiles_abs_mean_error_at_least_center,tiles_rmse_at_least_center,tile_mean_error_min,tile_mean_error_median,tile_mean_error_max
+proportions,-0.0927697615480994,0.121576406847292,-1.06067649447251,4,22,7,13,15,-0.180477717982239,-0.0326463302096416,0.763498634436839
+levels,-0.205104072893265,0.870558626780217,-0.205104072893265,3,22,7,11,2,-0.542475569426229,-0.079980640435056,1.86988345940893

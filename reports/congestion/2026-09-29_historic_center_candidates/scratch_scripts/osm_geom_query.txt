@@ -1,0 +1,4 @@
+[out:xml][timeout:120];
+(way(1077782502);relation(89703););
+(._;>;);
+out meta;

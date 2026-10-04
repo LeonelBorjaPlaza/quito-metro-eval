@@ -1,0 +1,4 @@
+T,smallest_attainable_p,tests,rejections_5pct,rejection_rate,rule
+20,0.05,22,1,0.0454545454545455,one pseudo-opening: 1 of 22 rejected; meets the 10 percent rule
+21,0.0476190476190476,22,3,0.136363636363636,one pseudo-opening: 3 of 22 rejected; fails the 10 percent rule
+,,44,4,0.0909090909090909,"pooled after seeing the results; does not count (Leonel, 2026-10-01)"

@@ -1,0 +1,10 @@
+item,value,source
+monitor location,"roof of the administrative building of Colegio San Gabriel, Av. América (Mariana de Jesús / Rumipamba), Quito",REMMAQ station descriptions found by web search on 2026-10-01 (https://idoc.pub/documents/red-metropolitana-de-monitoreo-atmosferico-de-quito-546g2jv2pxn8; https://pdfcoffee.com/remmaq-pdf-free.html); the documents returned 403 to direct fetch and are cited from search snippets
+campus outline,"OSM way 282603573 'Colegio San Gabriel' (amenity=college, addr:street 'Avenida América y Rumipamba'), 15 vertices",Overpass API on 2026-10-01; © OpenStreetMap contributors (ODbL)
+campus centroid,"lat -0.1837791, lon -78.4969515",same
+H3 resolution-8 cell of all 15 campus vertices,8866d338c9fffff,computed with the DuckDB h3 extension
+stored seed from the published coordinates (given to 0.01 degree, lat -0.18, lon -78.49; they look truncated rather than rounded, since the campus longitude -78.497 rounds to -78.50),8866d33aa3fffff,Data/spatial/Distancia_REMMAQ_Metro.gpkg; plan section 2
+same cell,FALSE,
+H3 grid distance between the two cells,1,
+distance from the stored point to the campus centroid (m),880,
+decision,"BELISARIO ring rebuilt around 8866d338c9fffff (Amendment 5, item 11); old-ring cells outside it return to their distance group",Scripts/Congestion/redesign_helpers.R

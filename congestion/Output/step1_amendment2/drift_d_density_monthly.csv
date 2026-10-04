@@ -1,0 +1,70 @@
+date,series,slots,min_cell
+202201,"10 heaviest donors, |weight|-weighted mean, primary_screened",21.6572903785853,19
+202202,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.6255792668489,20
+202203,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.4315762865392,21
+202204,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.1913727602407,18
+202205,"10 heaviest donors, |weight|-weighted mean, primary_screened",23.1233508877404,20
+202206,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.3005930045869,19
+202207,"10 heaviest donors, |weight|-weighted mean, primary_screened",21.8362300513446,20
+202208,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.6496064025644,17
+202209,"10 heaviest donors, |weight|-weighted mean, primary_screened",21.6983416482274,20
+202210,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.8177273186002,21
+202211,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.3432399585184,21
+202212,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.8887493789205,19
+202301,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.4344397493778,21
+202302,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.5612464960032,20
+202303,"10 heaviest donors, |weight|-weighted mean, primary_screened",23.5784301267848,20
+202304,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.439590798083,17
+202305,"10 heaviest donors, |weight|-weighted mean, primary_screened",23.0143624562049,20
+202306,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.6713891317861,19
+202307,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.5557024448962,18
+202308,"10 heaviest donors, |weight|-weighted mean, primary_screened",23.1809111533541,19
+202309,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.9335919628369,20
+202310,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.6291572025973,21
+202311,"10 heaviest donors, |weight|-weighted mean, primary_screened",22.3601297525787,20
+202201,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.3708625877737,20
+202202,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.734420938243,17
+202203,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.8324881449938,21
+202204,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.5325346408265,21
+202205,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.7149633914254,21
+202206,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.3419767824097,21
+202207,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.1905796284214,19
+202208,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.4064594347819,18
+202209,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.0336950771254,19
+202210,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.2095787455787,21
+202211,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.2008921303241,20
+202212,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.8089192444767,19
+202301,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.1514074680625,20
+202302,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.9300040921789,19
+202303,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",23.1296410376286,21
+202304,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.8012810745291,15
+202305,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.3686735104061,17
+202306,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.8401799014564,16
+202307,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.938152710104,18
+202308,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",23.0550143890249,19
+202309,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",21.8529951509085,18
+202310,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.4486067093769,21
+202311,"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.4461897693178,21
+202201,"CENTER cells, road-weighted mean",20.8920367298514,11
+202202,"CENTER cells, road-weighted mean",22.3440882940941,8
+202203,"CENTER cells, road-weighted mean",22.7110401204717,11
+202204,"CENTER cells, road-weighted mean",22.5029610839136,11
+202205,"CENTER cells, road-weighted mean",22.0906025687329,13
+202206,"CENTER cells, road-weighted mean",21.5993879947872,9
+202207,"CENTER cells, road-weighted mean",21.8301099755082,9
+202208,"CENTER cells, road-weighted mean",22.0075265466846,8
+202209,"CENTER cells, road-weighted mean",22.0112416584918,4
+202210,"CENTER cells, road-weighted mean",22.6939056379431,13
+202211,"CENTER cells, road-weighted mean",23.094331295445,11
+202212,"CENTER cells, road-weighted mean",23.1042740952864,4
+202301,"CENTER cells, road-weighted mean",21.9793435645677,6
+202302,"CENTER cells, road-weighted mean",23.2270948939762,12
+202303,"CENTER cells, road-weighted mean",22.8661678678792,12
+202304,"CENTER cells, road-weighted mean",23.081823078269,8
+202305,"CENTER cells, road-weighted mean",22.2994471440211,8
+202306,"CENTER cells, road-weighted mean",23.1586495894584,12
+202307,"CENTER cells, road-weighted mean",22.7826377720405,7
+202308,"CENTER cells, road-weighted mean",23.456735213712,11
+202309,"CENTER cells, road-weighted mean",23.3669854988875,6
+202310,"CENTER cells, road-weighted mean",22.4764711949052,9
+202311,"CENTER cells, road-weighted mean",22.5539261044798,6

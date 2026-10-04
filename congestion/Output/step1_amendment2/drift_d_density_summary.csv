@@ -1,0 +1,4 @@
+series,slots_first6,slots_last6,slope_per_year,min_cell_any_month,donor_slope_min,donor_slope_max
+"10 heaviest donors, |weight|-weighted mean, primary_screened",22.3882937640902,22.7218136080082,0.340574721984146,17,-0.687747035573124,1.95652173913044
+"10 heaviest donors, |weight|-weighted mean, primary_unscreened",22.2545410809453,22.2635231050314,0.118996382294881,15,-1.57707509881423,0.818181818181819
+"CENTER cells, road-weighted mean",22.0233527986418,22.9659008955806,0.669938785880472,4,,

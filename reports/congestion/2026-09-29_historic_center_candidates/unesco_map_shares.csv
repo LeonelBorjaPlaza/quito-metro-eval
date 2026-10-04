@@ -1,0 +1,7 @@
+id,share_in_map_frame,share_coloured_core,share_coloured_core_or_buffer,unesco_core_or_buffer_covered_ha,unesco_map_core_ha,unesco_map_core_or_buffer_ha,underlay_shift_east_m,underlay_shift_north_m
+G_AH,0.978,0.14,0.739,371.2,70.1,375.3,-246,-366
+G_PLAN,0.875,0.057,0.303,375.2,70.1,375.3,-246,-366
+G_PARR,0.998,0.188,0.724,269.6,70.1,375.3,-246,-366
+G_PARR_REF,0.998,0.188,0.724,269.6,70.1,375.3,-246,-366
+O_WHC,1,0.963,1,72,70.1,375.3,-246,-366
+O_PARR,0.999,0.189,0.711,262.7,70.1,375.3,-246,-366

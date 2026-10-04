@@ -1,0 +1,4 @@
+series,units,months_per_unit,pairs,lag1,variance_ratio,ceiling,ratio_normalized,note
+"placebo tiles, nine-month forecasts (fit usable months 1-12, forecast 13-21)",22,9,176,0.767082083675781,7.12112514049361,9,0.765140642561702,"variance ratio across tiles: Var(tile mean error) / (Var(all monthly errors) / 9); near 1 = month-to-month noise, well above 1 = persistent error; the pooled lag-1 correlation mixes persistent differences in tile mean error with month-to-month dependence"
+"placebo tiles, one-month-ahead rolling-origin errors (contest, cut-offs 12-20)",22,9,176,0.336091018454971,,,,consecutive one-month-ahead errors come from successive cut-offs
+"CENTER, June to October 2023 holdout errors (fit to May 2023)",1,5,4,0.346130780231599,2.91128201429069,5,0.477820503572672,"single unit, uncentred: 5 x (mean error)^2 / mean squared monthly error; not directly comparable with the tile ratio (see ratio_normalized); 4 adjacent pairs"

@@ -1,0 +1,6 @@
+buffer_m,holes,result
+25,7,neither reference point in an enclosed hole (ring open)
+50,1,neither reference point in an enclosed hole (ring open)
+100,1,neither reference point in an enclosed hole (ring open)
+150,1,neither reference point in an enclosed hole (ring open)
+250,3,closed

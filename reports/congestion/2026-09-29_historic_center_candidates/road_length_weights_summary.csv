@@ -1,0 +1,6 @@
+unit,drivable_road_km,share_in_unesco_core_or_buffer,n_hex_positive,top_hex_weight,hex_weight_ge_5pct,weight_on_ring7_cells,weight_by_group
+G_AH,89.18,0.806,15,0.179,8,0.711,CENTER:0.711 CORRIDOR:0.195 RING:0.094
+G_PARR,61.1,0.824,11,0.243,7,0.694,CENTER:0.694 CORRIDOR:0.23 RING:0.076
+O_WHC,13.26,1,4,0.534,4,1,CENTER:1
+O_PARR,60.59,0.808,9,0.245,7,0.726,CENTER:0.726 CORRIDOR:0.197 RING:0.077
+RING7,110.83,0.56,19,0.161,7,1,CENTER:1 RING:0 CORRIDOR:0 REST:0

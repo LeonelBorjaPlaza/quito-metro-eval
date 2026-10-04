@@ -1,0 +1,13 @@
+unit,rule,valid_months,missing_months,missing_detail
+CENTER,amended,23,0,""
+CORE,amended,23,0,""
+RING7,amended,23,0,""
+BELISARIO_RW,amended,23,0,""
+BELISARIO_EQ,amended,23,0,""
+CORRIDOR,amended,23,0,""
+CENTER,plan,20,3,202201 (persistence only); 202304 (persistence only); 202307 (persistence only)
+CORE,plan,23,0,""
+RING7,plan,20,3,202201 (persistence only); 202304 (persistence only); 202307 (persistence only)
+BELISARIO_RW,plan,23,0,""
+BELISARIO_EQ,plan,23,0,""
+CORRIDOR,plan,23,0,""

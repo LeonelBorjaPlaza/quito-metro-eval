@@ -1,0 +1,9 @@
+rule,pool,donors,frozen_donors,removed_by_buffer
+amended,primary_screened,165,166,1
+amended,primary_unscreened,269,270,1
+amended,low_exposure_screened,126,126,0
+amended,low_exposure_unscreened,214,214,0
+plan,primary_screened,135,136,1
+plan,primary_unscreened,196,197,1
+plan,low_exposure_screened,99,99,0
+plan,low_exposure_unscreened,152,152,0

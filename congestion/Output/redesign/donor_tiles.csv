@@ -1,0 +1,26 @@
+tile,pool,valley,low_exposure,saturated_cells,mean_km_to_line
+8766d306effffff,main (DMQ),FALSE,TRUE,5,18.71
+8766d3212ffffff,main (DMQ),TRUE,FALSE,5,4.69
+8766d3213ffffff,main (DMQ),TRUE,TRUE,4,7.3
+8766d3216ffffff,main (DMQ),FALSE,FALSE,4,3.91
+8766d321affffff,check (neighbouring municipalities),FALSE,TRUE,4,11.36
+8766d321effffff,main (DMQ),TRUE,TRUE,5,9.92
+8766d3220ffffff,main (DMQ),TRUE,TRUE,4,12.07
+8766d3221ffffff,main (DMQ),TRUE,TRUE,4,14.49
+8766d3222ffffff,main (DMQ),TRUE,TRUE,5,10.01
+8766d322cffffff,main (DMQ),TRUE,TRUE,4,16.96
+8766d3230ffffff,main (DMQ),TRUE,TRUE,5,5.66
+8766d3236ffffff,main (DMQ),FALSE,FALSE,6,3.1
+8766d3280ffffff,main (DMQ),FALSE,FALSE,5,3.62
+8766d328affffff,check (neighbouring municipalities),FALSE,TRUE,5,10.41
+8766d32acffffff,main (DMQ),TRUE,TRUE,4,6.24
+8766d32f6ffffff,check (neighbouring municipalities),FALSE,TRUE,4,11.48
+8766d3310ffffff,main (DMQ),TRUE,TRUE,7,6.91
+8766d3312ffffff,main (DMQ),FALSE,FALSE,7,4.79
+8766d3314ffffff,main (DMQ),TRUE,TRUE,5,9.17
+8766d3315ffffff,main (DMQ),TRUE,TRUE,7,9.27
+8766d3316ffffff,main (DMQ),FALSE,TRUE,7,7.26
+8766d3325ffffff,main (DMQ),FALSE,TRUE,4,21.02
+8766d33a1ffffff,main (DMQ),FALSE,FALSE,7,3.39
+8766d33a5ffffff,main (DMQ),FALSE,TRUE,7,5.9
+8766d33adffffff,main (DMQ),FALSE,FALSE,5,3.57

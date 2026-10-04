@@ -1,0 +1,5 @@
+method,forecasts,tiles,mse,mean_signed_error,share_errors_negative,mse_tile_index_points,mean_signed_error_tile_index_points,mse_relative_to_sc,note
+did,528,22,0.106296412430339,3.02172587016705e-18,0.545454545454545,0.897351636791435,-0.163847039911049,1.42120662166465,"signed error is zero by identity: with every tile as target against the mean of the others, errors sum to zero each month; compare bias only among sc, sdid and ridge"
+ridge,528,22,0.0980464245148501,0.0101599642663446,0.528409090909091,0.860827109131167,-0.060330571279365,1.31090245253918,""
+sc,528,22,0.0747930742862955,0.0311441430134491,0.488636363636364,0.587200701383038,-0.000148007735999441,1,""
+sdid,528,22,0.0840921315732022,0.00259729886332896,0.53219696969697,0.650412599379301,-0.0824810364333575,1.12433045941274,"synthdid fits its time weights on the donors over all forecast months together, so the horizon-1 forecast uses donor values of later horizons (no target data)"

@@ -1,0 +1,2 @@
+tiles,abs_mean_error_median,abs_mean_error_p75,abs_mean_error_p90,abs_mean_error_max,abs_mean_error_second_largest,tile_fit_mean_min,tile_fit_mean_median,tile_fit_mean_max,center_pre_mean_usable_months,note
+22,0.156519304408268,0.253573824200518,0.385010411244041,1.29605435429805,0.708809711627521,0.208664887272207,2.73580676942334,7.43668998063897,11.6693591648353,fit means are over usable months 1-12; CENTER's mean is over all 21 usable months

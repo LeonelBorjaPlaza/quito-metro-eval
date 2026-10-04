@@ -1,0 +1,31 @@
+contrast,role,rule,pool,estimator,fit,n_fit,n_post,fit_rmspe,holdout_rmse,holdout_bias
+CENTER minus BELISARIO_RW,primary,amended,primary_screened,ascm,full pre,23,0,1.0438849496694,,
+CENTER minus BELISARIO_RW,primary,amended,primary_screened,ascm,holdout,17,6,1.15233488257962,0.63468776648807,0.0540365936002516
+CENTER minus BELISARIO_RW,primary,amended,primary_screened,did,holdout,17,6,1.74410815441936,1.20731492293484,-0.831891251007494
+CENTER minus BELISARIO_RW,primary,amended,primary_screened,scm,full pre,23,0,0.952840829586923,,
+CENTER minus BELISARIO_RW,primary,amended,primary_screened,scm,holdout,17,6,1.1163256902027,0.698219043150531,-0.155475987726282
+CENTER minus BELISARIO_RW,primary,amended,primary_unscreened,ascm,full pre,23,0,0.777166700928176,,
+CENTER minus BELISARIO_RW,primary,amended,primary_unscreened,ascm,holdout,17,6,0.784333373610465,2.02180725764041,1.4674977652719
+CENTER minus BELISARIO_RW,primary,amended,primary_unscreened,did,holdout,17,6,1.74410815441936,1.20731492293484,-0.831891251007494
+CENTER minus BELISARIO_RW,primary,amended,primary_unscreened,scm,full pre,23,0,0.805534796611376,,
+CENTER minus BELISARIO_RW,primary,amended,primary_unscreened,scm,holdout,17,6,0.890920842147724,1.50450645209337,0.910092558534131
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_screened,ascm,full pre,23,0,1.0018129473778,,
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_screened,ascm,holdout,17,6,1.10108207505782,0.658949673984709,0.221496030339699
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_screened,did,holdout,17,6,1.67024345260625,1.08856742819293,-0.684781927126949
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_screened,scm,full pre,23,0,0.891483837626988,,
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_screened,scm,holdout,17,6,1.0448313890302,0.679968379333832,0.0702005727286175
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_unscreened,ascm,full pre,23,0,0.740626338264013,,
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_unscreened,ascm,holdout,17,6,0.722841608054906,2.10201811897331,1.57772156941504
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_unscreened,did,holdout,17,6,1.67024345260625,1.08856742819293,-0.684781927126949
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_unscreened,scm,full pre,23,0,0.766534767387451,,
+CENTER minus BELISARIO_EQ,sensitivity: equal-weight BELISARIO,amended,primary_unscreened,scm,holdout,17,6,0.818571763864618,1.69979181461291,1.20385108262441
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_screened,ascm,full pre,23,0,1.00181296711204,,
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_screened,ascm,holdout,17,6,1.10108208000083,0.570237353640294,0.0256362561131382
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_screened,did,holdout,17,6,1.77962441375135,1.02557248351577,-0.781003574991699
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_screened,scm,full pre,23,0,0.936069501469215,,
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_screened,scm,holdout,17,6,1.05420659044727,0.714062992089121,-0.107063564580778
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_unscreened,ascm,full pre,23,0,0.728253789905396,,
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_unscreened,ascm,holdout,17,6,0.699599074451866,2.02783243915496,1.70771464239382
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_unscreened,did,holdout,17,6,1.77962441375135,1.02557248351577,-0.781003574991699
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_unscreened,scm,full pre,23,0,0.795402923865898,,
+RING7 minus BELISARIO_EQ,Step 1 contrast with the buffer donor removed,amended,primary_unscreened,scm,holdout,17,6,0.823379365172706,1.6090666800221,1.29685951800254

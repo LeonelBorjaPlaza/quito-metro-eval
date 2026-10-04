@@ -1,0 +1,7 @@
+id,label,source,area_ha_geodesic,area_ha_sires,n_parts
+G_AH,GeoQuito: Area Historica Centro Historico de Quito (patrimonio layer 6),"GeoQuito web_reference_dmot/patrimonio MapServer/6, OBJECTID 41",515.47,513.63,1
+G_PLAN,GeoQuito: limite_plan_chq_a (Plan de Accion boundary),GeoQuito item 979cde91eb6440d6bab77bd01a72ea1e,1417.35,1412.31,1
+G_PARR,GeoQuito: parroquia urbana Centro Historico (ord. 002),store road_safety/raw/2026-09-25_geoquito_parroquias/parr_urbana_ord002.zip,374.41,373.08,1
+G_PARR_REF,GeoQuito: Parroquias DMQ (PARROQUIAS_REF) Centro Historico,store road_safety/raw/2026-09-25_geoquito_parroquias/PARROQUIAS_REF.zip,374.42,373.09,1
+O_WHC,"OSM way 1077782502 'Ciudad de Quito' (WHC, traced from UNESCO 173425)","OpenStreetMap, ODbL",72.25,71.99,1
+O_PARR,OSM relation 89703 'Centro Historico' (admin_level 9),"OpenStreetMap, ODbL",371.23,369.91,1

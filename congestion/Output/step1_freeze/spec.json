@@ -1,0 +1,267 @@
+{
+  "status": "Step 1 provisional freeze under provisional zero coding and plan Amendment 1. Final only after Leonel confirms it (plan section 8, Step 2).",
+  "plan": "docs/analysis_plan.md (v2 of 2026-09-22 with Amendment 1 of 2026-09-27)",
+  "code_commit": "e173f6d16d0e98dbccee75a14f9caabc538d62ee",
+  "outcome": {
+    "variable": "tci_osm_ratio",
+    "roadtype": "all_roadtype",
+    "scale": "native 0 to 100 levels",
+    "primary_block": "peak",
+    "blocks": {
+      "peak": [7, 8, 9, 17, 18, 19],
+      "morning": [7, 8, 9],
+      "evening": [17, 18, 19],
+      "night": [0, 1, 2, 3, 4]
+    },
+    "aggregation": "equal cell weights, then equal hour weights",
+    "secondary": "log of target aggregates (CENTER, BELISARIO, CORRIDOR); morning, evening; night 0-4 diagnostic"
+  },
+  "zero_coding": "provisional zero coding",
+  "flag_rules": {
+    "primary": "amended: sentinel -998/-999 in any field or any of the six auxiliary ratios below zero makes the key missing; severe persistence above 100 makes only severe outcomes missing",
+    "sensitivity": "plan: severe persistence above 100 also makes the key missing for every outcome"
+  },
+  "fixed_composition": "a unit-month exists only if every cell-hour is valid; no na.rm, no reweighting, no substitution; a target's missing months are left out of fits",
+  "calendar": {
+    "pre": [202201, 202311],
+    "training": [202201, 202305],
+    "holdout": [202306, 202311],
+    "dec2022_sensitivity": [202212, 202311],
+    "post_blocks": "as in plan section 5"
+  },
+  "units": {
+    "seeds": {
+      "CENTER": "8866d33885fffff",
+      "BELISARIO": "8866d33aa3fffff"
+    },
+    "CENTER": ["8866d33881fffff", "8866d33885fffff", "8866d33887fffff", "8866d3388dfffff", "8866d338a9fffff", "8866d338abfffff", "8866d338e3fffff"],
+    "BELISARIO": ["8866d338c9fffff", "8866d33aa1fffff", "8866d33aa3fffff", "8866d33aa7fffff", "8866d33aabfffff", "8866d33ab5fffff", "8866d33abdfffff"],
+    "CORRIDOR": ["8866d3284dfffff", "8866d32a05fffff", "8866d32a0dfffff", "8866d32a21fffff", "8866d32a27fffff", "8866d32a29fffff", "8866d32a2bfffff", "8866d32a2dfffff", "8866d32a41fffff", "8866d32a43fffff", "8866d32a45fffff", "8866d32a47fffff", "8866d32a49fffff", "8866d32a4bfffff", "8866d32a4dfffff", "8866d32a63fffff", "8866d32a6bfffff", "8866d32b1bfffff", "8866d33889fffff", "8866d3388bfffff", "8866d338a1fffff", "8866d338a3fffff", "8866d338a7fffff", "8866d338c1fffff", "8866d338c3fffff", "8866d338c5fffff", "8866d338c7fffff", "8866d338cbfffff", "8866d33a85fffff", "8866d33a87fffff", "8866d33a8dfffff", "8866d33ab7fffff", "8866d33ae3fffff", "8866d33aebfffff"]
+  },
+  "donor_rules": {
+    "eligible": "REST cells, centroid more than 2 km from every station, with a pre-period record",
+    "threshold": 20,
+    "threshold_sensitivity": 12,
+    "coverage_screen": {
+      "label": "jam-derived coverage",
+      "source": "Data/Waze/raw/roadlengths_quito.csv",
+      "year": 2022,
+      "roadtype": "all_roadtype",
+      "range": [38.9701741964233, 70.387631986531]
+    },
+    "low_exposure_m": 4000,
+    "completeness": "complete peak block over January 2022 to November 2023",
+    "primary_pool": "Leonel's decision: primary_unscreened or primary_screened"
+  },
+  "donor_counts": [
+    {
+      "rule": "amended",
+      "pool": "primary_unscreened",
+      "eligible": 271,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 1,
+      "donors": 270
+    },
+    {
+      "rule": "amended",
+      "pool": "primary_screened",
+      "eligible": 271,
+      "removed_by_coverage": 105,
+      "removed_incomplete": 0,
+      "donors": 166
+    },
+    {
+      "rule": "amended",
+      "pool": "threshold12_unscreened",
+      "eligible": 554,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 1,
+      "donors": 553
+    },
+    {
+      "rule": "amended",
+      "pool": "threshold12_screened",
+      "eligible": 554,
+      "removed_by_coverage": 248,
+      "removed_incomplete": 0,
+      "donors": 306
+    },
+    {
+      "rule": "amended",
+      "pool": "all_rest_unscreened",
+      "eligible": 1533,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 51,
+      "donors": 1482
+    },
+    {
+      "rule": "amended",
+      "pool": "all_rest_screened",
+      "eligible": 1533,
+      "removed_by_coverage": 979,
+      "removed_incomplete": 2,
+      "donors": 552
+    },
+    {
+      "rule": "amended",
+      "pool": "low_exposure_unscreened",
+      "eligible": 215,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 1,
+      "donors": 214
+    },
+    {
+      "rule": "amended",
+      "pool": "low_exposure_screened",
+      "eligible": 215,
+      "removed_by_coverage": 89,
+      "removed_incomplete": 0,
+      "donors": 126
+    },
+    {
+      "rule": "plan",
+      "pool": "primary_unscreened",
+      "eligible": 267,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 70,
+      "donors": 197
+    },
+    {
+      "rule": "plan",
+      "pool": "primary_screened",
+      "eligible": 267,
+      "removed_by_coverage": 105,
+      "removed_incomplete": 26,
+      "donors": 136
+    },
+    {
+      "rule": "plan",
+      "pool": "threshold12_unscreened",
+      "eligible": 553,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 149,
+      "donors": 404
+    },
+    {
+      "rule": "plan",
+      "pool": "threshold12_screened",
+      "eligible": 553,
+      "removed_by_coverage": 248,
+      "removed_incomplete": 69,
+      "donors": 236
+    },
+    {
+      "rule": "plan",
+      "pool": "all_rest_unscreened",
+      "eligible": 1533,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 243,
+      "donors": 1290
+    },
+    {
+      "rule": "plan",
+      "pool": "all_rest_screened",
+      "eligible": 1533,
+      "removed_by_coverage": 979,
+      "removed_incomplete": 87,
+      "donors": 467
+    },
+    {
+      "rule": "plan",
+      "pool": "low_exposure_unscreened",
+      "eligible": 212,
+      "removed_by_coverage": 0,
+      "removed_incomplete": 60,
+      "donors": 152
+    },
+    {
+      "rule": "plan",
+      "pool": "low_exposure_screened",
+      "eligible": 212,
+      "removed_by_coverage": 89,
+      "removed_incomplete": 24,
+      "donors": 99
+    }
+  ],
+  "estimator": {
+    "package": "augsynth",
+    "version": "0.2.0",
+    "remote_sha": "65c5a6f34f4e4a8b1011182fe12309ef022d992f",
+    "progfunc": "Ridge",
+    "scm": true,
+    "fixedeff": true,
+    "tuning": "leave-one-block-out on January 2022 to May 2023: calendar blocks of 3, 3, 3, 3, 3 and 2 months (a target's missing months removed from their block), augsynth's own lambda grid, minimum pooled MSE. The December 2022 start sensitivity reuses this penalty and is not re-tuned (approved in the Step 1 plan); on six training months it nearly interpolates CENTER.",
+    "lambda": [
+      {
+        "rule": "amended",
+        "pool": "primary_unscreened",
+        "target": "CENTER",
+        "lambda": 3400.60095632119,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "amended",
+        "pool": "primary_unscreened",
+        "target": "BELISARIO",
+        "lambda": 3400.60095632119,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "amended",
+        "pool": "primary_screened",
+        "target": "CENTER",
+        "lambda": 20.8800401723102,
+        "at_grid_edge": false
+      },
+      {
+        "rule": "amended",
+        "pool": "primary_screened",
+        "target": "BELISARIO",
+        "lambda": 2088.00401723102,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "plan",
+        "pool": "primary_unscreened",
+        "target": "CENTER",
+        "lambda": 1563.64304572224,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "plan",
+        "pool": "primary_unscreened",
+        "target": "BELISARIO",
+        "lambda": 2169.8703274551,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "plan",
+        "pool": "primary_screened",
+        "target": "CENTER",
+        "lambda": 9.74958001474941e-06,
+        "at_grid_edge": true
+      },
+      {
+        "rule": "plan",
+        "pool": "primary_screened",
+        "target": "BELISARIO",
+        "lambda": 1.30456303730162e-05,
+        "at_grid_edge": true
+      }
+    ],
+    "holdout_use": "The June to November 2023 holdout was scored for both pools, both rules, the benchmarks, the December 2022 start, the drop-one refits and the pseudo-neighbourhoods. Choosing the primary pool after seeing these scores is model selection (plan section 6) and is recorded here when Leonel decides.",
+    "benchmarks": {
+      "scm": "augsynth progfunc None, fixedeff FALSE",
+      "did": "donor-mean difference-in-differences, equal weights"
+    },
+    "contrast": "CENTER gap minus BELISARIO gap from two separate fits; neither target in the other's pool"
+  },
+  "inference_next": {
+    "conformal": "Chernozhukov-Wuthrich-Zhu, moving-block permutations of the full residual sequence (augsynth conformal_inf type block)",
+    "placebos": "seven-cell pseudo-neighbourhoods listed in pseudo_neighbourhoods.csv; fit filter full pre RMSPE <= 3 x CENTER"
+  },
+  "environment": {
+    "R": "4.5.2",
+    "platform": "x86_64-pc-linux-gnu"
+  }
+}

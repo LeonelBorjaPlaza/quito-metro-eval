@@ -1,0 +1,9 @@
+landmark,expected,osm,G_AH,G_PLAN,G_PARR,G_PARR_REF,O_WHC,O_PARR
+Plaza Grande,core,way 24734054,in,in,in,in,in,in
+San Francisco (plaza),core,way 376087703,in,in,in,in,in,in
+Santo Domingo (church),core,way 673325435,in,in,in,in,in,in
+La Compania (church),core,way 673869411,in,in,in,in,in,in
+San Blas (church),wider,way 721293007,in,in,in,in,-,in
+San Juan (church),wider,node 346195755,in,in,-,-,-,-
+El Tejar (church),wider,way 555827084,in,in,-,-,-,-
+San Roque (neighbourhood),wider,relation 14059444,in,in,in,in,-,in
