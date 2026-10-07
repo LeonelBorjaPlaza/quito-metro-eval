@@ -1,0 +1,4 @@
+series,reference,corr_k-3,corr_k-2,corr_k-1,corr_k+0,corr_k+1,corr_k+2,corr_k+3,best_k,best_k_at_edge,wide_best_k,wide_best_k_at_edge,wide_best_k_corr
+gapfill_2025-01-13..25,mar2025,0.4664,0.4547,0.2702,0.007,-0.3722,-0.4443,-0.5145,-3,True,7,False,0.601
+gapfill_2025-01-13..25,q1_2024,0.4378,0.3634,0.1043,-0.1562,-0.3788,-0.3031,-0.1402,-3,True,-4,False,0.4937
+mar2025,q1_2024,0.3062,0.5104,0.5708,0.3843,0.2169,0.0123,-0.1034,-1,False,-1,False,0.5708

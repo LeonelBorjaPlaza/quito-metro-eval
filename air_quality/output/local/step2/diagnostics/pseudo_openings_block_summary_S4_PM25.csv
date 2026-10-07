@@ -1,0 +1,3 @@
+pollutant,run,p_type,dates,fitted,reject_05,reject_10,share_negative,p_smallest,p_smallest_nonzero,level_05,level_10
+PM25,S4,iid,10,10,0.2,0.4,0.4,0,0.001,0.05,0.1
+PM25,S4,block,10,10,0,0.1,0.4,0.02127659574468085,0.02127659574468085,0.0425531914893617,0.0851063829787234

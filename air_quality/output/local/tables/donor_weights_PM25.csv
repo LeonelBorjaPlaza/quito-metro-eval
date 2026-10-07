@@ -1,76 +1,76 @@
 pollutant,model,method,donor_station,weight
-pm25,M4: AugSynth Centro+Belisario,AugSynth,cotocollao,0.6650272626626359
-pm25,M4: AugSynth Centro+Belisario,AugSynth,loschillos,0.49106198143825897
-pm25,M4: AugSynth Centro+Belisario,AugSynth,tumbaco,-0.3836939299096466
-pm25,M4: AugSynth Centro+Belisario,AugSynth,guamani,0.30837024866700363
-pm25,M4: AugSynth Centro+Belisario,AugSynth,carapungo,-0.057613693609927116
-pm25,M4: AugSynth Centro+Belisario,AugSynth,sanantonio,-0.023151869248321928
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,cotocollao,0.7134074278696972
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,loschillos,0.46880737456571436
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,tumbaco,-0.4037140904568382
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,guamani,0.26114350470625775
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,sanantonio,-0.03168736293331671
-pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,carapungo,-0.007956853751511936
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,belisario,0.9037111601308132
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,carapungo,0.11597141737543137
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,tumbaco,-0.018985316030476682
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,cotocollao,0.008231541024122217
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,sanantonio,-0.004504748513743132
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,guamani,-0.003255808749036439
-pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,loschillos,-0.0011682452310068155
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,cotocollao,0.5854977259939089
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,loschillos,0.5224081033359447
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,guamani,0.3640897564974659
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,tumbaco,-0.3605441992719291
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,carapungo,-0.09711570074889045
-pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,sanantonio,-0.01433568580525086
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,loschillos,0.5796692045362474
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,guamani,0.33068038191785615
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,cotocollao,0.2144403346944778
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,sanantonio,-0.04972283827433791
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,carapungo,-0.04033443680831615
-pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,tumbaco,-0.034732646059817136
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,loschillos,0.55093972314462
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,cotocollao,0.307064239848147
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,guamani,0.2636909829829852
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,sanantonio,-0.054265019107497627
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,tumbaco,-0.04103517590258291
-pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,carapungo,-0.0263947509592251
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,belisario,0.8460078535175182
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,cotocollao,0.0710416764990988
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,carapungo,0.0640149387663176
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,loschillos,0.049094121898762874
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,sanantonio,-0.012294338163194512
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,guamani,-0.012046504159352855
-pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,tumbaco,-0.005817748359125396
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,loschillos,0.6083986859277638
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,guamani,0.39766978085262433
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,cotocollao,0.12181642954091387
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,carapungo,-0.054274122657515946
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,sanantonio,-0.0451806574412357
-pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,tumbaco,-0.02843011621723385
-pm25,M1: SDID Centro+Belisario,SDID,guamani,0.19527506328153518
-pm25,M1: SDID Centro+Belisario,SDID,loschillos,0.18959438552144456
-pm25,M1: SDID Centro+Belisario,SDID,cotocollao,0.17763879127651844
-pm25,M1: SDID Centro+Belisario,SDID,tumbaco,0.16339439273245873
-pm25,M1: SDID Centro+Belisario,SDID,sanantonio,0.14205731543738823
-pm25,M1: SDID Centro+Belisario,SDID,carapungo,0.13204005175065478
-pm25,M2: SDID Centro (Bel. dropped),SDID,guamani,0.19779185382111217
-pm25,M2: SDID Centro (Bel. dropped),SDID,loschillos,0.19650757684960915
-pm25,M2: SDID Centro (Bel. dropped),SDID,cotocollao,0.182653688969569
-pm25,M2: SDID Centro (Bel. dropped),SDID,tumbaco,0.15967418900558525
-pm25,M2: SDID Centro (Bel. dropped),SDID,sanantonio,0.1352530503496499
-pm25,M2: SDID Centro (Bel. dropped),SDID,carapungo,0.12811964100447462
-pm25,M2b: SDID Centro (Bel. in pool),SDID,belisario,0.2164929898670187
-pm25,M2b: SDID Centro (Bel. in pool),SDID,loschillos,0.15174856060818007
-pm25,M2b: SDID Centro (Bel. in pool),SDID,guamani,0.15085166814579842
-pm25,M2b: SDID Centro (Bel. in pool),SDID,cotocollao,0.14257538217317076
-pm25,M2b: SDID Centro (Bel. in pool),SDID,tumbaco,0.12464853240195999
-pm25,M2b: SDID Centro (Bel. in pool),SDID,sanantonio,0.1083742405401347
-pm25,M2b: SDID Centro (Bel. in pool),SDID,carapungo,0.10530862626373767
-pm25,M3: SDID Belisario (Centro dropped),SDID,guamani,0.21139233300183438
-pm25,M3: SDID Belisario (Centro dropped),SDID,loschillos,0.19996129500710896
-pm25,M3: SDID Belisario (Centro dropped),SDID,cotocollao,0.1811606293331069
-pm25,M3: SDID Belisario (Centro dropped),SDID,tumbaco,0.16393769124014923
-pm25,M3: SDID Belisario (Centro dropped),SDID,sanantonio,0.130973208347069
-pm25,M3: SDID Belisario (Centro dropped),SDID,carapungo,0.11257484307073179
+pm25,M4: AugSynth Centro+Belisario,AugSynth,cotocollao,0.6846172075771093
+pm25,M4: AugSynth Centro+Belisario,AugSynth,loschillos,0.508584841574237
+pm25,M4: AugSynth Centro+Belisario,AugSynth,tumbaco,-0.38363781951800957
+pm25,M4: AugSynth Centro+Belisario,AugSynth,guamani,0.28801368435969693
+pm25,M4: AugSynth Centro+Belisario,AugSynth,carapungo,-0.06843493784521149
+pm25,M4: AugSynth Centro+Belisario,AugSynth,sanantonio,-0.029142976143607842
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,cotocollao,0.7418060729409854
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,loschillos,0.4836357838552337
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,tumbaco,-0.4060099148834901
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,guamani,0.2351844823115495
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,sanantonio,-0.03646475213237892
+pm25,M5: AugSynth Centro (Bel. dropped),AugSynth,carapungo,-0.01815167209189611
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,belisario,0.9036292989084488
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,carapungo,0.11697618204537703
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,tumbaco,-0.018843203051385173
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,cotocollao,0.00837439868055533
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,sanantonio,-0.00451636723563782
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,guamani,-0.004507555512036783
+pm25,M5b: AugSynth Centro (Bel. in pool),AugSynth,loschillos,-0.001112753830220132
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,cotocollao,0.5770893530225545
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,loschillos,0.548509259806637
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,tumbaco,-0.3558086216953963
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,guamani,0.35478900504925404
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,carapungo,-0.10255815131364801
+pm25,M6: AugSynth Belisario (Centro dropped),AugSynth,sanantonio,-0.0220208448674929
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,loschillos,0.6028577459563981
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,guamani,0.3057669412982442
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,cotocollao,0.2286126829482276
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,sanantonio,-0.054772923706229944
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,carapungo,-0.04702246662024506
+pm25,M7: AugSynth_FE Centro+Belisario,AugSynth_FE,tumbaco,-0.03544197986963942
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,loschillos,0.5693625715240381
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,cotocollao,0.3328135685892818
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,guamani,0.23190271495157663
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,sanantonio,-0.058708417585055045
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,tumbaco,-0.04278502006241234
+pm25,M8: AugSynth_FE Centro (Bel. dropped),AugSynth_FE,carapungo,-0.03258541740986614
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,belisario,0.8486823719543463
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,cotocollao,0.06964551057467608
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,carapungo,0.06664923502193684
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,loschillos,0.04905649739530571
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,guamani,-0.016165003599286413
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,sanantonio,-0.012235613219659092
+pm25,M8b: AugSynth_FE Centro (Bel. in pool),AugSynth_FE,tumbaco,-0.005632998127292975
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,loschillos,0.6363529203888735
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,guamani,0.37963116764488714
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,cotocollao,0.12441179730731423
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,carapungo,-0.0614595158306431
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,sanantonio,-0.050837429827479165
+pm25,M9: AugSynth_FE Belisario (Centro dropped),AugSynth_FE,tumbaco,-0.028098939676789357
+pm25,M1: SDID Centro+Belisario,SDID,guamani,0.1898615265544422
+pm25,M1: SDID Centro+Belisario,SDID,loschillos,0.18742291973834344
+pm25,M1: SDID Centro+Belisario,SDID,cotocollao,0.17829797634878783
+pm25,M1: SDID Centro+Belisario,SDID,tumbaco,0.16300760193927455
+pm25,M1: SDID Centro+Belisario,SDID,sanantonio,0.14478899017430785
+pm25,M1: SDID Centro+Belisario,SDID,carapungo,0.13662098524484426
+pm25,M2: SDID Centro (Bel. dropped),SDID,loschillos,0.19370088946398134
+pm25,M2: SDID Centro (Bel. dropped),SDID,guamani,0.19116618239282054
+pm25,M2: SDID Centro (Bel. dropped),SDID,cotocollao,0.1834011097388374
+pm25,M2: SDID Centro (Bel. dropped),SDID,tumbaco,0.15970120815739594
+pm25,M2: SDID Centro (Bel. dropped),SDID,sanantonio,0.13835024304910215
+pm25,M2: SDID Centro (Bel. dropped),SDID,carapungo,0.13368036719786264
+pm25,M2b: SDID Centro (Bel. in pool),SDID,belisario,0.208993242578063
+pm25,M2b: SDID Centro (Bel. in pool),SDID,loschillos,0.15118894822085638
+pm25,M2b: SDID Centro (Bel. in pool),SDID,guamani,0.14760769015393174
+pm25,M2b: SDID Centro (Bel. in pool),SDID,cotocollao,0.14445578895349792
+pm25,M2b: SDID Centro (Bel. in pool),SDID,tumbaco,0.12605844679628372
+pm25,M2b: SDID Centro (Bel. in pool),SDID,sanantonio,0.11148149543993921
+pm25,M2b: SDID Centro (Bel. in pool),SDID,carapungo,0.11021438785742803
+pm25,M3: SDID Belisario (Centro dropped),SDID,guamani,0.204122263570079
+pm25,M3: SDID Belisario (Centro dropped),SDID,loschillos,0.19715565441546765
+pm25,M3: SDID Belisario (Centro dropped),SDID,cotocollao,0.18221591124478886
+pm25,M3: SDID Belisario (Centro dropped),SDID,tumbaco,0.16300772276794362
+pm25,M3: SDID Belisario (Centro dropped),SDID,sanantonio,0.13490541094920866
+pm25,M3: SDID Belisario (Centro dropped),SDID,carapungo,0.11859303705251231

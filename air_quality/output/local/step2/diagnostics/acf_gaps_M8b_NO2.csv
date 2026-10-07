@@ -1,0 +1,9 @@
+pollutant,period,weeks,lag,autocorrelation
+NO2,pre,52,1,0.3294
+NO2,pre,52,2,0.1273
+NO2,pre,52,3,0.1842
+NO2,pre,52,4,0.1194
+NO2,post,82,1,0.2584
+NO2,post,82,2,0.2078
+NO2,post,82,3,0.1943
+NO2,post,82,4,0.1736

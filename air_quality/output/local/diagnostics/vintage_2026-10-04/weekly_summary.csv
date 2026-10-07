@@ -1,0 +1,9 @@
+pollutant,rule,weeks_total,weeks_kept,last_week_kept,first_week_dropped_from_2025_03_31,last_week_of_unbroken_run_from_2025_03_03
+co,current,197,134,2025-06-16,2025-06-23,2025-06-16
+co,min_half_hours,197,127,2025-06-09,2025-06-16,2025-06-09
+no2,current,197,137,2026-08-24,2025-06-23,2025-06-16
+no2,min_half_hours,197,133,2026-08-24,2025-06-16,2025-03-03
+pm25,current,197,138,2026-08-31,2025-06-23,2025-06-16
+pm25,min_half_hours,197,132,2026-08-31,2025-06-16,2025-06-09
+so2,current,197,137,2026-08-24,2025-06-23,2025-06-16
+so2,min_half_hours,197,133,2026-08-24,2025-06-16,2025-03-03

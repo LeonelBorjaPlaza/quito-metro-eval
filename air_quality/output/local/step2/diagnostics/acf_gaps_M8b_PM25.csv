@@ -1,0 +1,9 @@
+pollutant,period,weeks,lag,autocorrelation
+PM25,pre,52,1,0.0759
+PM25,pre,52,2,0.0588
+PM25,pre,52,3,0.0148
+PM25,pre,52,4,-0.0074
+PM25,post,82,1,0.4579
+PM25,post,82,2,0.3523
+PM25,post,82,3,0.3804
+PM25,post,82,4,0.3185

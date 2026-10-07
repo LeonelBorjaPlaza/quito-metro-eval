@@ -1,0 +1,22 @@
+\begin{table}[htbp]\centering
+\begin{threeparttable}
+\caption{Table 6. Spatial placebo estimates for PM2.5}
+\begin{tabular}{lccc}
+\toprule
+Station & Distance (km) & Effect (%) & Conformal p-value \\
+\midrule
+Centro & 0.61 & -12.2 & 0.013 \\
+Belisario & 0.77 & -6.1 & 0.740 \\
+Guamaní & 4.04 & -9.0 & 0.585 \\
+Cotocollao & 5.21 & 5.2 & 0.047 \\
+Carapungo & 7.64 & -9.2 & 1.000 \\
+Los Chillos & 8.62 & 21.7 & 0.136 \\
+Tumbaco & 9.56 & -17.8 & 0.768 \\
+San Antonio & 16.65 & 10.0 & 0.565 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Entries report leave-one-station-out placebo estimates for weekly peak-hour PM2.5 in the pre-disruption window. Each row treats the listed station as if it were exposed and uses the remaining stations as the donor pool; for Belisario, Centro is also excluded from the donor pool. Effects are estimated using augmented synthetic control with station fixed effects and meteorological controls. Distance is the straight-line distance from the monitoring station to the nearest Metro Line 1 stop. The p-values are two-sided conformal p-values (1,000 random permutations; smallest nonzero value 0.001). The rank-based placebo statistic is not used as the inferential test because the local placebo sample contains only eight stations. We also do not rank stations by post-to-pre fit ratios, because with eight stations those ratios can be sensitive to a single station's pre-period noise; the conformal procedure instead uses the full sequence of prediction errors.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

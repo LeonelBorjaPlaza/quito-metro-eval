@@ -2,7 +2,7 @@
 #  01_read_and_merge.R
 #  Read REMMAQ raw .xlsx files, standardize, merge, flag events
 #
-#  Input:  data/raw/remmaq/*.xlsx (9 files: PM2.5, CO, TMP, HUM, VEL, DIR, LLU, RS, PRE)
+#  Input:  data/remmaq_2026-10-04/*.xlsx (PM2.5, CO, NO2, SO2, TMP, HUM, VEL, DIR, LLU, RS, PRE)
 #  Output: data/processed/hourly_panel.csv
 #
 #  Stations kept (8): belisario, carapungo, centro, cotocollao,
@@ -18,7 +18,9 @@ library(stringr)
 
 # ---- Paths ----
 root_dir <- here::here()  # project root (quito-metro-airquality-2026)
-raw_dir  <- file.path(root_dir, "data", "raw", "remmaq")
+# 2026-10-05: the 2026-10-04 REMMAQ delivery replaces the earlier vintage
+# (air_quality/docs/revision_plan.md, section 1); committed symlink into the store.
+raw_dir  <- file.path(root_dir, "data", "remmaq_2026-10-04")
 out_dir  <- file.path(root_dir, "data", "processed")
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
@@ -29,6 +31,7 @@ standardize_name <- function(x) {
   x <- gsub(" ", "", x)
   x <- chartr("\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1",
               "aeionn", x)
+  x[x == "santonio"] <- "sanantonio"   # 2026-10-04 HUM.xlsx heads San Antonio "Santonio"
   return(x)
 }
 

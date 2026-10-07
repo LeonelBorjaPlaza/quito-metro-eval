@@ -20,7 +20,7 @@ mkdir -p data/processed output/local/tables output/local/figures output/local/cr
          output/local/spatial_placebo output/local/diagnostics output/maps ../logs
 
 # Check that the raw inputs resolve
-ls data/raw/remmaq/PM2.5.xlsx data/for_maps/MetroLine.gpkg
+ls data/remmaq_2026-10-04/PM2.5.xlsx data/for_maps/MetroLine.gpkg
 ```
 
 Only for Figure 1 (step 7), add the map packages, which the lockfile does not record:
@@ -40,13 +40,26 @@ Rscript -e 'renv::install(c("sf","ggrepel","ggspatial","maptiles","rnaturalearth
 - Every setup, cross-sample and placebo script calls `set.seed(12345)` at its top, so each block gives the same numbers whether it runs alone or after other blocks.
 - `master.R` runs `01`, `02`, the four setup and model pairs, `99`, `11` and `12`. It does **not** run the cross-sample scripts, the spatial placebos or the publication figure, which were never committed to the old repository. The steps below cover all of them.
 
+## Step 2 of the revision (from 2026-10-05)
+
+`code/local/step2/run_step2.sh` runs everything the step 2 plan specifies (`docs/revision_plan.md`, 3A), stage by stage: `panels` (01, then 02 for the main specification and each sensitivity), `check` (the San Antonio imputation check, before any estimate), `main` (steps 3 to 6 below), `sens` (the cross-sample scripts for each sensitivity), `diag` (Centro diagnostics and the triple difference) and `compare` (old-versus-new tables). Switches are environment variables, all off by default: `AQ_SENS` (tag for panel files and output folders), `AQ_PANEL_END` (default 2025-06-16; `none` for no cut), `AQ_EXCLUDE`, `AQ_LC_SHIFT_FROM`, `AQ_MIN_HALF`, `AQ_DROP_RATIONING` and `AQ_SPECS`. Sensitivity outputs go to `output/local/sensitivity/<tag>/`; step 2 diagnostics to `output/local/step2/`. After `compare`, `python3 code/local/step2/paper_number_map.py` (pandas, numpy; a few seconds) writes the paper-number map `output/local/step2/paper_number_map.csv`.
+
+Check d (`docs/revision_plan.md`, 3B; pseudo-openings with block p-values; two independent runs, can run in parallel):
+
+```
+Rscript -e 'source("code/local/03_analysis_setupPM2.5.R"); source("code/local/step2/pseudo_openings_extra.R")' > ../logs/aq_s2_pseudo_block_main.log 2>&1
+AQ_SENS=S4 AQ_DROP_RATIONING=1 Rscript -e 'source("code/local/03_analysis_setupPM2.5.R"); source("code/local/step2/pseudo_openings_extra.R")' > ../logs/aq_s2_pseudo_block_S4.log 2>&1
+```
+
+`python3 code/local/step2/paper_tables.py` (a few seconds) rebuilds the paper's local tables on the step 2 outputs and lists every number in the text with its old and new value (`output/local/paper/`).
+
 ## 1. Hourly panel
 
 ```bash
 Rscript -e 'source("code/local/01_read_and_merge.R")' > ../logs/aq_01.log 2>&1
 ```
 
-- Reads `data/raw/remmaq/{PM2.5,CO,NO2,SO2,TMP,HUM,VEL,DIR,LLU,RS,PRE}.xlsx`.
+- Reads `data/remmaq_2026-10-04/{PM2.5,CO,NO2,SO2,TMP,HUM,VEL,DIR,LLU,RS,PRE}.xlsx` (the 2026-10-04 delivery; until 2026-10-05 it read the earlier vintage in `data/raw/remmaq/`).
 - Writes `data/processed/hourly_panel.csv`.
 
 ## 2. Weekly panels

@@ -1,0 +1,4 @@
+pollutant,spec,method,sample,att_log,att_pct,p_2s,p_1s,p_type,ci_lo,ci_hi,ci_type,rmspe_pre,rmspe_post,ratio,n_placebo,donor_weights,included_2x,included_5x
+co,M8b,AugFE,pre_blackout,0.0528712844884297,5.429393240252267,1,NA,conformal,NA,NA,conformal_avg_CI_unavailable(NA),0.2697009186888542,0.12412719356515788,0.4602401585007564,NA,belisario:0.5608;carapungo:-0.0782;cotocollao:0.5875;loschillos:-0.0139;tumbaco:-0.0561,NA,NA
+co,M8b,AugFE,donut,0.1029283016315047,10.841193489960377,0.99,NA,conformal,NA,NA,conformal_avg_CI_unavailable(NA),0.2697009186888542,0.2514525527308182,0.9323385102032647,NA,belisario:0.5608;carapungo:-0.0782;cotocollao:0.5875;loschillos:-0.0139;tumbaco:-0.0561,NA,NA
+co,M8b,AugFE,full,0.07969900501322655,8.296105276524003,0.982,NA,conformal,NA,NA,conformal_avg_CI_unavailable(NA),0.2697009186888542,0.2412303654311188,0.8944365729410769,NA,belisario:0.5608;carapungo:-0.0782;cotocollao:0.5875;loschillos:-0.0139;tumbaco:-0.0561,NA,NA

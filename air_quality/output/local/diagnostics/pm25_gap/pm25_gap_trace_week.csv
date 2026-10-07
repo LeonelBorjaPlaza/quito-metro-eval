@@ -1,0 +1,12 @@
+week_date,in_gap,stations_with_raw_peak_hours,stations_in_hourly_panel,stations_weekly_mean,stations_after_interp,stations_after_sa_imp,missing_after_sa_imp,week_in_panel,week_in_frozen
+2024-12-30,FALSE,8,8,8,8,8,,1,1
+2025-01-06,FALSE,8,8,8,8,8,,1,1
+2025-01-13,TRUE,7,7,7,7,7,loschillos,0,0
+2025-01-20,TRUE,7,7,7,7,7,loschillos,0,0
+2025-01-27,TRUE,7,7,7,7,7,loschillos,0,0
+2025-02-03,TRUE,7,7,7,7,7,loschillos,0,0
+2025-02-10,TRUE,7,7,7,7,7,loschillos,0,0
+2025-02-17,TRUE,7,7,7,7,7,loschillos,0,0
+2025-02-24,TRUE,7,7,7,7,7,loschillos,0,0
+2025-03-03,FALSE,8,8,8,8,8,,1,1
+2025-03-10,FALSE,6,6,6,8,8,,1,1

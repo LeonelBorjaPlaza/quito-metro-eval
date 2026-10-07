@@ -1,0 +1,18 @@
+\begin{table}[htbp]\centering
+\begin{threeparttable}
+\caption{Table 3. Estimation samples: balanced weekly panel composition by pollutant}
+\begin{tabular}{lccccccccc}
+\toprule
+Pollutant & Stations & Pre & P1 & Blackout & Trans. & P2 & pre_blackout & donut & full \\
+\midrule
+PM2.5 & 8 & 52 & 42 & 14 & 2 & 24 & 94 & 120 & 134 \\
+CO & 7 & 52 & 42 & 14 & 2 & 24 & 94 & 120 & 134 \\
+NO2 & 7 & 52 & 42 & 14 & 2 & 24 & 94 & 120 & 134 \\
+SO2 & 7 & 52 & 42 & 14 & 2 & 24 & 94 & 120 & 134 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Balanced weekly panels of peak-hour, weekday pollutant concentrations. Peak hours are 07:00-09:00 and 17:00-19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begins in ISO 2023-W48, the week containing the December 1, 2023 opening of Quito Metro Line 1. "Blackout" denotes the Phase 3 power-outage and wildfire disruption weeks, which are excluded from the donut sample and occur after the pre_blackout sample ends. "Trans." is the post-outage transition fortnight in late December 2024. pre_blackout equals pre-treatment plus P1; donut equals the full sample minus blackout weeks; full uses all weeks. San Antonio is unavailable for CO, NO2, and SO2 and is dropped from those panels. Short station-level gaps of up to two weeks are linearly interpolated, and San Antonio's PM2.5 series is regression-imputed where needed; these observations are filled values, not absent weeks.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

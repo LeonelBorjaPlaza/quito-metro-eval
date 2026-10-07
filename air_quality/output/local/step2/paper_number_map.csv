@@ -1,0 +1,309 @@
+table,location,quantity,frozen_rounded,new,change,sign_changed,note,source,paper_lines
+Table 5,"Pre-disruption window, M7",log effect,-0.124,-0.126,-0.002,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M7",percent effect,-11.7,-11.8,-0.1,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M7",conformal p,0.610,0.655,0.045,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M7",pre RMSPE,0.185,0.188,0.003,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M7",post RMSPE,0.230,0.231,0.001,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M7",post/pre RMSPE,1.24,1.23,-0.01,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",log effect,-0.089,-0.063,0.026,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",percent effect,-8.5,-6.2,2.3,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",conformal p,0.809,0.877,0.068,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",pre RMSPE,0.185,0.188,0.003,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",post RMSPE,0.253,0.205,-0.048,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M7",post/pre RMSPE,1.37,1.09,-0.28,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",log effect,0.040,0.028,-0.012,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",percent effect,4.1,2.9,-1.2,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",conformal p,0.807,0.922,0.115,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",pre RMSPE,0.185,0.188,0.003,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",post RMSPE,0.581,0.496,-0.085,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M7",post/pre RMSPE,3.14,2.64,-0.50,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",log effect,-0.062,-0.063,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",percent effect,-6.0,-6.1,-0.1,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",conformal p,0.729,0.737,0.008,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",pre RMSPE,0.188,0.190,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",post RMSPE,0.218,0.221,0.003,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M9",post/pre RMSPE,1.16,1.16,0.00,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",log effect,-0.024,0.013,0.037,True,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",percent effect,-2.3,1.3,3.6,True,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",conformal p,0.849,0.863,0.014,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",pre RMSPE,0.188,0.190,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",post RMSPE,0.259,0.217,-0.042,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M9",post/pre RMSPE,1.38,1.14,-0.24,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",log effect,0.140,0.130,-0.010,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",percent effect,15.1,13.9,-1.2,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",conformal p,0.698,0.863,0.165,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",pre RMSPE,0.188,0.190,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",post RMSPE,0.671,0.578,-0.093,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M9",post/pre RMSPE,3.58,3.04,-0.54,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",log effect,-0.186,-0.188,-0.002,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",percent effect,-17.0,-17.2,-0.2,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",conformal p,0.392,0.431,0.039,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",pre RMSPE,0.205,0.207,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",post RMSPE,0.308,0.310,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8",post/pre RMSPE,1.50,1.50,0.00,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",log effect,-0.153,-0.139,0.014,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",percent effect,-14.2,-13.0,1.2,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",conformal p,0.486,0.775,0.289,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",pre RMSPE,0.205,0.207,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",post RMSPE,0.308,0.263,-0.045,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8",post/pre RMSPE,1.50,1.27,-0.23,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",log effect,-0.060,-0.074,-0.014,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",percent effect,-5.8,-7.1,-1.3,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",conformal p,0.506,0.767,0.261,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",pre RMSPE,0.205,0.207,0.002,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",post RMSPE,0.534,0.460,-0.074,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8",post/pre RMSPE,2.61,2.22,-0.39,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",log effect,-0.130,-0.131,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",percent effect,-12.2,-12.2,0.0,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",conformal p,0.011,0.016,0.005,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",post RMSPE,0.255,0.256,0.001,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Pre-disruption window, M8b",post/pre RMSPE,1.98,1.98,0.00,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",log effect,-0.132,-0.147,-0.015,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",percent effect,-12.4,-13.7,-1.3,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",conformal p,0.041,0.199,0.158,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",post RMSPE,0.244,0.234,-0.010,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Donut window, M8b",post/pre RMSPE,1.89,1.82,-0.07,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",log effect,-0.164,-0.170,-0.006,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",percent effect,-15.1,-15.6,-0.5,False,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",conformal p,0.006,0.097,0.091,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",post RMSPE,0.272,0.259,-0.013,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 5,"Full window, M8b",post/pre RMSPE,2.10,2.01,-0.09,,,crosssample/CrossSample_Summary_PM25.csv,640-663
+Table 7,"Pre-disruption window, PM25",log effect,-0.130,-0.131,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, PM25",percent effect,-12.2,-12.2,0.0,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, PM25",conformal p,0.011,0.016,0.005,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, PM25",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, PM25",post RMSPE,0.255,0.256,0.001,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, PM25",post/pre RMSPE,1.98,1.98,0.00,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",log effect,-0.132,-0.147,-0.015,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",percent effect,-12.4,-13.7,-1.3,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",conformal p,0.041,0.199,0.158,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",post RMSPE,0.244,0.234,-0.010,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Donut window, PM25",post/pre RMSPE,1.89,1.82,-0.07,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",log effect,-0.164,-0.170,-0.006,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",percent effect,-15.1,-15.6,-0.5,False,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",conformal p,0.006,0.097,0.091,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",pre RMSPE,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",post RMSPE,0.272,0.259,-0.013,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Full window, PM25",post/pre RMSPE,2.10,2.01,-0.09,,,crosssample/CrossSample_Summary_PM25.csv,734-756
+Table 7,"Pre-disruption window, CO",log effect,-0.056,-0.057,-0.001,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, CO",percent effect,-5.4,-5.5,-0.1,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, CO",conformal p,1.000,1.000,0.000,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, CO",pre RMSPE,0.248,0.247,-0.001,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, CO",post RMSPE,0.163,0.164,0.001,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, CO",post/pre RMSPE,0.66,0.66,0.00,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",log effect,-0.082,-0.076,0.006,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",percent effect,-7.9,-7.4,0.5,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",conformal p,1.000,1.000,0.000,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",pre RMSPE,0.248,0.247,-0.001,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",post RMSPE,0.168,0.166,-0.002,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Donut window, CO",post/pre RMSPE,0.68,0.67,-0.01,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",log effect,-0.108,-0.103,0.005,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",percent effect,-10.2,-9.8,0.4,False,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",conformal p,1.000,1.000,0.000,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",pre RMSPE,0.248,0.247,-0.001,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",post RMSPE,0.189,0.187,-0.002,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Full window, CO",post/pre RMSPE,0.76,0.76,0.00,,,crosssample/CrossSample_Summary_CO.csv,734-756
+Table 7,"Pre-disruption window, NO2",log effect,-0.064,-0.064,0.000,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, NO2",percent effect,-6.2,-6.2,0.0,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, NO2",conformal p,0.967,0.967,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, NO2",pre RMSPE,0.089,0.089,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, NO2",post RMSPE,0.090,0.090,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, NO2",post/pre RMSPE,1.02,1.02,0.00,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",log effect,-0.055,-0.055,0.000,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",percent effect,-5.4,-5.4,0.0,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",conformal p,0.610,0.610,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",pre RMSPE,0.089,0.089,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",post RMSPE,0.138,0.138,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Donut window, NO2",post/pre RMSPE,1.56,1.56,0.00,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",log effect,-0.060,-0.060,0.000,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",percent effect,-5.8,-5.8,0.0,False,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",conformal p,0.716,0.716,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",pre RMSPE,0.089,0.089,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",post RMSPE,0.131,0.131,0.000,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Full window, NO2",post/pre RMSPE,1.48,1.48,0.00,,,crosssample/CrossSample_Summary_NO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",log effect,-0.025,-0.053,-0.028,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",percent effect,-2.5,-5.1,-2.6,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",conformal p,0.187,0.248,0.061,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",pre RMSPE,0.214,0.225,0.011,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",post RMSPE,0.293,0.297,0.004,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Pre-disruption window, SO2",post/pre RMSPE,1.37,1.32,-0.05,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",log effect,0.123,0.095,-0.028,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",percent effect,13.1,10.0,-3.1,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",conformal p,0.055,0.120,0.065,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",pre RMSPE,0.214,0.225,0.011,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",post RMSPE,0.403,0.395,-0.008,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Donut window, SO2",post/pre RMSPE,1.89,1.75,-0.14,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",log effect,0.095,0.070,-0.025,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",percent effect,10.0,7.3,-2.7,False,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",conformal p,0.124,0.249,0.125,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",pre RMSPE,0.214,0.225,0.011,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",post RMSPE,0.381,0.373,-0.008,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table 7,"Full window, SO2",post/pre RMSPE,1.78,1.66,-0.12,,,crosssample/CrossSample_Summary_SO2.csv,734-756
+Table A.3,"M1, Pre-disruption",log effect,-0.123,-0.120,0.003,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M1, Donut",log effect,-0.092,-0.068,0.024,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M1, Full",log effect,0.005,-0.008,-0.013,True,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M1,RMSPE pre,0.261,0.259,-0.002,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M1,post/pre RMSPE (pre-disruption),0.95,0.93,-0.02,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M3, Pre-disruption",log effect,-0.038,-0.043,-0.005,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M3, Donut",log effect,0.001,0.029,0.028,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M3, Full",log effect,0.118,0.114,-0.004,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M3,RMSPE pre,0.258,0.258,0.000,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M3,post/pre RMSPE (pre-disruption),0.88,0.86,-0.02,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2, Pre-disruption",log effect,-0.208,-0.198,0.010,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2, Donut",log effect,-0.184,-0.165,0.019,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2, Full",log effect,-0.108,-0.131,-0.023,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M2,RMSPE pre,0.281,0.277,-0.004,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M2,post/pre RMSPE (pre-disruption),1.13,1.12,-0.01,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2b, Pre-disruption",log effect,-0.157,-0.161,-0.004,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2b, Donut",log effect,-0.154,-0.150,0.004,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M2b, Full",log effect,-0.232,-0.220,0.012,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M2b,RMSPE pre,0.234,0.229,-0.005,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M2b,post/pre RMSPE (pre-disruption),1.23,1.23,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Pre-disruption",log effect,-0.063,-0.063,0.000,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Pre-disruption",conformal p,0.906,0.920,0.014,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Donut",log effect,-0.033,-0.019,0.014,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Donut",conformal p,0.952,0.970,0.018,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Full",log effect,0.084,0.066,-0.018,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M4, Full",conformal p,0.860,0.950,0.090,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M4,RMSPE pre,0.198,0.200,0.002,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M4,post/pre RMSPE (pre-disruption),0.98,0.98,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Pre-disruption",log effect,-0.006,-0.005,0.001,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Pre-disruption",conformal p,0.871,0.876,0.005,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Donut",log effect,0.028,0.054,0.026,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Donut",conformal p,0.884,0.901,0.017,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Full",log effect,0.177,0.163,-0.014,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M6, Full",conformal p,0.670,0.806,0.136,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M6,RMSPE pre,0.195,0.199,0.004,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M6,post/pre RMSPE (pre-disruption),0.95,0.95,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Pre-disruption",log effect,-0.121,-0.122,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Pre-disruption",conformal p,0.836,0.850,0.014,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Donut",log effect,-0.095,-0.091,0.004,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Donut",conformal p,0.858,0.962,0.104,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Full",log effect,-0.007,-0.028,-0.021,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5, Full",conformal p,0.764,0.923,0.159,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M5,RMSPE pre,0.221,0.223,0.002,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M5,post/pre RMSPE (pre-disruption),1.24,1.24,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Pre-disruption",log effect,-0.100,-0.100,0.000,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Pre-disruption",conformal p,0.011,0.019,0.008,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Donut",log effect,-0.106,-0.123,-0.017,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Donut",conformal p,0.020,0.191,0.171,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Full",log effect,-0.143,-0.149,-0.006,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M5b, Full",conformal p,0.003,0.057,0.054,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M5b,RMSPE pre,0.132,0.132,0.000,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M5b,post/pre RMSPE (pre-disruption),1.83,1.83,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Pre-disruption",log effect,-0.124,-0.126,-0.002,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Pre-disruption",conformal p,0.610,0.655,0.045,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Donut",log effect,-0.089,-0.063,0.026,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Donut",conformal p,0.809,0.877,0.068,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Full",log effect,0.040,0.028,-0.012,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M7, Full",conformal p,0.807,0.922,0.115,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M7,RMSPE pre,0.185,0.188,0.003,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M7,post/pre RMSPE (pre-disruption),1.24,1.23,-0.01,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Pre-disruption",log effect,-0.062,-0.063,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Pre-disruption",conformal p,0.729,0.737,0.008,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Donut",log effect,-0.024,0.013,0.037,True,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Donut",conformal p,0.849,0.863,0.014,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Full",log effect,0.140,0.130,-0.010,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M9, Full",conformal p,0.698,0.863,0.165,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M9,RMSPE pre,0.188,0.190,0.002,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M9,post/pre RMSPE (pre-disruption),1.16,1.16,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Pre-disruption",log effect,-0.186,-0.188,-0.002,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Pre-disruption",conformal p,0.392,0.431,0.039,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Donut",log effect,-0.153,-0.139,0.014,False,Paper prints -0.154 here; Table 5 prints -0.153 from the same source value (typo in Table A.3).,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Donut",conformal p,0.486,0.775,0.289,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Full",log effect,-0.060,-0.074,-0.014,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8, Full",conformal p,0.506,0.767,0.261,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M8,RMSPE pre,0.205,0.207,0.002,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M8,post/pre RMSPE (pre-disruption),1.50,1.50,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Pre-disruption",log effect,-0.130,-0.131,-0.001,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Pre-disruption",conformal p,0.011,0.016,0.005,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Donut",log effect,-0.132,-0.147,-0.015,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Donut",conformal p,0.041,0.199,0.158,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Full",log effect,-0.164,-0.170,-0.006,False,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,"M8b, Full",conformal p,0.006,0.097,0.091,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M8b,RMSPE pre,0.129,0.129,0.000,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table A.3,M8b,post/pre RMSPE (pre-disruption),1.98,1.98,0.00,,,crosssample/CrossSample_Summary_PM25.csv,1231-1261
+Table 6,centro,percent effect,-12.2,-12.2,0.0,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,centro,conformal p,0.012,0.013,0.001,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,cotocollao,percent effect,4.5,5.2,0.7,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,cotocollao,conformal p,0.061,0.047,-0.014,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,loschillos,percent effect,21.8,21.7,-0.1,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,loschillos,conformal p,0.135,0.136,0.001,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,belisario,percent effect,8.5,-6.1,-14.6,True,"New donor rule: Centro removed from Belisario's pool, so the change is not due to the data alone.",spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,belisario,conformal p,0.452,0.740,0.288,,"New donor rule: Centro removed from Belisario's pool, so the change is not due to the data alone.",spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,guamani,percent effect,-7.8,-9.0,-1.2,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,guamani,conformal p,0.523,0.585,0.062,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,sanantonio,percent effect,9.2,10.0,0.8,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,sanantonio,conformal p,0.574,0.565,-0.009,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,tumbaco,percent effect,-17.7,-17.8,-0.1,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,tumbaco,conformal p,0.785,0.768,-0.017,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,carapungo,percent effect,-8.9,-9.2,-0.3,False,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 6,carapungo,conformal p,1.000,1.000,0.000,,,spatial_placebo/spatial_placebo_PM25_M8b_conformalp.csv,688-697
+Table 3,PM25,stations,8,8,0,,,tables/descriptives_sample_construction.csv,292-299
+Table 3,PM25,Pre weeks,52,52,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,PM25,P1 weeks,42,42,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,PM25,Blackout weeks,14,14,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,PM25,Trans. weeks,2,2,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,PM25,P2 weeks,6,24,18,,Frozen P2 excludes the 7-week gap of Table 3 footnote a.,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,PM25,pre_blackout weeks,94,94,0,,,step2/window_weeks.csv,292-299
+Table 3,PM25,donut weeks,102,120,18,,,step2/window_weeks.csv,292-299
+Table 3,PM25,full weeks,116,134,18,,,step2/window_weeks.csv,292-299
+Table 3,CO,stations,7,7,0,,,tables/descriptives_sample_construction.csv,292-299
+Table 3,CO,Pre weeks,52,52,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,CO,P1 weeks,42,42,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,CO,Blackout weeks,14,14,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,CO,Trans. weeks,2,2,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,CO,P2 weeks,24,24,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,CO,pre_blackout weeks,94,94,0,,,step2/window_weeks.csv,292-299
+Table 3,CO,donut weeks,120,120,0,,,step2/window_weeks.csv,292-299
+Table 3,CO,full weeks,134,134,0,,,step2/window_weeks.csv,292-299
+Table 3,NO2,stations,7,7,0,,,tables/descriptives_sample_construction.csv,292-299
+Table 3,NO2,Pre weeks,52,52,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,NO2,P1 weeks,42,42,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,NO2,Blackout weeks,14,14,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,NO2,Trans. weeks,2,2,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,NO2,P2 weeks,24,24,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,NO2,pre_blackout weeks,94,94,0,,,step2/window_weeks.csv,292-299
+Table 3,NO2,donut weeks,120,120,0,,,step2/window_weeks.csv,292-299
+Table 3,NO2,full weeks,134,134,0,,,step2/window_weeks.csv,292-299
+Table 3,SO2,stations,7,7,0,,,tables/descriptives_sample_construction.csv,292-299
+Table 3,SO2,Pre weeks,52,52,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,SO2,P1 weeks,42,42,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,SO2,Blackout weeks,14,14,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,SO2,Trans. weeks,2,2,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,SO2,P2 weeks,24,24,0,,,tables/descriptives_treatment_timeline.csv,292-299
+Table 3,SO2,pre_blackout weeks,94,94,0,,,step2/window_weeks.csv,292-299
+Table 3,SO2,donut weeks,120,120,0,,,step2/window_weeks.csv,292-299
+Table 3,SO2,full weeks,134,134,0,,,step2/window_weeks.csv,292-299
+Table A.1,PM25,stations,8,8,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,raw hourly,198778,163799,-34979,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,peak-hour,49697,40917,-8780,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,weekday peak-hour,35427,29157,-6270,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,balanced panel,928,1072,144,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,imputed (%),3.0,2.7,-0.3,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,PM25,weeks,116,134,18,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,stations,7,7,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,raw hourly,167214,142761,-24453,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,peak-hour,43457,36934,-6523,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,weekday peak-hour,30973,26291,-4682,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,balanced panel,938,938,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,imputed (%),1.0,1.0,0.0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,CO,weeks,134,134,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,stations,7,7,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,raw hourly,176580,145306,-31274,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,peak-hour,45622,37314,-8308,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,weekday peak-hour,32560,26639,-5921,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,balanced panel,938,938,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,imputed (%),0.7,0.7,0.0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,NO2,weeks,134,134,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,stations,7,7,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,raw hourly,177295,141510,-35785,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,peak-hour,45378,36039,-9339,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,weekday peak-hour,32370,25695,-6675,,"Counting window changed: new counts stop at the June 2025 cut (11_descriptives.R), so most of the change is definitional, not a change in the sample.",tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,balanced panel,938,938,0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,imputed (%),1.3,1.3,0.0,,,tables/descriptives_sample_construction.csv,1173-1178
+Table A.1,SO2,weeks,134,134,0,,,tables/descriptives_sample_construction.csv,1173-1178

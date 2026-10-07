@@ -1,0 +1,4 @@
+pollutant,spec,sample,att_log,p_iid_reseeded,p_iid_smallest_nonzero,p_block,p_block_smallest,n_weeks
+CO,M8b,full,-0.10345504504247298,1,0.001,1,0.007462686567164179,134
+CO,M8b,donut,-0.07648850848605047,1,0.001,1,0.008333333333333333,120
+CO,M8b,pre_blackout,-0.056717288971611296,1,0.001,1,0.010638297872340425,94

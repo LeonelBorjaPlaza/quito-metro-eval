@@ -1,0 +1,47 @@
+\begin{table}[htbp]\centering
+\begin{threeparttable}
+\caption{Table A.3. Local PM2.5: full specification battery across estimators, treated-unit configurations, and windows}
+\begin{tabular}{lccccc}
+\toprule
+M / Configuration & Pre-disruption† & Donut & Full & RMSPEpre & Post/pre \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A. Synthetic difference-in-differences}} \\
+M1 Centro + Belisario co-treated & -0.120 & -0.068 & -0.008 & 0.259 & 0.93 \\
+ & n.a. & n.a. & n.a. &  &  \\
+M3 Belisario treated, Centro dropped & -0.043 & 0.029 & 0.114 & 0.258 & 0.86 \\
+ & n.a. & n.a. & n.a. &  &  \\
+M2 Centro treated, Belisario dropped & -0.198 & -0.165 & -0.131 & 0.277 & 1.12 \\
+ & n.a. & n.a. & n.a. &  &  \\
+M2b Centro treated, Belisario retained & -0.161 & -0.150 & -0.220 & 0.229 & 1.23 \\
+ & n.a. & n.a. & n.a. &  &  \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel B. Augmented synthetic control, no station fixed effects}} \\
+M4 Centro + Belisario co-treated & -0.063 & -0.019 & 0.066 & 0.200 & 0.98 \\
+ & (0.920) & (0.970) & (0.950) &  &  \\
+M6 Belisario treated, Centro dropped & -0.005 & 0.054 & 0.163 & 0.199 & 0.95 \\
+ & (0.876) & (0.901) & (0.806) &  &  \\
+M5 Centro treated, Belisario dropped & -0.122 & -0.091 & -0.028 & 0.223 & 1.24 \\
+ & (0.850) & (0.962) & (0.923) &  &  \\
+M5b Centro treated, Belisario retained & -0.100 & -0.123 & -0.149 & 0.132 & 1.83 \\
+ & (0.019) & (0.191) & (0.057) &  &  \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel C. Augmented synthetic control with station fixed effects}} \\
+M7 Centro + Belisario co-treated & -0.126 & -0.063 & 0.028 & 0.188 & 1.23 \\
+ & (0.655) & (0.877) & (0.922) &  &  \\
+ & [0.521] & [0.733] & [0.776] &  &  \\
+M9 Belisario treated, Centro dropped & -0.063 & 0.013 & 0.130 & 0.190 & 1.16 \\
+ & (0.737) & (0.863) & (0.863) &  &  \\
+ & [0.691] & [0.775] & [0.784] &  &  \\
+M8 Centro treated, Belisario dropped & -0.188 & -0.139 & -0.074 & 0.207 & 1.50 \\
+ & (0.431) & (0.775) & (0.767) &  &  \\
+ & [0.394] & [0.692] & [0.493] &  &  \\
+M8b Centro treated, Belisario retained‡ & -0.131 & -0.147 & -0.170 & 0.129 & 1.98 \\
+ & (0.016) & (0.199) & (0.097) &  &  \\
+ & [0.011] & [0.242] & [0.291] &  &  \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Each cell reports the treatment effect on log weekly peak-hour weekday PM2.5, with the two-sided p-value in parentheses beneath when valid inference is available. Every specification is re-estimated separately on each window. Rows are labeled by treated-unit configuration; the M code is retained for traceability and matches the estimation script. † Pre-disruption is the primary window, ending before the onset of the 2024 electricity-rationing and wildfire disruption. RMSPEpre is the pre-treatment root mean squared prediction error. The post-to-pre RMSPE ratio is reported for the pre-disruption window only. A ratio near or below one indicates little post-period divergence from the synthetic control, which is why the co-treated and Belisario-treated specifications are insignificant despite, in some cases, sizable point estimates. ‡ Preferred specification: augmented synthetic control with station fixed effects, Centro treated with Belisario retained in the donor pool. This row is also the final column of the main identification table, Table 5. Panel A reports SDID point estimates only. We do not report p-values for the local SDID estimates because large-sample approximations are not credible with this small monitoring network, donor-placebo permutation inference is mechanically coarse, and conformal inference was not computed for SDID. The SDID estimates are therefore used only to assess robustness of sign and magnitude. Panels B and C use two-sided conformal inference. In Panel C, the block conformal p-value is in brackets beneath the iid p-value. Co-treated specifications pool Centro and Belisario into a single treated aggregate. Belisario-treated specifications place treatment on the more distant Belisario station and serve as placebo-style checks. All specifications condition on meteorology. The augmented synthetic control specifications adjust for meteorological covariates within the estimator. Synthetic difference-in-differences uses the meteorology-residualized log outcome. The fixed-effects distinction applies only to the augmented synthetic control panels. Block conformal p-values use the T cyclic shifts of the weeks instead of 1,000 random permutations; they allow for serial dependence, and their smallest attainable value is 1/T (1/94 = 0.011 pre-disruption, 1/120 = 0.008 donut, 1/134 = 0.007 full). Iid conformal p-values use 1,000 random permutations; the smallest nonzero value is 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

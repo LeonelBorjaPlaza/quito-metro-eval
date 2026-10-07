@@ -1,0 +1,305 @@
+line,section,phrase,quantity,old,new,changed,flag,flag_reason,status,source
+8,Title and abstract,"May 31, 2026",31,31,31,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+8,Title and abstract,"May 31, 2026",2026,2026,2026,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+15,Title and abstract,"trated within a city. We examine Quito Metro Line 1, Ecuador’s first metro line, which ope",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+16,Title and abstract,"December 2023 and provides direct access to the city’s historic center, a dense destinatio",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+21,Title and abstract,0.130 log points,"M8b PM2.5 pre-disruption, log effect",0.130,0.131,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_log')"
+22,Title and abstract,12.2 percent,"M8b PM2.5 pre-disruption, percent",12.2,12.2,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_pct')"
+23,Title and abstract,nearly unchanged when later post-opening weeks are added,"M8b PM2.5 donut, percent (cited as nearly unchanged)",12.4,13.7,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'att_pct')"
+24,Title and abstract,only station with a statistically significant negative,Spatial placebo: Centro p (M8b),0.012,0.013,True,False,,mapped to a step 2 output,"('pl', 'centro', 'conf_p')"
+44,1 Introduction,1   Introduction,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+54,1 Introduction,in December 2023. The setting is useful because Quito Metro Line 1 connects the city’s nor,2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+54,1 Introduction,in December 2023. The setting is useful because Quito Metro Line 1 connects the city’s nor,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+61,1 Introduction,"station inside the historic center, lies 0.61 kilometers from the nearest metro stop. Beli",0.61,0.61,0.61,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+62,1 Introduction,"the historic center, lies 0.77 kilometers from the nearest stop. The two stations are simi",0.77,0.77,0.77,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+66,1 Introduction,Gendron-Carrier et al. (2022) estimate pollution effects around metro stations across citi,2022,2022,2022,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+68,1 Introduction,or transport and emissions shocks at corridor or city scales (Chen and Whalley 2012; Li et,2012,2012,2012,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+68,1 Introduction,or transport and emissions shocks at corridor or city scales (Chen and Whalley 2012; Li et,2019,2019,2019,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+69,1 Introduction,Goel and Gupta 2017; Lin et al. 2021; Chen et al. 2013). We build on this literature by as,2017,2017,2017,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+69,1 Introduction,Goel and Gupta 2017; Lin et al. 2021; Chen et al. 2013). We build on this literature by as,2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+69,1 Introduction,Goel and Gupta 2017; Lin et al. 2021; Chen et al. 2013). We build on this literature by as,2013,2013,2013,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+89,1 Introduction,about 12 percent,"M8b PM2.5 pre-disruption, percent",12,12,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_pct')"
+91,1 Introduction,unchanged when later post-opening weeks are added,"M8b PM2.5 donut, percent (cited as nearly unchanged)",12.4,13.7,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'att_pct')"
+94,1 Introduction,only station with a statistically significant negative,Spatial placebo: Centro p (M8b),0.012,0.013,True,False,,mapped to a step 2 output,"('pl', 'centro', 'conf_p')"
+99,1 Introduction,complementary rather than as the paper’s main causal test. In the preferred 100-city donor,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+100,1 Introduction,"aerosol optical depth falls by 0.113 log points during the first months of operation, befo",0.113,0.113,0.113,False,False,,"unchanged: satellite part, not re-run",
+123,1 Introduction,The rest of the paper proceeds as follows. Section 2 describes the institutional setting. ,2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+123,1 Introduction,The rest of the paper proceeds as follows. Section 2 describes the institutional setting. ,3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+124,1 Introduction,describes the data and estimation samples. Section 4 presents the empirical strategy. Sect,4,4,4,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+124,1 Introduction,describes the data and estimation samples. Section 4 presents the empirical strategy. Sect,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+128,2 Institutional background,2   Institutional Background,2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+130,2 Institutional background,"roughly 2,850 meters above sea level. Its topography matters for air quality. Steep terrai","2,850","2,850","2,850",False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+132,2 Institutional background,surface (Encyclopaedia Britannica 2026; Cazorla 2016; Zalakeviciute et al. 2024). These co,2026,2026,2026,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+132,2 Institutional background,surface (Encyclopaedia Britannica 2026; Cazorla 2016; Zalakeviciute et al. 2024). These co,2016,2016,2016,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+132,2 Institutional background,surface (Encyclopaedia Britannica 2026; Cazorla 2016; Zalakeviciute et al. 2024). These co,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+136,2 Institutional background,health guidelines (Cazorla 2016; Zalakeviciute et al. 2024).,2016,2016,2016,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+136,2 Institutional background,health guidelines (Cazorla 2016; Zalakeviciute et al. 2024).,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+139,2 Institutional background,flows (Encyclopaedia Britannica 2026; UNESCO World Heritage Centre n.d.). These features m,2026,2026,2026,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+143,2 Institutional background,"the empirical design: Centro and Belisario are both close to Metro Line 1, but only Centro",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+145,2 Institutional background,"Quito Metro Line 1 is the city’s first metro line. Commercial service began on December 1,",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+145,2 Institutional background,"Quito Metro Line 1 is the city’s first metro line. Commercial service began on December 1,",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+146,2 Institutional background,"2023, after earlier trial operations were suspended. The line runs entirely underground fo",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+147,2 Institutional background,"22.6 kilometers along Quito’s north-south valley corridor, connecting Quitumbe in the sout",22.6,22.6,22.6,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+148,2 Institutional background,El Labrador in the north through 15 stations (Transdev 2023). The end-to-end trip takes ro,15,15,15,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+148,2 Institutional background,El Labrador in the north through 15 stations (Transdev 2023). The end-to-end trip takes ro,2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+148,2 Institutional background,El Labrador in the north through 15 stations (Transdev 2023). The end-to-end trip takes ro,34,34,34,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+150,2 Institutional background,"(Oliver Wyman Forum 2024). One station, San Francisco, is located in the historic center, ",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+152,2 Institutional background,"the end of 2023 and ridership was still ramping up during 2024, the estimates in this pape",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+152,2 Institutional background,"the end of 2023 and ridership was still ramping up during 2024, the estimates in this pape",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+157,2 Institutional background,The first year of operation also coincided with an unusually disruptive national context. ,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+162,2 Institutional background,al. 2025; Zalakeviciute et al. 2024). This institutional shock is important for the empiri,2025,2025,2025,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+162,2 Institutional background,al. 2025; Zalakeviciute et al. 2024). This institutional shock is important for the empiri,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+167,3.1 Treatment timing (and Table 1),3       Data,3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+173,3.1 Treatment timing (and Table 1),"network. Given the broader Ecuadorian context of 2024, which combined a security emergency",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+177,3.1 Treatment timing (and Table 1),We describe the treatment timing and the 2024 disruption that shapes the estimation window,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+178,3.1 Treatment timing (and Table 1),"(Section 3.1), the air-quality monitoring station panel (Section 3.2), and the satellite-d",3.1,3.1,3.1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+178,3.1 Treatment timing (and Table 1),"(Section 3.1), the air-quality monitoring station panel (Section 3.2), and the satellite-d",3.2,3.2,3.2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+179,3.1 Treatment timing (and Table 1),center panel (Section 3.3). We discuss the estimators in the empirical strategy section.,3.3,3.3,3.3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+181,3.1 Treatment timing (and Table 1),3.1      Treatment timing and the 2024 disruption,3.1,3.1,3.1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+181,3.1 Treatment timing (and Table 1),3.1      Treatment timing and the 2024 disruption,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+182,3.1 Treatment timing (and Table 1),"Quito Metro Line 1 opened to passengers on Friday, December 1, 2023. Treatment is defined ",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+182,3.1 Treatment timing (and Table 1),"Quito Metro Line 1 opened to passengers on Friday, December 1, 2023. Treatment is defined ",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+182,3.1 Treatment timing (and Table 1),"Quito Metro Line 1 opened to passengers on Friday, December 1, 2023. Treatment is defined ",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+184,3.1 Treatment timing (and Table 1),"date, beginning November 27, 2023.",27,27,27,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+184,3.1 Treatment timing (and Table 1),"date, beginning November 27, 2023.",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+186,3.1 Treatment timing (and Table 1),"runs from the opening week through the week beginning September 9, 2024. The second is a",9,9,9,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+186,3.1 Treatment timing (and Table 1),"runs from the opening week through the week beginning September 9, 2024. The second is a",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+187,3.1 Treatment timing (and Table 1),"disruption block spanning the weeks beginning September 16 through December 16, 2024, when",16,16,16,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+187,3.1 Treatment timing (and Table 1),"disruption block spanning the weeks beginning September 16 through December 16, 2024, when",16,16,16,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+187,3.1 Treatment timing (and Table 1),"disruption block spanning the weeks beginning September 16 through December 16, 2024, when",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+190,3.1 Treatment timing (and Table 1),to the metro (Vallejo et al. 2025; Zalakeviciute et al. 2024). The final post-opening bloc,2025,2025,2025,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+190,3.1 Treatment timing (and Table 1),to the metro (Vallejo et al. 2025; Zalakeviciute et al. 2024). The final post-opening bloc,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+192,3.1 Treatment timing (and Table 1),"ISO weeks follow the international week-date convention: weeks begin on Monday, and week 1",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+193,3.1 Treatment timing (and Table 1),"the first Thursday of the calendar year. Under this convention, the week containing Decemb",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+193,3.1 Treatment timing (and Table 1),"the first Thursday of the calendar year. Under this convention, the week containing Decemb",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+194,3.1 Treatment timing (and Table 1),"Monday, November 27, 2023 and is labeled ISO 2023-W48.",27,27,27,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+194,3.1 Treatment timing (and Table 1),"Monday, November 27, 2023 and is labeled ISO 2023-W48.",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+194,3.1 Treatment timing (and Table 1),"Monday, November 27, 2023 and is labeled ISO 2023-W48.",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+198,3.1 Treatment timing (and Table 1),Table 1. Local and citywide analyses at a glance,1,1,1,False,False,,"unchanged: satellite part, not re-run",
+200,3.1 Treatment timing (and Table 1),"Treated unit                     REMMAQ monitoring stations, with             Quito urban ",2544,2544,2544,False,False,,"unchanged: satellite part, not re-run",
+208,3.1 Treatment timing (and Table 1),Pre-treatment period             52 weeks before the opening week             100 weeks be,52,52,52,False,False,,"unchanged: satellite part, not re-run",
+208,3.1 Treatment timing (and Table 1),Pre-treatment period             52 weeks before the opening week             100 weeks be,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+210,3.1 Treatment timing (and Table 1),116 weeks,PM2.5 balanced weeks (Table 1),116,134,True,False,,mapped to a step 2 output,"('sc', 'pm25', 'balanced_weeks')"
+210,3.1 Treatment timing (and Table 1),Panel size before estimation     PM2.5 : 8 stations × 116 weeks; gases: 7     Pollutant-sp,8,8,8,False,False,,"unchanged: satellite part, not re-run",
+210,3.1 Treatment timing (and Table 1),Panel size before estimation     PM2.5 : 8 stations × 116 weeks; gases: 7     Pollutant-sp,7,7,7,False,False,,"unchanged: satellite part, not re-run",
+211,3.1 Treatment timing (and Table 1),134 weeks,Gas balanced weeks (Table 1),134,134,False,False,,mapped to a step 2 output,"('sc', 'co', 'balanced_weeks')"
+211,3.1 Treatment timing (and Table 1),stations × 134 weeks                         227 weekly observations per city,227,227,227,False,False,,"unchanged: satellite part, not re-run",
+217,3.1 Treatment timing (and Table 1),"in January 2025. The two weeks beginning December 23 and December 30, 2024 fall after the ",2025,2025,2025,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+217,3.1 Treatment timing (and Table 1),"in January 2025. The two weeks beginning December 23 and December 30, 2024 fall after the ",23,23,23,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+217,3.1 Treatment timing (and Table 1),"in January 2025. The two weeks beginning December 23 and December 30, 2024 fall after the ",30,30,30,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+217,3.1 Treatment timing (and Table 1),"in January 2025. The two weeks beginning December 23 and December 30, 2024 fall after the ",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+223,3.1 Treatment timing (and Table 1),from a later period contaminated by large citywide shocks. Table 1 summarizes the two empi,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+226,3.2 Local data,3.2      Local analysis: ground-based air monitoring data,3.2,3.2,3.2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+228,3.2 Local data,environmental authority (REMMAQ 2026). They cover pollutant concentrations and meteorologi,2026,2026,2026,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+236,3.2 Local data,"0.61 km from the nearest Line 1 stop, while Belisario is 0.77 km away. The two stations ar",0.61,0.61,0.61,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+236,3.2 Local data,"0.61 km from the nearest Line 1 stop, while Belisario is 0.77 km away. The two stations ar",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+236,3.2 Local data,"0.61 km from the nearest Line 1 stop, while Belisario is 0.77 km away. The two stations ar",0.77,0.77,0.77,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+245,3.2 Local data,interpretation centered on the historic center. Figure 1 maps the REMMAQ stations and Line,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+245,3.2 Local data,interpretation centered on the historic center. Figure 1 maps the REMMAQ stations and Line,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+250,3.2 Local data,"not report those series. Table 2 lists the stations, their distance to the nearest stop, a",2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+252,3.2 Local data,Table 2. Air-quality monitoring stations,2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+264,3.2 Local data,Straight-line distance from the monitoring station to the nearest Metro Line 1 stop.,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+270,3.2 Local data,"We restrict the hourly data to weekday morning and evening peak hours, 7-9 a.m. and 5-7 p.",7,7,7,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+270,3.2 Local data,"We restrict the hourly data to weekday morning and evening peak hours, 7-9 a.m. and 5-7 p.",5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+274,3.2 Local data,March 2025,PM2.5 panel end (data section),March 2025,June 2025,True,False,,mapped to a step 2 output,"('const', 'March 2025', 'June 2025')"
+274,3.2 Local data,116 balanced station-weeks,PM2.5 balanced weeks per station,116,134,True,False,,mapped to a step 2 output,"('sc', 'pm25', 'balanced_weeks')"
+274,3.2 Local data,"November 28, 2022 and runs through March 2025, yielding 116 balanced station-weeks per sta",28,28,28,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+274,3.2 Local data,"November 28, 2022 and runs through March 2025, yielding 116 balanced station-weeks per sta",2022,2022,2022,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+275,3.2 Local data,134 balanced station-weeks,Gas balanced weeks per station,134,134,False,False,,mapped to a step 2 output,"('sc', 'co', 'balanced_weeks')"
+275,3.2 Local data,"The gas panels run through June 2025, yielding 134 balanced station-weeks per station.",2025,2025,2025,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+282,3.2 Local data,3.0 percent of PM2.5,PM2.5 imputed share (%),3.0,2.7,True,False,,mapped to a step 2 output,"('sc', 'pm25', 'pct_imputed')"
+282,3.2 Local data,1.0 percent of CO,CO imputed share (%),1.0,1.0,False,False,,mapped to a step 2 output,"('sc', 'co', 'pct_imputed')"
+282,3.2 Local data,0.7 percent of NO2,NO2 imputed share (%),0.7,0.7,False,False,,mapped to a step 2 output,"('sc', 'no2', 'pct_imputed')"
+289,3.2 Local data,1.3 percent of SO2,SO2 imputed share (%),1.3,1.3,False,False,,mapped to a step 2 output,"('sc', 'so2', 'pct_imputed')"
+290,3.2 Local data,Table 3 summarizes the balanced panels and estimation windows. The full sample-constructio,3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+292,3.2 Local data,Table 3. Estimation samples: balanced weekly panel composition by pollutant,3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+300,3.2 Local data,"Notes. Balanced weekly panels of peak-hour, weekday pollutant concentrations. Peak hours a",07,07,07,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+300,3.2 Local data,"Notes. Balanced weekly panels of peak-hour, weekday pollutant concentrations. Peak hours a",00,00,00,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+300,3.2 Local data,"Notes. Balanced weekly panels of peak-hour, weekday pollutant concentrations. Peak hours a",00,00,00,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+301,3.2 Local data,52 weeks,Pre-treatment weeks (Table 3 note),52,52,False,False,,mapped to a step 2 output,"('tl', 'Pre-treatment', 'pm25')"
+301,3.2 Local data,17:00-19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begi,17,17,17,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+301,3.2 Local data,17:00-19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begi,00,00,00,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+301,3.2 Local data,17:00-19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begi,00,00,00,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+301,3.2 Local data,17:00-19:00. The pre-treatment period contains 52 weeks for all pollutants; treatment begi,2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+302,3.2 Local data,"the week containing the December 1, 2023 opening of Quito Metro Line 1. “Blackout” denotes",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+302,3.2 Local data,"the week containing the December 1, 2023 opening of Quito Metro Line 1. “Blackout” denotes",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+302,3.2 Local data,"the week containing the December 1, 2023 opening of Quito Metro Line 1. “Blackout” denotes",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+302,3.2 Local data,"the week containing the December 1, 2023 opening of Quito Metro Line 1. “Blackout” denotes",3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+304,3.2 Local data,pre_blackout sample ends. “Trans.” is the post-outage transition fortnight in late Decembe,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+310,3.2 Local data,"7-week interior gap, from the week of January 13 to the week of February 24, 2025",Table 3 footnote a (PM2.5 gap),7-week gap,no gap: footnote obsolete,True,False,,mapped to a step 2 output,"('const', '7-week gap', 'no gap: footnote obsolete')"
+310,3.2 Local data,"2.5 contains a 7-week interior gap, from the week of January 13 to the week of February 24",2.5,2.5,2.5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+311,3.2 Local data,"January 6, 2025",Table 3 footnote a (gap dates),"January 6, 2025",obsolete,True,False,,mapped to a step 2 output,"('const', 'January 6, 2025', 'obsolete')"
+312,3.2 Local data,"March 3, 2025",Table 3 footnote a (gap dates),"March 3, 2025",obsolete,True,False,,mapped to a step 2 output,"('const', 'March 3, 2025', 'obsolete')"
+312,3.2 Local data,"March 3, 2025. This accounts for PM2.5 ’s shorter Period 2. CO, NO2 , and SO2 have contigu",2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+315,3.2 Local data,"Figure 2 plots the weekly pollutant series around the opening. The figure is descriptive, ",2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+317,3.2 Local data,"two closest stations to Line 1, yet they do not move together uniformly after the opening.",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+321,3.3 Satellite data,3.3    City-level analysis: satellite retrievals,3.3,3.3,3.3,False,False,,"unchanged: satellite part, not re-run",
+324,3.3 Satellite data,comparable cities after Metro Line 1 opened.,1,1,1,False,False,,"unchanged: satellite part, not re-run",
+325,3.3 Satellite data,"We define cities using the Global Human Settlement Urban Centre Database, 2024A release,",2024,2024,2024,False,False,,"unchanged: satellite part, not re-run",
+327,3.3 Satellite data,"2024).4 The Latin American UCDB sample contains 1,036 urban areas. Quito is UCDB identifie",2024,2024,2024,False,False,,"unchanged: satellite part, not re-run",
+327,3.3 Satellite data,"2024).4 The Latin American UCDB sample contains 1,036 urban areas. Quito is UCDB identifie","1,036","1,036","1,036",False,False,,"unchanged: satellite part, not re-run",
+328,3.3 Satellite data,2544 and is the treated city. We retrieve and aggregate weekly pollutant measures for each,2544,2544,2544,False,False,,"unchanged: satellite part, not re-run",
+329,3.3 Satellite data,"center through Google Earth Engine (Gorelick et al. 2017), and merge them with weekly mete",2017,2017,2017,False,False,,"unchanged: satellite part, not re-run",
+330,3.3 Satellite data,logical covariates from ERA5-Land (Muñoz-Sabater et al. 2021).5 The weather controls inclu,2021,2021,2021,False,False,,"unchanged: satellite part, not re-run",
+333,3.3 Satellite data,clusters using harmonized grid-cell criteria rather than administrative boundaries (Dijkst,2021,2021,2021,False,False,,"unchanged: satellite part, not re-run",
+349,3.3 Satellite data,"The initial satellite sample contains 1,036 Latin American urban areas and 227 weekly obse","1,036","1,036","1,036",False,False,,"unchanged: satellite part, not re-run",
+349,3.3 Satellite data,"The initial satellite sample contains 1,036 Latin American urban areas and 227 weekly obse",227,227,227,False,False,,"unchanged: satellite part, not re-run",
+352,3.3 Satellite data,pre-treatment difference is the normalized difference between Quito and the preferred 100-,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+358,3.3 Satellite data,MCD19A2 product at ∼1.1 km resolution (Lyapustin et al. 2018). It measures aerosol loading,1.1,1.1,1.1,False,False,,"unchanged: satellite part, not re-run",
+358,3.3 Satellite data,MCD19A2 product at ∼1.1 km resolution (Lyapustin et al. 2018). It measures aerosol loading,2018,2018,2018,False,False,,"unchanged: satellite part, not re-run",
+360,3.3 Satellite data,from Sentinel-5P TROPOMI (Veefkind et al. 2012). CO and NO2 are traffic-related atmospheri,2012,2012,2012,False,False,,"unchanged: satellite part, not re-run",
+366,3.3 Satellite data,cities (Bellemare and Wichman 2020); these values are valid noisy retrievals rather than m,2020,2020,2020,False,False,,"unchanged: satellite part, not re-run",
+369,3.3 Satellite data,one or two weeks are imputed before balancing. The balanced panels retain 572 cities for A,572,572,572,False,False,,"unchanged: satellite part, not re-run",
+370,3.3 Satellite data,"1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. ","1,035","1,035","1,035",False,False,,"unchanged: satellite part, not re-run",
+370,3.3 Satellite data,"1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. ",906,906,906,False,False,,"unchanged: satellite part, not re-run",
+370,3.3 Satellite data,"1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. ",861,861,861,False,False,,"unchanged: satellite part, not re-run",
+370,3.3 Satellite data,"1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. ",227,227,227,False,False,,"unchanged: satellite part, not re-run",
+370,3.3 Satellite data,"1,035 for CO, 906 for NO2 , and 861 for SO2 , each with 227 weekly observations per city. ",4,4,4,False,False,,"unchanged: satellite part, not re-run",
+376,3.3 Satellite data,"and Vives-i Bastida 2024). The estimation uses a sequence of donor pools, including the 50",2024,2024,2024,False,False,,"unchanged: satellite part, not re-run",
+376,3.3 Satellite data,"and Vives-i Bastida 2024). The estimation uses a sequence of donor pools, including the 50",50,50,50,False,False,,"unchanged: satellite part, not re-run",
+376,3.3 Satellite data,"and Vives-i Bastida 2024). The estimation uses a sequence of donor pools, including the 50",100,100,100,False,False,,"unchanged: satellite part, not re-run",
+379,3.3 Satellite data,aerosol loading and surface exposure (Boyouk et al. 2010; Cazorla 2016).,2010,2010,2010,False,False,,"unchanged: satellite part, not re-run",
+379,3.3 Satellite data,aerosol loading and surface exposure (Boyouk et al. 2010; Cazorla 2016).,2016,2016,2016,False,False,,"unchanged: satellite part, not re-run",
+388,3.3 Satellite data,"150, and 200 nearest cities, as well as balanced panels with all available cities. The pre",150,150,150,False,False,,"unchanged: satellite part, not re-run",
+388,3.3 Satellite data,"150, and 200 nearest cities, as well as balanced panels with all available cities. The pre",200,200,200,False,False,,"unchanged: satellite part, not re-run",
+389,3.3 Satellite data,"specification uses the 100 nearest donor cities, while the alternative donor pools are rep",100,100,100,False,False,,"unchanged: satellite part, not re-run",
+390,3.3 Satellite data,robustness checks. The last column of Table 4 reports the normalized pre-treatment differe,4,4,4,False,False,,"unchanged: satellite part, not re-run",
+393,3.3 Satellite data,Figures 3 and 4 summarize the citywide panel. The outcome figure shows that Quito’s satell,3,3,3,False,False,,"unchanged: satellite part, not re-run",
+393,3.3 Satellite data,Figures 3 and 4 summarize the citywide panel. The outcome figure shows that Quito’s satell,4,4,4,False,False,,"unchanged: satellite part, not re-run",
+401,4 Empirical strategy,4    Empirical Strategy,4,4,4,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+408,4 Empirical strategy,1 X                   ,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+409,4 Empirical strategy,"τi =            Yit - Yit (0) ,",0,0,0,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+416,4 Empirical strategy,"opening periods used in the estimate, and Ybit (0) is a synthetic counterfactual construct",0,0,0,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+421,4 Empirical strategy,unit (Abadie et al. 2010).,2010,2010,2010,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+423,4 Empirical strategy,mechanism predicts that pollution changes should be strongest at monitors close to Metro L,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+426,4 Empirical strategy,"Centro and Belisario are both close to Line 1, but only Centro lies inside the historic ce",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+444,4 Empirical strategy,"implemented with the augsynth package (Ben-Michael et al. 2021a,b). The second is syntheti",2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+445,4 Empirical strategy,"difference-in-differences, implemented with the synthdid package (Arkhangelsky et al. 2021",2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+445,4 Empirical strategy,"difference-in-differences, implemented with the synthdid package (Arkhangelsky et al. 2021",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+451,4 Empirical strategy,pre-treatment imbalance (Ben-Michael et al. 2021a). Let X1 denote the vector of pre-treatm,2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+483,4 Empirical strategy,"differences time weights (Arkhangelsky et al. 2021). In a single-treated-unit setting, the",2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+487,4 Empirical strategy,"τbsdid =   Ȳ1,post -         w",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+510,4 Empirical strategy,counterfactual and synthetic-control settings (Chernozhukov et al. 2021). The intuition is,2021,2021,2021,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+524,4 Empirical strategy,"stations, any rank-based comparison is coarse and has a natural lower bound of 1/8. Instea",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+524,4 Empirical strategy,"stations, any rank-based comparison is coarse and has a natural lower bound of 1/8. Instea",8,8,8,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+527,4 Empirical strategy,Belisario is the key placebo because it is nearly as close to Line 1 as Centro but outside,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+548,4 Empirical strategy,counterfactual for Quito (Arkhangelsky et al. 2021).,2021,2021,2021,False,False,,"unchanged: satellite part, not re-run",
+578,5 Results,5     Results,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+579,5 Results,The results support one main claim: Metro Line 1 is associated with a localized reduction ,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+591,5.1 Local PM2.5,5.1   Local PM2.5 effects at Centro,5.1,5.1,5.1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+592,5.1 Local PM2.5,Figure 5 shows the weekly event-study estimates for the preferred Centro specification. Th,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+594,5.1 Local PM2.5,first months of operation and deepen through 2024. During the early post-opening period be,2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+595,5.1 Local PM2.5,0.130 log points,"M8b PM2.5 pre-disruption, log effect",-0.130,-0.131,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_log')"
+596,5.1 Local PM2.5,0.132 log points,"M8b PM2.5 donut, log effect",-0.132,-0.147,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'att_log')"
+603,5.1 Local PM2.5,Table 5 reports the local PM2.5 estimates. The table is organized around the identificatio,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+604,5.1 Local PM2.5,The first column treats Centro and Belisario jointly as the two monitoring stations closes,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+614,5.1 Local PM2.5,17.0 percent,"M8 PM2.5 pre-disruption, percent",17.0,17.2,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8', 'pre_blackout', 'att_pct')"
+615,5.1 Local PM2.5,14.2 percent,"M8 PM2.5 donut, percent",14.2,13.0,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8', 'donut', 'att_pct')"
+619,5.1 Local PM2.5,12.2 percent,"M8b PM2.5 pre-disruption, percent",12.2,12.2,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_pct')"
+620,5.1 Local PM2.5,0.011,"M8b PM2.5 pre-disruption, conformal p",0.011,0.016,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'p_2s')"
+621,5.1 Local PM2.5,12.4 percent,"M8b PM2.5 donut, percent",12.4,13.7,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'att_pct')"
+621,5.1 Local PM2.5,15.1,"M8b PM2.5 full, percent",15.1,15.6,True,True,p crosses 0.05 or 0.10 (0.006 to 0.097),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'full', 'att_pct')"
+625,5.1 Local PM2.5,0.129,M8b PM2.5 pre RMSPE,0.129,0.129,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'rmspe_pre')"
+625,5.1 Local PM2.5,0.185 to 0.205,"Pre RMSPE of M7, M9, M8",0.185 to 0.205,0.188 to 0.207,True,False,,mapped to a step 2 output,"('range', [('cs', 'PM25', 'M7', 'pre_blackout', 'rmspe_pre'), ('cs', 'PM25', 'M9', 'pre_blackout', 'rmspe_pre'), ('cs', 'PM25', 'M8', 'pre_blackout', 'rmspe_pre')])"
+626,5.1 Local PM2.5,1.98,"M8b PM2.5 post/pre RMSPE, pre-disruption",1.98,1.98,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'ratio')"
+633,5.2 Spatial placebo,5.2   Spatial placebo evidence,5.2,5.2,5.2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+657,5.2 Spatial placebo,Mar. 2025,Table 5 Panel C end date,Mar. 2025,June 2025,True,False,,mapped to a step 2 output,"('const', 'Mar. 2025', 'June 2025')"
+674,5.2 Spatial placebo,Table 6 reports the station-level placebo estimates for the pre-disruption window. Because,6,6,6,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+676,5.2 Spatial placebo,only station,Spatial placebo: Centro p (M8b),0.012,0.013,True,False,,mapped to a step 2 output,"('pl', 'centro', 'conf_p')"
+676,5.2 Spatial placebo,Centro estimate differs trivially from the configured estimate in Table 5. Centro is the o,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+677,5.2 Spatial placebo,12.2 percent,Spatial placebo: Centro percent,12.2,12.2,False,False,,mapped to a step 2 output,"('pl', 'centro', 'att_pct')"
+678,5.2 Spatial placebo,0.012,Spatial placebo: Centro p,0.012,0.013,True,False,,mapped to a step 2 output,"('pl', 'centro', 'conf_p')"
+679,5.2 Spatial placebo,8.5 percent,Spatial placebo: Belisario percent (new donor rule),8.5,-6.1,True,True,sign changes,mapped to a step 2 output,"('pl', 'belisario', 'att_pct')"
+680,5.2 Spatial placebo,identification sequence in Table 5: the same station that anchors Centro’s preferred count,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+683,5.2 Spatial placebo,approaching conventional significance is Cotocollao,Spatial placebo: Cotocollao p,0.061,0.047,True,True,p crosses 0.05 or 0.10 (0.061 to 0.047),mapped to a step 2 output,"('pl', 'cotocollao', 'conf_p')"
+703,5.2 Spatial placebo,Line 1 stop. The p-values are two-sided conformal p-values. The rank-based placebo,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+709,5.2 Spatial placebo,0.785,Spatial placebo: Tumbaco p,0.785,0.768,True,False,,mapped to a step 2 output,"('pl', 'tumbaco', 'conf_p')"
+718,5.3 Local pollutants,5.3   Local pollutant pattern,5.3,5.3,5.3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+719,5.3 Local pollutants,Table 7 reports the preferred local specification for all four ground-monitored pollutants,7,7,7,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+720,5.3 Local pollutants,falls significantly in every window,M8b PM2.5 donut p,0.041,0.199,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'p_2s')"
+720,5.3 Local pollutants,falls significantly in every window,M8b PM2.5 full p,0.006,0.097,True,True,p crosses 0.05 or 0.10 (0.006 to 0.097),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'full', 'p_2s')"
+722,5.3 Local pollutants,0.089,M8b NO2 pre RMSPE,0.089,0.089,False,False,,mapped to a step 2 output,"('cs', 'NO2', 'M8b', 'pre_blackout', 'rmspe_pre')"
+722,5.3 Local pollutants,1.02,"M8b NO2 post/pre RMSPE, pre-disruption",1.02,1.02,False,False,,mapped to a step 2 output,"('cs', 'NO2', 'M8b', 'pre_blackout', 'ratio')"
+725,5.3 Local pollutants,1.000,M8b CO conformal p (all windows; pre shown),1.000,1.000,False,False,,mapped to a step 2 output,"('cs', 'CO', 'M8b', 'pre_blackout', 'p_2s')"
+727,5.3 Local pollutants,close to zero and statistically insignificant,"M8b SO2 pre-disruption, percent",-2.5,-5.1,True,False,,mapped to a step 2 output,"('cs', 'SO2', 'M8b', 'pre_blackout', 'att_pct')"
+729,5.3 Local pollutants,13.1 percent,"M8b SO2 donut, percent",13.1,10.0,True,True,p crosses 0.05 or 0.10 (0.055 to 0.120),mapped to a step 2 output,"('cs', 'SO2', 'M8b', 'donut', 'att_pct')"
+729,5.3 Local pollutants,0.055,"M8b SO2 donut, conformal p",0.055,0.120,True,True,p crosses 0.05 or 0.10 (0.055 to 0.120),mapped to a step 2 output,"('cs', 'SO2', 'M8b', 'donut', 'p_2s')"
+729,5.3 Local pollutants,10.0,"M8b SO2 full, percent",10.0,7.3,True,False,,mapped to a step 2 output,"('cs', 'SO2', 'M8b', 'full', 'att_pct')"
+762,5.3 Local pollutants,"late-2024 blackout and wildfire disruption, from Nov. 27, 2023 to Sept. 9,",27,27,27,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+762,5.3 Local pollutants,"late-2024 blackout and wildfire disruption, from Nov. 27, 2023 to Sept. 9,",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+762,5.3 Local pollutants,"late-2024 blackout and wildfire disruption, from Nov. 27, 2023 to Sept. 9,",9,9,9,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+763,5.3 Local pollutants,"2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024.",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+763,5.3 Local pollutants,"2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024.",16,16,16,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+763,5.3 Local pollutants,"2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024.",16,16,16,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+763,5.3 Local pollutants,"2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024.",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+764,5.3 Local pollutants,Mar. 2025,Table 7 note: PM2.5 end date,Mar. 2025,June 2025,True,False,,mapped to a step 2 output,"('const', 'Mar. 2025', 'June 2025')"
+765,5.3 Local pollutants,"PM2.5 and through June 2025 for CO, NO2 , and SO2 . Pre RMSPE is",2025,2025,2025,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+779,5.3 Local pollutants,9.5 percent,"M5b PM2.5 pre-disruption, percent",9.5,9.5,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'pre_blackout', 'att_pct')"
+779,5.3 Local pollutants,10.1 percent,"M5b PM2.5 donut, percent",10.1,11.6,True,True,p crosses 0.05 or 0.10 (0.020 to 0.191),mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'donut', 'att_pct')"
+780,5.3 Local pollutants,13.3 percent,"M5b PM2.5 full, percent",13.3,13.8,True,True,p crosses 0.05 or 0.10 (0.003 to 0.057),mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'full', 'att_pct')"
+780,5.3 Local pollutants,all significant,M5b PM2.5 donut p,0.020,0.191,True,True,p crosses 0.05 or 0.10 (0.020 to 0.191),mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'donut', 'p_2s')"
+780,5.3 Local pollutants,all significant,M5b PM2.5 full p,0.003,0.057,True,True,p crosses 0.05 or 0.10 (0.003 to 0.057),mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'full', 'p_2s')"
+785,5.3 Local pollutants,14.3 to 20.7 percent,M2b (SDID) percent across windows (magnitudes),14.3 to 20.7,13.9 to 19.8,True,False,,mapped to a step 2 output,"('range', [('cs', 'PM25', 'M2b', 'pre_blackout', 'att_pct'), ('cs', 'PM25', 'M2b', 'donut', 'att_pct'), ('cs', 'PM25', 'M2b', 'full', 'att_pct')])"
+785,5.3 Local pollutants,14.5 percent,"M2b (SDID) pre-disruption, percent",14.5,14.9,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M2b', 'pre_blackout', 'att_pct')"
+789,5.4 Satellite,5.4   Citywide satellite estimates,5.4,5.4,5.4,False,False,,"unchanged: satellite part, not re-run",
+792,5.4 Satellite,pollution relative to comparable Latin American urban areas. Table 8 reports the citywide ,8,8,8,False,False,,"unchanged: satellite part, not re-run",
+794,5.4 Satellite,"across all donor pools and windows. In the preferred 100-city donor pool, selected using t",100,100,100,False,False,,"unchanged: satellite part, not re-run",
+795,5.4 Satellite,"pre-specified Mahalanobis-distance rule, AOD falls by 0.113 log points during the first mo",0.113,0.113,0.113,False,False,,"unchanged: satellite part, not re-run",
+797,5.4 Satellite,from placebo standard errors is 0.035.,0.035,0.035,0.035,False,False,,"unchanged: satellite part, not re-run",
+799,5.4 Satellite,"estimate is negative in every donor pool, ranging from -0.100 to -0.145 log points. The 95",-0.100,-0.100,-0.100,False,False,,"unchanged: satellite part, not re-run",
+799,5.4 Satellite,"estimate is negative in every donor pool, ranging from -0.100 to -0.145 log points. The 95",-0.145,-0.145,-0.145,False,False,,"unchanged: satellite part, not re-run",
+799,5.4 Satellite,"estimate is negative in every donor pool, ranging from -0.100 to -0.145 log points. The 95",95,95,95,False,False,,"unchanged: satellite part, not re-run",
+800,5.4 Satellite,"confidence intervals exclude zero in every pool, although the upper bound in the 50-city p",50,50,50,False,False,,"unchanged: satellite part, not re-run",
+803,5.4 Satellite,does not depend on selecting the 100-city pool because it is significant; that pool is the,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+808,5.4 Satellite,"PM2.5 , and the broader Ecuadorian environment in 2024 may have affected Quito differently",2024,2024,2024,False,False,,"unchanged: satellite part, not re-run",
+813,5.4 Satellite,Table 9 reports the preferred 100-city SDID specification for all satellite outcomes. The ,9,9,9,False,False,,"unchanged: satellite part, not re-run",
+813,5.4 Satellite,Table 9 reports the preferred 100-city SDID specification for all satellite outcomes. The ,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+838,5.4 Satellite,theses; 95 percent confidence intervals are in brackets. Donor pools are ranked by Maha-,95,95,95,False,False,,"unchanged: satellite part, not re-run",
+842,5.4 Satellite,"fication uses the 100 nearest donor cities, following the pre-specified Mahalanobis-distan",100,100,100,False,False,,"unchanged: satellite part, not re-run",
+851,5.4 Satellite,"Line 1 reduced fine-particulate pollution at the historic center, consistent with destinat",1,1,1,False,False,,"unchanged: satellite part, not re-run",
+855,6 Conclusion,6   Conclusion,6,6,6,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+857,6 Conclusion,"city. Using the opening of Quito Metro Line 1, we compare pollution changes at the histori",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+861,6 Conclusion,12 percent,"M8b PM2.5 pre-disruption, percent (conclusion)",12,12,False,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_pct')"
+882,6 Conclusion,100-city SDID specification. p-values are two-sided p-values,100,100,100,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+972,Figure notes,Figure 1. Air-quality monitoring stations and Metro Line 1. The black line traces Metro Li,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+972,Figure notes,Figure 1. Air-quality monitoring stations and Metro Line 1. The black line traces Metro Li,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+972,Figure notes,Figure 1. Air-quality monitoring stations and Metro Line 1. The black line traces Metro Li,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+974,Figure notes,"within 1 km of the corridor, Centro and Belisario; blue dots mark the six monitors farther",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+978,Figure notes,Figure 2. Weekly peak-hour pollution at REMMAQ monitoring stations. The figure plots weekd,2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+980,Figure notes,in blue; all other stations are shown in gray. The vertical dashed line marks the opening ,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+981,Figure notes,"December 1, 2023. The shaded region marks the Phase 3 power-outage and wildfire disruption",1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+981,Figure notes,"December 1, 2023. The shaded region marks the Phase 3 power-outage and wildfire disruption",2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+981,Figure notes,"December 1, 2023. The shaded region marks the Phase 3 power-outage and wildfire disruption",3,3,3,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+988,Figure notes,Figure 3. Weekly satellite outcomes for Quito and the donor pool. Red lines plot Quito. Bl,3,3,3,False,False,,"unchanged: satellite part, not re-run",
+989,Figure notes,"donor-pool median, and shaded bands show the 10th to 90th percentiles of the donor pool. T",10,10,10,False,False,,"unchanged: satellite part, not re-run",
+989,Figure notes,"donor-pool median, and shaded bands show the 10th to 90th percentiles of the donor pool. T",90,90,90,False,False,,"unchanged: satellite part, not re-run",
+990,Figure notes,"line marks the Metro Line 1 opening week, ISO 2023-W48. The shaded region marks the 2024 d",1,1,1,False,False,,"unchanged: satellite part, not re-run",
+990,Figure notes,"line marks the Metro Line 1 opening week, ISO 2023-W48. The shaded region marks the 2024 d",2023,2023,2023,False,False,,"unchanged: satellite part, not re-run",
+990,Figure notes,"line marks the Metro Line 1 opening week, ISO 2023-W48. The shaded region marks the 2024 d",2024,2024,2024,False,False,,"unchanged: satellite part, not re-run",
+997,Figure notes,Figure 4. Satellite coverage over time. Blue lines show the percentage of donor-pool citie,4,4,4,False,False,,"unchanged: satellite part, not re-run",
+999,Figure notes,"imputation. The vertical dashed line marks the Metro Line 1 opening week, ISO 2023-W48.",1,1,1,False,False,,"unchanged: satellite part, not re-run",
+999,Figure notes,"imputation. The vertical dashed line marks the Metro Line 1 opening week, ISO 2023-W48.",2023,2023,2023,False,False,,"unchanged: satellite part, not re-run",
+1041,Figure notes,Figure 5. Effect of Quito Metro Line 1 on PM2.5 : event-study estimates.,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1041,Figure notes,Figure 5. Effect of Quito Metro Line 1 on PM2.5 : event-study estimates.,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1044,Figure notes,pointwise conformal confidence interval. The vertical dashed line marks the opening of Qui,1,1,1,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1045,Figure notes,December 2023. The gray region marks the blackout and wildfire disruption period. Average ,2023,2023,2023,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1046,Figure notes,0.130 log points (p = 0.011),Figure 5 note: pre-disruption log effect,-0.130,-0.131,True,False,,mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'pre_blackout', 'att_log')"
+1046,Figure notes,0.132 log points (p = 0.041),Figure 5 note: donut log effect,-0.132,-0.147,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'att_log')"
+1046,Figure notes,(p = 0.041),Figure 5 note: donut p,0.041,0.199,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'p_2s')"
+1047,Figure notes,0.164 log points (p = 0.006),Figure 5 note: full log effect,-0.164,-0.170,True,True,p crosses 0.05 or 0.10 (0.006 to 0.097),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'full', 'att_log')"
+1047,Figure notes,(p = 0.006),Figure 5 note: full p,0.006,0.097,True,True,p crosses 0.05 or 0.10 (0.006 to 0.097),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'full', 'p_2s')"
+1047,Figure notes,"and full post-opening, -0.164 log points (p = 0.006). All p-values are two-sided conformal",2,2,2,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1048,Figure notes,only 6 PM2.5 weeks,Figure 5 note: Period 2 PM2.5 weeks,6,24,True,False,,mapped to a step 2 output,"('tl', 'Period 2 (post, post-blackout)', 'pm25')"
+1048,Figure notes,13 Jan,Figure 5 note: PM2.5 gap dates,gap 13 Jan to 24 Feb 2025,no gap: sentence obsolete,True,False,,mapped to a step 2 output,"('const', 'gap 13 Jan to 24 Feb 2025', 'no gap: sentence obsolete')"
+1049,Figure notes,"24 Feb 2025, so the panel jumps from the week of 6 Jan 2025 to the week of 3 Mar 2025",Figure 5 note: PM2.5 gap dates,gap dates,obsolete,True,False,,mapped to a step 2 output,"('const', 'gap dates', 'obsolete')"
+1050,Figure notes,the series in early 2025 marks this gap,Figure 5 note: gap sentence,gap,obsolete,True,False,,mapped to a step 2 output,"('const', 'gap', 'obsolete')"
+1179,Appendix,The table reports non-missing observations at each step. Peak hours are 7-9 a.m. and 5-7 p,7,7,7,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1179,Appendix,The table reports non-missing observations at each step. Peak hours are 7-9 a.m. and 5-7 p,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1181,Appendix,116 weeks,Table A.1 note: PM2.5 weeks,116,134,True,False,,mapped to a step 2 output,"('sc', 'pm25', 'balanced_weeks')"
+1182,Appendix,panels span 134 weeks.,134,134,134,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1204,Appendix,the preferred 100-city donor pool. Outcomes are transformed as in the,100,100,100,False,False,,"unchanged: satellite part, not re-run",
+1215,Appendix,sequence in Table 5 and the robustness statement in the main text. The battery crosses thr,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1218,Appendix,only one that combines,Appendix A.2: M8b donut p,0.041,0.199,True,True,p crosses 0.05 or 0.10 (0.041 to 0.199),mapped to a step 2 output,"('cs', 'PM25', 'M8b', 'donut', 'p_2s')"
+1218,Appendix,only one that combines,Appendix A.2: M5b donut p,0.020,0.191,True,True,p crosses 0.05 or 0.10 (0.020 to 0.191),mapped to a step 2 output,"('cs', 'PM25', 'M5b', 'donut', 'p_2s')"
+1267,Appendix,"Pre-disruption is the primary window, ending before the onset of the 2024 electricity-rati",2024,2024,2024,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",
+1274,Appendix,retained in the donor pool. This row is also the final column of the main identification t,5,5,5,False,False,,"unchanged: not a step 2 output (setting, design constant, date, method or citation)",

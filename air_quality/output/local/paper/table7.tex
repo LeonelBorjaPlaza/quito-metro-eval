@@ -1,0 +1,40 @@
+\begin{table}[htbp]\centering
+\begin{threeparttable}
+\caption{Table 7. Local pollutant effects at Centro}
+\begin{tabular}{lcccc}
+\toprule
+ & PM2.5 & CO & NO2 & SO2 \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A. Pre-disruption window}} \\
+Log effect & -0.131 & -0.057 & -0.064 & -0.053 \\
+Percent effect & -12.2 & -5.5 & -6.2 & -5.1 \\
+Conformal p (iid) & 0.016 & 1.000 & 0.967 & 0.248 \\
+Block conformal p & 0.011 & 1.000 & 0.840 & 0.340 \\
+Pre RMSPE & 0.129 & 0.247 & 0.089 & 0.225 \\
+Post RMSPE & 0.256 & 0.164 & 0.090 & 0.297 \\
+Post/pre RMSPE & 1.98 & 0.66 & 1.02 & 1.32 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B. Donut window}} \\
+Log effect & -0.147 & -0.076 & -0.055 & 0.095 \\
+Percent effect & -13.7 & -7.4 & -5.4 & 10.0 \\
+Conformal p (iid) & 0.199 & 1.000 & 0.610 & 0.120 \\
+Block conformal p & 0.242 & 1.000 & 0.567 & 0.333 \\
+Pre RMSPE & 0.129 & 0.247 & 0.089 & 0.225 \\
+Post RMSPE & 0.234 & 0.166 & 0.138 & 0.395 \\
+Post/pre RMSPE & 1.82 & 0.67 & 1.56 & 1.75 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C. Full post-opening window}} \\
+Log effect & -0.170 & -0.103 & -0.060 & 0.070 \\
+Percent effect & -15.6 & -9.8 & -5.8 & 7.3 \\
+Conformal p (iid) & 0.097 & 1.000 & 0.716 & 0.249 \\
+Block conformal p & 0.291 & 1.000 & 0.701 & 0.410 \\
+Pre RMSPE & 0.129 & 0.247 & 0.089 & 0.225 \\
+Post RMSPE & 0.259 & 0.187 & 0.131 & 0.373 \\
+Post/pre RMSPE & 2.01 & 0.76 & 1.48 & 1.66 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item All columns use the preferred local specification: Centro treated, Belisario retained in the donor pool, augmented synthetic control with station fixed effects and meteorological controls. Effects are reported in logs and percent terms. p-values are two-sided conformal p-values. Panel A is the primary local window and covers the post-opening period before the late-2024 blackout and wildfire disruption, from Nov. 27, 2023 to Sept. 9, 2024. Panel B excludes the disruption weeks, Sept. 16 to Dec. 16, 2024. Panel C retains all available post-opening weeks, through June 2025 for all four pollutants. Pre RMSPE is identical across panels within each pollutant because all three windows use the same pre-treatment period. PM2.5 is available for eight stations. CO, NO2, and SO2 are available for seven stations because San Antonio does not report these pollutants. Block conformal p-values use the T cyclic shifts of the weeks instead of 1,000 random permutations; they allow for serial dependence, and their smallest attainable value is 1/T (1/94 = 0.011 pre-disruption, 1/120 = 0.008 donut, 1/134 = 0.007 full). Iid conformal p-values use 1,000 random permutations; the smallest nonzero value is 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -167,6 +167,14 @@ specs <- tribble(
   "M9",  "AugFE",   "belisario",         "centro",    FALSE
 )
 
+## Step 2 (revision_plan.md 3A.2): a sensitivity runs only the specifications
+## the paper reports in the main text (AQ_SPECS, comma-separated); default: all.
+if (nzchar(Sys.getenv("AQ_SPECS", ""))) {
+  keep_specs <- trimws(strsplit(Sys.getenv("AQ_SPECS"), ",")[[1]])
+  stopifnot(all(keep_specs %in% specs$spec))
+  specs <- specs %>% filter(spec %in% keep_specs)
+}
+
 ## ---- 6. Run every (spec x sample) ----
 samples <- make_samples()
 cat(sprintf("Samples: %s\n", paste(sprintf("%s(t_int=%d,wk=%d)",
@@ -200,7 +208,7 @@ cross <- bind_rows(rows)
 
 ## ---- 7. Pre-fit filter (2x/5x on the Centro reference, per sample) ----
 cross <- cross %>% group_by(sample) %>%
-  mutate(ref_pre = rmspe_pre[spec == "M5b"],     # Centro no-FE pool = M5b reference
+  mutate(ref_pre = if (any(spec == "M5b")) rmspe_pre[spec == "M5b"] else NA_real_,  # M5b reference (NA if not run)
          included_2x = rmspe_pre <= 2 * ref_pre,
          included_5x = rmspe_pre <= 5 * ref_pre) %>% ungroup() %>% select(-ref_pre)
 
@@ -245,7 +253,9 @@ chk_legacy <- function(spec_lab, obj_name) {
 chk_legacy("M5b", "m5b"); chk_legacy("M8b", "m8b")
 
 ## ---- 9. Write CrossSample_Summary ----
-out_dir <- file.path(ROOT_DIR, "output", "local", "crosssample")
+out_dir <- if (nzchar(Sys.getenv("AQ_SENS", ""))) {
+  file.path(ROOT_DIR, "output", "local", "sensitivity", Sys.getenv("AQ_SENS"), "crosssample")
+} else file.path(ROOT_DIR, "output", "local", "crosssample")
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 cross <- cross %>% arrange(match(method, c("AugNoFE","AugFE","SDID")), spec,
                            match(sample, c("pre_blackout","donut","full")))

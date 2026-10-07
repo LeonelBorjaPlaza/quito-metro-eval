@@ -1,0 +1,16 @@
+item,value
+raw_sheets,LIMPIO
+loschillos_values_2025-01-07_to_02-28_by_sheet,0
+raw_data_rows,189243
+raw_rows_first_cell_not_date,0
+raw_timestamps_off_hour,0
+raw_hours_absent_in_window,0
+read_remmaq_equals_hourly_in_window,TRUE
+read_remmaq_rows,189243
+read_remmaq_rows_dropped,0
+raw_text_cells_in_window,0
+hourly_panel_identical_to_frozen,TRUE
+traced_vs_written_max_abs_diff,0
+written_vs_frozen_max_abs_diff,2.8421709430404e-14
+panel_weeks_written,116
+panel_weeks_frozen,116

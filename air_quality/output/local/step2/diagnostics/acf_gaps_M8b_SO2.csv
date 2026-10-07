@@ -1,0 +1,9 @@
+pollutant,period,weeks,lag,autocorrelation
+SO2,pre,52,1,0.4249
+SO2,pre,52,2,0.2215
+SO2,pre,52,3,0.1836
+SO2,pre,52,4,0.108
+SO2,post,82,1,0.713
+SO2,post,82,2,0.5231
+SO2,post,82,3,0.348
+SO2,post,82,4,0.2748

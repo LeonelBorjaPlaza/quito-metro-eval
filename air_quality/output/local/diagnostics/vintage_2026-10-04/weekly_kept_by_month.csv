@@ -1,0 +1,169 @@
+pollutant,rule,month,weeks,weeks_kept,missing_stations
+co,current,2024-12,1,1,
+co,current,2025-01,4,4,
+co,current,2025-02,4,4,
+co,current,2025-03,5,5,
+co,current,2025-04,4,4,
+co,current,2025-05,4,4,
+co,current,2025-06,5,3,guamani
+co,current,2025-07,4,0,guamani
+co,current,2025-08,4,0,guamani
+co,current,2025-09,5,0,guamani
+co,current,2025-10,4,0,guamani
+co,current,2025-11,4,0,guamani
+co,current,2025-12,5,0,guamani
+co,current,2026-01,4,0,guamani
+co,current,2026-02,4,0,guamani
+co,current,2026-03,5,0,guamani tumbaco
+co,current,2026-04,4,0,guamani tumbaco
+co,current,2026-05,4,0,guamani tumbaco
+co,current,2026-06,5,0,guamani tumbaco
+co,current,2026-07,4,0,guamani tumbaco
+co,current,2026-08,5,0,guamani tumbaco
+co,min_half_hours,2024-12,1,1,
+co,min_half_hours,2025-01,4,4,
+co,min_half_hours,2025-02,4,4,
+co,min_half_hours,2025-03,5,5,
+co,min_half_hours,2025-04,4,4,
+co,min_half_hours,2025-05,4,4,
+co,min_half_hours,2025-06,5,2,guamani
+co,min_half_hours,2025-07,4,0,guamani
+co,min_half_hours,2025-08,4,0,guamani
+co,min_half_hours,2025-09,5,0,guamani
+co,min_half_hours,2025-10,4,0,guamani
+co,min_half_hours,2025-11,4,0,guamani loschillos
+co,min_half_hours,2025-12,5,0,guamani loschillos
+co,min_half_hours,2026-01,4,0,guamani
+co,min_half_hours,2026-02,4,0,guamani
+co,min_half_hours,2026-03,5,0,guamani tumbaco
+co,min_half_hours,2026-04,4,0,guamani tumbaco
+co,min_half_hours,2026-05,4,0,guamani tumbaco
+co,min_half_hours,2026-06,5,0,guamani tumbaco
+co,min_half_hours,2026-07,4,0,guamani tumbaco
+co,min_half_hours,2026-08,5,0,guamani tumbaco
+no2,current,2024-12,1,1,
+no2,current,2025-01,4,4,
+no2,current,2025-02,4,4,
+no2,current,2025-03,5,5,
+no2,current,2025-04,4,4,
+no2,current,2025-05,4,4,
+no2,current,2025-06,5,3,guamani
+no2,current,2025-07,4,0,guamani
+no2,current,2025-08,4,0,centro guamani
+no2,current,2025-09,5,0,guamani
+no2,current,2025-10,4,0,guamani
+no2,current,2025-11,4,0,guamani loschillos
+no2,current,2025-12,5,0,centro guamani loschillos
+no2,current,2026-01,4,0,centro guamani loschillos
+no2,current,2026-02,4,0,centro guamani loschillos
+no2,current,2026-03,5,0,guamani
+no2,current,2026-04,4,0,guamani
+no2,current,2026-05,4,0,guamani
+no2,current,2026-06,5,0,guamani
+no2,current,2026-07,4,0,guamani
+no2,current,2026-08,5,3,guamani
+no2,min_half_hours,2024-12,1,1,
+no2,min_half_hours,2025-01,4,4,
+no2,min_half_hours,2025-02,4,4,
+no2,min_half_hours,2025-03,5,2,carapungo
+no2,min_half_hours,2025-04,4,4,
+no2,min_half_hours,2025-05,4,4,
+no2,min_half_hours,2025-06,5,2,guamani
+no2,min_half_hours,2025-07,4,0,centro guamani
+no2,min_half_hours,2025-08,4,0,centro guamani
+no2,min_half_hours,2025-09,5,0,centro guamani
+no2,min_half_hours,2025-10,4,0,guamani
+no2,min_half_hours,2025-11,4,0,centro guamani loschillos
+no2,min_half_hours,2025-12,5,0,centro guamani loschillos
+no2,min_half_hours,2026-01,4,0,centro guamani loschillos
+no2,min_half_hours,2026-02,4,0,centro guamani loschillos
+no2,min_half_hours,2026-03,5,0,centro guamani
+no2,min_half_hours,2026-04,4,0,guamani
+no2,min_half_hours,2026-05,4,0,guamani
+no2,min_half_hours,2026-06,5,0,guamani
+no2,min_half_hours,2026-07,4,0,guamani
+no2,min_half_hours,2026-08,5,3,guamani
+pm25,current,2024-12,1,1,
+pm25,current,2025-01,4,4,
+pm25,current,2025-02,4,4,
+pm25,current,2025-03,5,5,
+pm25,current,2025-04,4,4,
+pm25,current,2025-05,4,4,
+pm25,current,2025-06,5,3,guamani
+pm25,current,2025-07,4,0,guamani
+pm25,current,2025-08,4,0,guamani
+pm25,current,2025-09,5,0,guamani
+pm25,current,2025-10,4,0,guamani
+pm25,current,2025-11,4,0,guamani loschillos sanantonio
+pm25,current,2025-12,5,0,guamani loschillos sanantonio
+pm25,current,2026-01,4,0,guamani sanantonio
+pm25,current,2026-02,4,0,guamani sanantonio
+pm25,current,2026-03,5,0,guamani sanantonio
+pm25,current,2026-04,4,0,guamani sanantonio
+pm25,current,2026-05,4,0,guamani sanantonio
+pm25,current,2026-06,5,0,guamani sanantonio
+pm25,current,2026-07,4,0,guamani sanantonio
+pm25,current,2026-08,5,4,guamani sanantonio
+pm25,min_half_hours,2024-12,1,1,
+pm25,min_half_hours,2025-01,4,4,
+pm25,min_half_hours,2025-02,4,4,
+pm25,min_half_hours,2025-03,5,5,
+pm25,min_half_hours,2025-04,4,4,
+pm25,min_half_hours,2025-05,4,4,
+pm25,min_half_hours,2025-06,5,2,guamani
+pm25,min_half_hours,2025-07,4,0,guamani
+pm25,min_half_hours,2025-08,4,0,guamani
+pm25,min_half_hours,2025-09,5,0,guamani sanantonio
+pm25,min_half_hours,2025-10,4,0,guamani sanantonio
+pm25,min_half_hours,2025-11,4,0,guamani loschillos sanantonio
+pm25,min_half_hours,2025-12,5,0,guamani loschillos sanantonio
+pm25,min_half_hours,2026-01,4,0,guamani sanantonio
+pm25,min_half_hours,2026-02,4,0,guamani sanantonio
+pm25,min_half_hours,2026-03,5,0,guamani sanantonio
+pm25,min_half_hours,2026-04,4,0,guamani sanantonio
+pm25,min_half_hours,2026-05,4,0,guamani sanantonio
+pm25,min_half_hours,2026-06,5,0,guamani sanantonio
+pm25,min_half_hours,2026-07,4,0,guamani sanantonio
+pm25,min_half_hours,2026-08,5,3,guamani sanantonio
+so2,current,2024-12,1,1,
+so2,current,2025-01,4,4,
+so2,current,2025-02,4,4,
+so2,current,2025-03,5,5,
+so2,current,2025-04,4,4,
+so2,current,2025-05,4,4,
+so2,current,2025-06,5,3,guamani
+so2,current,2025-07,4,0,guamani
+so2,current,2025-08,4,0,guamani
+so2,current,2025-09,5,0,guamani
+so2,current,2025-10,4,0,guamani
+so2,current,2025-11,4,0,guamani
+so2,current,2025-12,5,0,guamani
+so2,current,2026-01,4,0,guamani
+so2,current,2026-02,4,0,guamani
+so2,current,2026-03,5,0,guamani
+so2,current,2026-04,4,0,guamani
+so2,current,2026-05,4,0,guamani
+so2,current,2026-06,5,0,guamani
+so2,current,2026-07,4,0,guamani
+so2,current,2026-08,5,3,guamani tumbaco
+so2,min_half_hours,2024-12,1,1,
+so2,min_half_hours,2025-01,4,4,
+so2,min_half_hours,2025-02,4,4,
+so2,min_half_hours,2025-03,5,2,carapungo
+so2,min_half_hours,2025-04,4,4,
+so2,min_half_hours,2025-05,4,4,
+so2,min_half_hours,2025-06,5,2,guamani
+so2,min_half_hours,2025-07,4,0,guamani
+so2,min_half_hours,2025-08,4,0,guamani
+so2,min_half_hours,2025-09,5,0,guamani
+so2,min_half_hours,2025-10,4,0,guamani
+so2,min_half_hours,2025-11,4,0,guamani loschillos
+so2,min_half_hours,2025-12,5,0,guamani loschillos
+so2,min_half_hours,2026-01,4,0,guamani
+so2,min_half_hours,2026-02,4,0,guamani
+so2,min_half_hours,2026-03,5,0,guamani
+so2,min_half_hours,2026-04,4,0,guamani
+so2,min_half_hours,2026-05,4,0,guamani
+so2,min_half_hours,2026-06,5,0,guamani
+so2,min_half_hours,2026-07,4,0,guamani
+so2,min_half_hours,2026-08,5,3,guamani tumbaco

@@ -1,0 +1,40 @@
+\begin{table}[htbp]\centering
+\begin{threeparttable}
+\caption{Table 5. Local PM2.5 identification sequence}
+\begin{tabular}{lcccc}
+\toprule
+ & Centro + Belisario co-treated & Belisario treated, Centro excluded & Centro treated, Belisario excluded & Centro treated, Belisario retained \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A. Pre-disruption window: Nov. 27, 2023 to Sept. 9, 2024}} \\
+Log effect & -0.126 & -0.063 & -0.188 & -0.131 \\
+Percent effect & -11.8 & -6.1 & -17.2 & -12.2 \\
+Conformal p (iid) & 0.655 & 0.737 & 0.431 & 0.016 \\
+Block conformal p & 0.521 & 0.691 & 0.394 & 0.011 \\
+Pre RMSPE & 0.188 & 0.190 & 0.207 & 0.129 \\
+Post RMSPE & 0.231 & 0.221 & 0.310 & 0.256 \\
+Post/pre RMSPE & 1.23 & 1.16 & 1.50 & 1.98 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B. Donut window: excluding Sept. 16 to Dec. 16, 2024}} \\
+Log effect & -0.063 & 0.013 & -0.139 & -0.147 \\
+Percent effect & -6.2 & 1.3 & -13.0 & -13.7 \\
+Conformal p (iid) & 0.877 & 0.863 & 0.775 & 0.199 \\
+Block conformal p & 0.733 & 0.775 & 0.692 & 0.242 \\
+Pre RMSPE & 0.188 & 0.190 & 0.207 & 0.129 \\
+Post RMSPE & 0.205 & 0.217 & 0.263 & 0.234 \\
+Post/pre RMSPE & 1.09 & 1.14 & 1.27 & 1.82 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C. Full post-opening window: Nov. 27, 2023 to June 2025}} \\
+Log effect & 0.028 & 0.130 & -0.074 & -0.170 \\
+Percent effect & 2.9 & 13.9 & -7.1 & -15.6 \\
+Conformal p (iid) & 0.922 & 0.863 & 0.767 & 0.097 \\
+Block conformal p & 0.776 & 0.784 & 0.493 & 0.291 \\
+Pre RMSPE & 0.188 & 0.190 & 0.207 & 0.129 \\
+Post RMSPE & 0.496 & 0.578 & 0.460 & 0.259 \\
+Post/pre RMSPE & 2.64 & 3.04 & 2.22 & 2.01 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item All specifications use augmented synthetic control with station fixed effects and meteorological controls. Effects are reported in logs and percent terms. p-values are two-sided conformal p-values. The preferred specification is the final column: Centro treated, Belisario retained in the donor pool. The table is ordered to distinguish a corridor-proximity interpretation from a destination-access interpretation. Belisario is first tested as a treated station with Centro excluded; after showing no comparable effect at Belisario, the preferred specification retains Belisario as the key donor for Centro. Block conformal p-values use the T cyclic shifts of the weeks instead of 1,000 random permutations; they allow for serial dependence, and their smallest attainable value is 1/T (1/94 = 0.011 pre-disruption, 1/120 = 0.008 donut, 1/134 = 0.007 full). Iid conformal p-values use 1,000 random permutations; the smallest nonzero value is 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -94,8 +94,10 @@ run_sample <- function(which_sample) {
   s <- make_sample(which_sample)
   cat(sprintf("\n=== sample=%s (t_int_s=%d, weeks=%d) ===\n",
               which_sample, s$t_int_s, dplyr::n_distinct(s$panel$week_id)))
+  # revision_plan.md 3A.3 item 2: the Belisario placebo never has Centro (the
+  # treated station) in its donor pool; every other row keeps all other stations.
   L <- lapply(all_stations, function(st)
-    tryCatch(fit_one(s$panel, s$t_int_s, st, setdiff(all_stations, st)),
+    tryCatch(fit_one(s$panel, s$t_int_s, st, setdiff(all_stations, c(st, if (st == "belisario") "centro"))),
              error = function(e) { cat(sprintf("  fit error %s: %s\n", st, e$message)); NULL }))
   tibble(
     sample   = which_sample,
@@ -157,7 +159,7 @@ write_csv(res %>% select(sample, station, dist_corridor_km, att_log, att_pct, co
 con <- file(file.path(out_dir, "spatial_placebo_PM25_M5b_conformalp_log.txt"), "w")
 lines <- c("M5b conformal-p placebo across stations  [windows: pre_blackout=P1, donut=P1+P2]",
            "================================================================",
-           "Estimator: AugSynth NO FE (M5b). Canonical pools (each station vs other 7).",
+           "Estimator: AugSynth NO FE (M5b). Canonical pools (each station vs the other 7; Belisario vs the other 6, without Centro).",
            "Rank statistic: two-sided conformal p, most significant NEGATIVE = rank 1.",
            "")
 for (r in ranks) lines <- c(lines,

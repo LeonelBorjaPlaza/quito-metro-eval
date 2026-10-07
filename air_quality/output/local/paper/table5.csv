@@ -1,0 +1,22 @@
+row,Centro + Belisario co-treated,"Belisario treated, Centro excluded","Centro treated, Belisario excluded","Centro treated, Belisario retained"
+pre_blackout|Log effect,-0.126,-0.063,-0.188,-0.131
+pre_blackout|Percent effect,-11.8,-6.1,-17.2,-12.2
+pre_blackout|Conformal p (iid),0.655,0.737,0.431,0.016
+pre_blackout|Block conformal p,0.521,0.691,0.394,0.011
+pre_blackout|Pre RMSPE,0.188,0.190,0.207,0.129
+pre_blackout|Post RMSPE,0.231,0.221,0.310,0.256
+pre_blackout|Post/pre RMSPE,1.23,1.16,1.50,1.98
+donut|Log effect,-0.063,0.013,-0.139,-0.147
+donut|Percent effect,-6.2,1.3,-13.0,-13.7
+donut|Conformal p (iid),0.877,0.863,0.775,0.199
+donut|Block conformal p,0.733,0.775,0.692,0.242
+donut|Pre RMSPE,0.188,0.190,0.207,0.129
+donut|Post RMSPE,0.205,0.217,0.263,0.234
+donut|Post/pre RMSPE,1.09,1.14,1.27,1.82
+full|Log effect,0.028,0.130,-0.074,-0.170
+full|Percent effect,2.9,13.9,-7.1,-15.6
+full|Conformal p (iid),0.922,0.863,0.767,0.097
+full|Block conformal p,0.776,0.784,0.493,0.291
+full|Pre RMSPE,0.188,0.190,0.207,0.129
+full|Post RMSPE,0.496,0.578,0.460,0.259
+full|Post/pre RMSPE,2.64,3.04,2.22,2.01

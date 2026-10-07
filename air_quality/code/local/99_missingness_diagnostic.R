@@ -34,7 +34,8 @@ diagnose_pollutant <- function(pol, panel_file) {
   peak <- hourly %>%
     filter(hour_of_day %in% c(7, 8, 9, 17, 18, 19),
            day_of_week %in% 1:5,
-           date >= as.Date("2022-12-01"))
+           date >= as.Date("2022-12-01"),
+           date < as.Date(Sys.getenv("AQ_PANEL_END", "2025-06-16")) + 7)   # B3 cut (revision_plan.md 3A.1)
   
   peak_long <- peak %>%
     select(date, hour_of_day, all_of(var_cols)) %>%

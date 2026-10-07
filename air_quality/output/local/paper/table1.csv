@@ -1,0 +1,10 @@
+row,Local ground-monitor analysis,Citywide satellite analysis
+Treated unit,"REMMAQ monitoring stations, with Centro as the main treated station","Quito urban center, UCDB identifier 2544"
+Comparison pool,Other REMMAQ stations reporting the same pollutant,Latin American urban areas ranked by similarity to Quito
+Geographic unit,Monitoring station,UCDB urban-center polygon
+Pollutants,"PM2.5, CO, NO2, SO2","AOD, CO, NO2, SO2"
+Temporal resolution,Weekly averages of weekday peak-hour readings,"Weekly satellite retrievals, aggregated to four-week blocks for estimation"
+Pre-treatment period,52 weeks before the opening week,100 weeks before the opening week
+Post-opening windows,"Pre-disruption, donut, and full","Pre-disruption, donut, and full"
+Panel size before estimation,PM2.5: 8 stations x 134 weeks; gases: 7 stations x 134 weeks,"Pollutant-specific balanced panels, with 227 weekly observations per city"
+Primary role,Main test of localized air-quality effects near the historic center,Citywide benchmark for aggregate pollution changes in Quito

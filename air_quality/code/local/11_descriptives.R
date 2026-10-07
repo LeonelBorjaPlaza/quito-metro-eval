@@ -111,9 +111,11 @@ compute_construction <- function(pol) {
   stns_in_data <- sub(paste0("_", pol, "$"), "", cols)
   stns_used <- intersect(stns_in_data, stations_keep)
   
+  # B3 cut (revision_plan.md 3A.1): hours up to the end of the week starting AQ_PANEL_END
   hourly_long <- hourly %>%
-    filter(date >= as.Date("2022-12-01")) %>%
-    select(date, hour_of_day, day_of_week, all_of(cols)) %>%
+    filter(date >= as.Date("2022-12-01"),
+           date < as.Date(Sys.getenv("AQ_PANEL_END", "2025-06-16")) + 7) %>%
+    dplyr::select(date, hour_of_day, day_of_week, all_of(cols)) %>%
     pivot_longer(all_of(cols), names_to = "stn_col", values_to = "value") %>%
     mutate(estacion = sub(paste0("_", pol, "$"), "", stn_col)) %>%
     filter(estacion %in% stns_used)

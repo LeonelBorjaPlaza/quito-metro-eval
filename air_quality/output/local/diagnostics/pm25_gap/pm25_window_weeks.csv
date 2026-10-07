@@ -1,0 +1,13 @@
+spec,treated,exclude,units,donors,window,weeks_now,pre_now,post_now,weeks_all7,pre_all7,post_all7,weeks_gapfill_only,pre_gapfill_only,post_gapfill_only,first_week_now,last_week_now
+M7,"centro,belisario",NA,8,6,pre_blackout,94,52,42,94,52,42,94,52,42,2022-11-28,2024-09-09
+M7,"centro,belisario",NA,8,6,donut,102,52,50,109,52,57,104,52,52,2022-11-28,2025-03-31
+M7,"centro,belisario",NA,8,6,full,116,52,64,123,52,71,118,52,66,2022-11-28,2025-03-31
+M9,belisario,centro,7,6,pre_blackout,94,52,42,94,52,42,94,52,42,2022-11-28,2024-09-09
+M9,belisario,centro,7,6,donut,102,52,50,109,52,57,104,52,52,2022-11-28,2025-03-31
+M9,belisario,centro,7,6,full,116,52,64,123,52,71,118,52,66,2022-11-28,2025-03-31
+M8,centro,belisario,7,6,pre_blackout,94,52,42,94,52,42,94,52,42,2022-11-28,2024-09-09
+M8,centro,belisario,7,6,donut,102,52,50,109,52,57,104,52,52,2022-11-28,2025-03-31
+M8,centro,belisario,7,6,full,116,52,64,123,52,71,118,52,66,2022-11-28,2025-03-31
+M8b,centro,NA,8,7,pre_blackout,94,52,42,94,52,42,94,52,42,2022-11-28,2024-09-09
+M8b,centro,NA,8,7,donut,102,52,50,109,52,57,104,52,52,2022-11-28,2025-03-31
+M8b,centro,NA,8,7,full,116,52,64,123,52,71,118,52,66,2022-11-28,2025-03-31

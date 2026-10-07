@@ -3,8 +3,8 @@
 #  Build balanced weekly station panels for PM2.5 and CO
 #
 #  Input:  data/processed/hourly_panel.csv
-#  Output: data/processed/pm25_completepanel_peakweekly.csv
-#          data/processed/CO_completepanel_peakweekly.csv
+#  Output: data/processed/{pm25,CO,NO2,SO2}_completepanel_peakweekly.csv
+#          (with a _<AQ_SENS> suffix for a sensitivity; revision_plan.md 3A)
 #
 #  Pipeline per pollutant:
 #    1. Filter to peak hours (7-9am, 5-7pm weekdays)
@@ -38,10 +38,41 @@ proc_dir <- file.path(root_dir, "data", "processed")
 cat("Loading hourly panel...\n")
 panel <- read_csv(file.path(proc_dir, "hourly_panel.csv"),
                   show_col_types = FALSE)
+stopifnot(nrow(problems(panel)) == 0)
 
 # ---- The 8 analysis stations ----
 stations_keep <- c("belisario", "carapungo", "centro", "cotocollao",
                    "guamani", "loschillos", "sanantonio", "tumbaco")
+
+#=========================================================
+#  Step 2 switches (air_quality/docs/revision_plan.md, 3A).
+#  Defaults give the main specification; each sensitivity sets
+#  AQ_SENS (a tag for its panel files) and its own switches.
+#=========================================================
+SENS        <- Sys.getenv("AQ_SENS", "")                    # "" = main specification
+PANEL_END   <- Sys.getenv("AQ_PANEL_END", "2025-06-16")     # last week kept (B3); "none" = no cut
+EXCLUDE     <- Sys.getenv("AQ_EXCLUDE", "")                 # stations removed, comma-separated
+LC_SHIFT    <- Sys.getenv("AQ_LC_SHIFT_FROM", "")           # Los Chillos PM2.5 shift start (S2b)
+MIN_HALF    <- Sys.getenv("AQ_MIN_HALF", "") == "1"         # minimum-hours rule (S3)
+PANEL_SUFFIX <- if (nzchar(SENS)) paste0("_", SENS) else ""
+# A main run (no tag) must have every switch at its default, so it can never
+# overwrite the main panels with a sensitivity
+stopifnot(nzchar(SENS) || (EXCLUDE == "" && LC_SHIFT == "" && !MIN_HALF && PANEL_END == "2025-06-16"))
+cat(sprintf("Switches: sens='%s' end='%s' exclude='%s' lc_shift='%s' min_half=%s\n",
+            SENS, PANEL_END, EXCLUDE, LC_SHIFT, MIN_HALF))
+
+# (AQ_EXCLUDE is applied just before the weekly panels are built, below.)
+
+# S2b: from LC_SHIFT on, Los Chillos PM2.5 at hour t takes the value stamped
+# t + 2 h (the value stamped 09:00 is treated as 07:00). The hourly panel is a
+# complete hour-by-hour spine, so a lead of two rows is a lead of two hours.
+if (nzchar(LC_SHIFT)) {
+  panel <- panel %>% arrange(date, hour_of_day)
+  stopifnot(nrow(panel) == 24 * n_distinct(panel$date))
+  shifted <- dplyr::lead(panel$loschillos_pm25, 2)
+  panel$loschillos_pm25 <- ifelse(panel$date >= as.Date(LC_SHIFT), shifted,
+                                  panel$loschillos_pm25)
+}
 
 # Distance from each station to the metro corridor (km)
 station_distances <- tibble(
@@ -95,6 +126,7 @@ cat(sprintf("Long panel: %d rows, %d columns\n", nrow(peak_long), ncol(peak_long
 peak_long <- peak_long %>%
   filter(date >= as.Date("2022-12-01"))
 
+
 cat(sprintf("After dropping events and pre-Dec 2022: %d rows\n", nrow(peak_long)))
 
 
@@ -115,6 +147,24 @@ daily <- peak_long %>%
                 ~ ifelse(is.nan(.x), NA, .x)))
 
 cat(sprintf("Daily panel: %d rows\n", nrow(daily)))
+
+# S3 (revision_plan.md 2.2): a station-week with fewer than half of its weekday
+# peak-hour slots observed is treated as missing for that pollutant.
+if (MIN_HALF) {
+  pk <- peak_long %>% mutate(.wk = floor_date(date, "week", week_start = 1))
+  slots <- pk %>% distinct(.wk, date, hour_of_day) %>% count(.wk, name = "slots")
+  for (pol in c("pm25", "co", "no2", "so2")) {
+    low <- pk %>% group_by(estacion, .wk) %>%
+      summarise(obs = sum(!is.na(.data[[pol]])), .groups = "drop") %>%
+      left_join(slots, by = ".wk") %>% filter(obs < slots / 2) %>%
+      transmute(estacion, .wk, .low = TRUE)
+    daily <- daily %>% mutate(.wk = floor_date(date, "week", week_start = 1)) %>%
+      left_join(low, by = c("estacion", ".wk")) %>%
+      mutate(!!pol := ifelse(coalesce(.low, FALSE), NA, .data[[pol]])) %>%
+      select(-.low, -.wk)
+    cat(sprintf("Minimum-hours rule: %d station-weeks set missing for %s\n", nrow(low), pol))
+  }
+}
 
 
 #=========================================================
@@ -410,6 +460,15 @@ build_weekly_panel <- function(daily_data, covars, pollutant,
               by = c("station_id", "week_date"))
 
 
+  # ---- B3 (revision_plan.md 3A.1): keep weeks up to the week starting PANEL_END,
+  #      after interpolation, imputation and the all-stations rule ----
+  if (PANEL_END != "none") {
+    n_before <- n_distinct(balanced$week_date)
+    balanced <- balanced %>% filter(as.Date(week_date) <= as.Date(PANEL_END))
+    cat(sprintf("Panel cut at the week starting %s: %d -> %d weeks\n",
+                PANEL_END, n_before, n_distinct(balanced$week_date)))
+  }
+
   # ---- Build gap-free week_id and week_label ----
   week_map <- balanced %>%
     distinct(week_date) %>%
@@ -456,11 +515,18 @@ build_weekly_panel <- function(daily_data, covars, pollutant,
 #=========================================================
 #  Build PM2.5 panel (all 8 stations, San Antonio imputed)
 #=========================================================
+if (nzchar(EXCLUDE)) {
+  ex <- trimws(strsplit(EXCLUDE, ",")[[1]])
+  stopifnot(all(ex %in% stations_keep), !any(c("centro", "belisario") %in% ex))
+  stations_keep <- setdiff(stations_keep, ex)
+  cat(sprintf("Stations excluded: %s\n", paste(ex, collapse = ", ")))
+}
+
 pm25_panel <- build_weekly_panel(daily, covars_weekly, "pm25",
                                  drop_sanantonio = FALSE)
 
-write_csv(pm25_panel, file.path(proc_dir, "pm25_completepanel_peakweekly.csv"))
-cat(sprintf("Saved: %s\n", file.path(proc_dir, "pm25_completepanel_peakweekly.csv")))
+write_csv(pm25_panel, file.path(proc_dir, paste0("pm25_completepanel_peakweekly", PANEL_SUFFIX, ".csv")))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, paste0("pm25_completepanel_peakweekly", PANEL_SUFFIX, ".csv"))))
 
 
 #=========================================================
@@ -470,8 +536,8 @@ cat(sprintf("Saved: %s\n", file.path(proc_dir, "pm25_completepanel_peakweekly.cs
 co_panel <- build_weekly_panel(daily, covars_weekly, "co",
                                 drop_sanantonio = TRUE)
 
-write_csv(co_panel, file.path(proc_dir, "CO_completepanel_peakweekly.csv"))
-cat(sprintf("Saved: %s\n", file.path(proc_dir, "CO_completepanel_peakweekly.csv")))
+write_csv(co_panel, file.path(proc_dir, paste0("CO_completepanel_peakweekly", PANEL_SUFFIX, ".csv")))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, paste0("CO_completepanel_peakweekly", PANEL_SUFFIX, ".csv"))))
 
 
 
@@ -481,8 +547,8 @@ cat(sprintf("Saved: %s\n", file.path(proc_dir, "CO_completepanel_peakweekly.csv"
 no2_panel <- build_weekly_panel(daily, covars_weekly, "no2",
                                 drop_sanantonio = TRUE)
 
-write_csv(no2_panel, file.path(proc_dir, "NO2_completepanel_peakweekly.csv"))
-cat(sprintf("Saved: %s\n", file.path(proc_dir, "NO2_completepanel_peakweekly.csv")))
+write_csv(no2_panel, file.path(proc_dir, paste0("NO2_completepanel_peakweekly", PANEL_SUFFIX, ".csv")))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, paste0("NO2_completepanel_peakweekly", PANEL_SUFFIX, ".csv"))))
 
 
 #=========================================================
@@ -491,17 +557,17 @@ cat(sprintf("Saved: %s\n", file.path(proc_dir, "NO2_completepanel_peakweekly.csv
 so2_panel <- build_weekly_panel(daily, covars_weekly, "so2",
                                 drop_sanantonio = TRUE)
 
-write_csv(so2_panel, file.path(proc_dir, "SO2_completepanel_peakweekly.csv"))
-cat(sprintf("Saved: %s\n", file.path(proc_dir, "SO2_completepanel_peakweekly.csv")))
+write_csv(so2_panel, file.path(proc_dir, paste0("SO2_completepanel_peakweekly", PANEL_SUFFIX, ".csv")))
+cat(sprintf("Saved: %s\n", file.path(proc_dir, paste0("SO2_completepanel_peakweekly", PANEL_SUFFIX, ".csv"))))
 
 #=========================================================
 #  Final summary
 #=========================================================
 cat("\n===== DONE =====\n")
-cat(sprintf("PM2.5 panel: %d obs, %d weeks, 8 stations\n",
-            nrow(pm25_panel), n_distinct(pm25_panel$week_id)))
-cat(sprintf("CO panel:    %d obs, %d weeks, 7 stations\n",
-            nrow(co_panel), n_distinct(co_panel$week_id)))
+cat(sprintf("PM2.5 panel: %d obs, %d weeks, %d stations\n",
+            nrow(pm25_panel), n_distinct(pm25_panel$week_id), n_distinct(pm25_panel$estacion)))
+cat(sprintf("CO panel:    %d obs, %d weeks, %d stations\n",
+            nrow(co_panel), n_distinct(co_panel$week_id), n_distinct(co_panel$estacion)))
 cat(sprintf("Output dir:  %s\n", proc_dir))
 
 cat(sprintf("PM2.5 panel: %d obs, %d weeks, 8 stations\n",

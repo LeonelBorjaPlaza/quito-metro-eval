@@ -1,0 +1,7 @@
+source,test,n_months,rho_sf,p_station,p_station_smallest,sf_rank_abs,sf_rank_most_negative,p_cyclic,p_cyclic_smallest,supports
+monthly sheet,"primary: share, levels",16,0.25588235294117645,0.6666666666666666,0.06666666666666667,10,10,0.4375,0.0625,False
+monthly sheet,"secondary: log entries, levels",16,-0.3029411764705882,0.5333333333333333,0.06666666666666667,8,8,0.25,0.0625,False
+monthly sheet,"robustness: share, first differences",14,0.2571428571428571,0.26666666666666666,0.06666666666666667,4,14,0.35714285714285715,0.07142857142857142,False
+monthly sheet,"robustness: log entries, first differences",14,0.23956043956043957,0.2,0.06666666666666667,3,14,0.21428571428571427,0.07142857142857142,False
+hourly file (data-source check),"primary: share, levels",16,0.411764705882353,0.4,0.06666666666666667,6,13,0.1875,0.0625,False
+hourly file (data-source check),"secondary: log entries, levels",16,-0.08823529411764705,0.9333333333333333,0.06666666666666667,14,14,0.6875,0.0625,False

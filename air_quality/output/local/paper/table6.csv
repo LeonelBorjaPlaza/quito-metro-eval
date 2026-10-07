@@ -1,0 +1,9 @@
+row,Distance (km),Effect (%),Conformal p-value
+Centro,0.61,-12.2,0.013
+Belisario,0.77,-6.1,0.740
+Guamaní,4.04,-9.0,0.585
+Cotocollao,5.21,5.2,0.047
+Carapungo,7.64,-9.2,1.000
+Los Chillos,8.62,21.7,0.136
+Tumbaco,9.56,-17.8,0.768
+San Antonio,16.65,10.0,0.565

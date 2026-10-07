@@ -1,0 +1,22 @@
+row,PM2.5,CO,NO2,SO2
+pre_blackout|Log effect,-0.131,-0.057,-0.064,-0.053
+pre_blackout|Percent effect,-12.2,-5.5,-6.2,-5.1
+pre_blackout|Conformal p (iid),0.016,1.000,0.967,0.248
+pre_blackout|Block conformal p,0.011,1.000,0.840,0.340
+pre_blackout|Pre RMSPE,0.129,0.247,0.089,0.225
+pre_blackout|Post RMSPE,0.256,0.164,0.090,0.297
+pre_blackout|Post/pre RMSPE,1.98,0.66,1.02,1.32
+donut|Log effect,-0.147,-0.076,-0.055,0.095
+donut|Percent effect,-13.7,-7.4,-5.4,10.0
+donut|Conformal p (iid),0.199,1.000,0.610,0.120
+donut|Block conformal p,0.242,1.000,0.567,0.333
+donut|Pre RMSPE,0.129,0.247,0.089,0.225
+donut|Post RMSPE,0.234,0.166,0.138,0.395
+donut|Post/pre RMSPE,1.82,0.67,1.56,1.75
+full|Log effect,-0.170,-0.103,-0.060,0.070
+full|Percent effect,-15.6,-9.8,-5.8,7.3
+full|Conformal p (iid),0.097,1.000,0.716,0.249
+full|Block conformal p,0.291,1.000,0.701,0.410
+full|Pre RMSPE,0.129,0.247,0.089,0.225
+full|Post RMSPE,0.259,0.187,0.131,0.373
+full|Post/pre RMSPE,2.01,0.76,1.48,1.66

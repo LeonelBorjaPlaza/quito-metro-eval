@@ -30,7 +30,10 @@ OUTCOME_RAW <- "co_imp"
 ROOT_DIR <- here::here()
 DATA_DIR <- file.path(ROOT_DIR, "data", "processed")
 
-INFILE <- file.path(DATA_DIR, "CO_completepanel_peakweekly.csv")
+# Step 2 (revision_plan.md 3A): a sensitivity reads its own panel (AQ_SENS tag)
+SENS <- Sys.getenv("AQ_SENS", "")
+INFILE <- file.path(DATA_DIR, paste0("CO_completepanel_peakweekly",
+                                     if (nzchar(SENS)) paste0("_", SENS) else "", ".csv"))
 
 TREATMENT_DATE <- as.Date("2023-12-01")
 
@@ -54,6 +57,20 @@ COL_LINE  <- "#E41A1C"
 
 cat("=== Loading panel ===\n")
 df <- read_csv(INFILE, show_col_types = FALSE)
+
+# S4 (revision_plan.md 3A.2): drop every Monday week containing a day of the
+# 2023 rationing (2023-10-27 to 2023-12-15), i.e. the weeks starting 2023-10-23
+# to 2023-12-11, and renumber week_id; t_int below then falls on 2023-12-18.
+stopifnot(nzchar(SENS) || Sys.getenv("AQ_DROP_RATIONING", "") == "")   # never on a main run
+if (Sys.getenv("AQ_DROP_RATIONING", "") == "1") {
+  rationing_weeks <- seq(as.Date("2023-10-23"), as.Date("2023-12-11"), by = "week")
+  n_before <- n_distinct(df$week_date)
+  df <- df %>% filter(!as.Date(week_date) %in% rationing_weeks)
+  wk_map <- df %>% distinct(week_date) %>% arrange(week_date) %>% mutate(.wid = row_number())
+  df <- df %>% left_join(wk_map, by = "week_date") %>% mutate(week_id = .wid) %>% select(-.wid)
+  cat(sprintf("Rationing weeks dropped: %d (weeks %d -> %d)\n",
+              n_before - n_distinct(df$week_date), n_before, n_distinct(df$week_date)))
+}
 
 cat(sprintf("Pollutant: %s\n", toupper(POLLUTANT)))
 cat(sprintf("Rows: %d, Stations: %d, Weeks: %d\n",
