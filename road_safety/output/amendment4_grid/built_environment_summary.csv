@@ -1,0 +1,3 @@
+group,units,median_road_density,median_urban_street_density,minimum_urban_street_density,median_fast_share,maximum_fast_share,median_major_share,median_population_density
+stations,15,23.3679575792974,23.2434614985546,16.1948336083837,0,0.100985423119524,0.207718187383016,5900
+grid,82,20.6565482275371,19.5129275870313,16.2154024435974,0,0.245608845438691,0.0248753263111925,5400

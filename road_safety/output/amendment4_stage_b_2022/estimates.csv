@@ -1,0 +1,8 @@
+model,outcome,ring,comparison,clustering,estimate_pct_2022_primary,ci_low_pct_2022_primary,ci_high_pct_2022_primary,clusters_2022_primary,df_2022_primary,units_2022_primary,omitted_units_2022_primary,estimate_pct_2021_sensitivity,ci_low_pct_2021_sensitivity,ci_high_pct_2021_sensitivity,clusters_2021_sensitivity,df_2021_sensitivity,units_2021_sensitivity,omitted_units_2021_sensitivity
+primary,all_crashes,0-500 m,Main,Unit,9.028,-7.076,27.924,97,96,97,0,19.043,4.194,36.008,97,96,97,0
+all_outer,all_crashes,500 m-1 km,Main,Unit,-1.552,-12.477,10.736,97,96,97,0,4.554,-6.155,16.486,97,96,97,0
+pedestrian_inner,pedestrian,0-500 m,Main,Unit,36.719,-8.64,104.596,82,81,82,15,72.519,24.189,139.657,87,86,87,10
+pedestrian_outer,pedestrian,500 m-1 km,Main,Unit,5.663,-26.62,52.149,82,81,82,15,19.334,-13.063,63.804,87,86,87,10
+valley,all_crashes,0-500 m,Main plus valley,Unit,5.783,-9.082,23.078,174,173,174,94,14.46,0.864,29.888,181,180,181,87
+far,all_crashes,0-500 m,Beyond 2 km of Metro line,Unit,-1.927,-16.172,14.738,79,78,79,0,10.202,-3.995,26.498,79,78,79,0
+primary_parish,all_crashes,0-500 m,Main,Parish,9.028,-8.422,29.805,32,31,97,0,19.043,3.413,37.035,32,31,97,0

@@ -1,0 +1,16 @@
+{
+  "rule_document": "docs/amendment4_grid_selection_rule.md",
+  "crs": 32717,
+  "grid_origin_m": [0, 0],
+  "spacing_m": 1000,
+  "disc_radius_m": 500,
+  "urban_density_floor_exact": 16.194833608383664,
+  "station_defining_floor": "near_Solanda",
+  "max_fast_share": 0.25,
+  "urban_density_inclusive": true,
+  "fast_share_inclusive": true,
+  "geometry_only": true,
+  "alternative_grids_attempted": false,
+  "exclusions": "whole disc inside DMQ; centre >1500m from every station and >1000m from 2022 Trolebus/Ecovia trunk",
+  "fast_definition": "motorway/trunk and links OR primary/secondary and links on fixed named list/E35 ref; urban excludes fast and tracks; denominator all motor roads"
+}

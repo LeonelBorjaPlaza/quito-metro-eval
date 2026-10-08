@@ -1,0 +1,14 @@
+{
+  "scope": "geography-only comparison revision; no crash inputs",
+  "sources": {
+    "data/derived/amendment2/geography.rds": "7c14506200725e62e023824e5af9b25822895d61c4653b7bac350d73d2b73d2d",
+    "data/derived/amendment4/brt_2022.geojson": "de36dc5124128d325302fe08ab6bb1aae2122dc9d89d8bed30cfd4a9c320d3ee",
+    "docs/amendment4_grid_selection_rule.md": "01c572836c62dbaa231a46b7a29d3f3da0c6d53f3c8c742d0e3b44fdf611d463"
+  },
+  "brt_source": {
+    "input": "data/raw/2026-10-05_osm_ecuador_geofabrik/ecuador-220101.osm.pbf",
+    "sha256": "ebd20f7063490591e4155004305a40bc02888d8fa7a7ff5f5474a20bbff9d535",
+    "relation_rule": "Metrobus-Q C1/C4/C6/E1/E1R/E3/E4/E6, route masters and all child routes; omit platform ways",
+    "complete_members": true
+  }
+}

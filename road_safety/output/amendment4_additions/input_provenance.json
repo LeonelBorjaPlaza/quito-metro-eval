@@ -1,0 +1,10 @@
+{
+  "scope": "approved three-check geography; no crash inputs",
+  "selection": "centre in named valleys, original exclusions/fast cap, no density floor; unique union; whole-disc beyond line2km; centre/point parish clustering",
+  "inputs": {
+    "data/derived/amendment4_grid/geography.rds": "2e1949673e41a8f7627c938ae34b1b2016aa4340b4fc955da350548c0ebfa008",
+    "output/amendment4_grid/grid_registry.csv": "de819865a3f77b9a1f317464388d154aba53364b4f1b320a49db44386e868307",
+    "../air_quality/data/for_maps/MetroLine.gpkg": "e036fdc44b44f8555eef5e6a5ab98407fc43f4833d419c32378c898d39fe832f",
+    "data/raw/2026-09-25_geoquito_parroquias/PARROQUIAS_REF.zip": "20012166d883a7de9800e117b159609e87bb21b29be35c341ba8bc7e782da96c"
+  }
+}

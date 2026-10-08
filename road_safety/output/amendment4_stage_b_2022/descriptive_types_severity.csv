@@ -1,0 +1,12 @@
+group,category,ring,label,estimate_pct,ci_low_pct,ci_high_pct,clusters,df,units,omitted_units,omitted_months,status
+Typology,ATIPICO,0-500 m,Descriptive,-16.7,-44.175,24.298,91,90,91,6,0,Estimated; pointwise 95% interval
+Typology,ATROPELLO,0-500 m,Descriptive,36.719,-8.64,104.596,82,81,82,15,0,Estimated; pointwise 95% interval
+Typology,CAIDA DE PASAJERO,0-500 m,Descriptive,106.061,-43.594,652.775,29,28,29,68,24,Estimated; pointwise 95% interval
+Typology,CHOQUES,0-500 m,Descriptive,-1.416,-23.845,27.619,95,94,95,2,0,Estimated; pointwise 95% interval
+Typology,COLISION,0-500 m,Descriptive,93.846,-2.729,286.305,41,40,41,56,5,Estimated; pointwise 95% interval
+Typology,ESTRELLAMIENTO,0-500 m,Descriptive,31.106,-1.995,75.388,94,93,94,3,0,Estimated; pointwise 95% interval
+Typology,PERDIDA DE CARRIL,0-500 m,Descriptive,66.552,-7.969,201.414,68,67,68,29,2,Estimated; pointwise 95% interval
+Typology,ROCE,0-500 m,Descriptive,-42.455,-77.771,48.967,40,39,40,57,17,Estimated; pointwise 95% interval
+Typology,VOLCAMIENTO,0-500 m,Descriptive,,,,,,,,,Not estimable
+Severity,Damage only,0-500 m,Descriptive,5.612,-10.6,24.764,96,95,96,1,0,Estimated; pointwise 95% interval
+Severity,Injury or fatal,0-500 m,Descriptive,12.684,-10.954,42.596,97,96,97,0,0,Estimated; pointwise 95% interval

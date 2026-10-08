@@ -1,0 +1,9 @@
+check,passed
+geography only; no crash input,TRUE
+fixed1000m origin-zero grid,TRUE
+nonoverlapping disc interiors,TRUE
+whole disc DMQ/Metro/BRT exclusions,TRUE
+exact minimum station density applied,TRUE
+25percent fast cap applied,TRUE
+population used only for audit,TRUE
+no models power simulations placebos,TRUE

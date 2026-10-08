@@ -1,0 +1,6 @@
+{
+  "elapsed_seconds": 17.9706,
+  "source_roads": "2022 Geofabrik PBF via code/19_amend2_geography.R",
+  "station_geometry": "unchanged station points and nearest-station partition",
+  "crash_inputs_loaded": false
+}

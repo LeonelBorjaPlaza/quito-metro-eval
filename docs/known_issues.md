@@ -156,14 +156,14 @@ Carried over from earlier work:
 
 ## road_safety
 
-Added 2026-09-24:
+Release redaction, 2026-10-07: the non-road-safety sections above are preserved from `ddde0a8`. The summary below retains issues without protected crash counts. Historical evidence paths identify local records excluded from the clean release.
 
-- **Note.** An older copy of the crash matrix sat in the air quality OneDrive folder (`data/traffic-accidents/`). It matches the delivered file cell for cell, except that its `DIA` column holds English day names, apparently from a re-save by Excel. It is kept in the store under `copy_found_in_AQ_SRC/`. Use the delivered file.
-
-Carried over from the first look:
-
-- **Open, provider.** No records for 2020 or earlier with coordinates and the same variables, so the series starts in January 2021.
-- **Open.** One record has the text "X (SICARIATO)" in the deaths field instead of a number, which suggests a homicide rather than a road crash. Decide how to treat it and document the rule.
-- **Open.** The urban or rural field (ZONA) is empty for 960 records.
-- **Open, provider.** The typology "ATIPICO" (about 2,700 records) has no definition yet.
-- **Open.** Coordinates are stored partly as text and partly as numbers in the Excel file. All convert to numbers, but no point has yet been checked against the district boundary.
+- **Open, provider.** The series begins in January 2021; earlier records lack comparable georeferencing and variables. ATIPICO, COLISION, ZONA and vehicle codes need definitions. The provider's coverage and recording practices remain uncertain. Source: the AMT provenance note and local data audit.
+- **Note.** Use the delivered workbook; the older copy in `copy_found_in_AQ_SRC/` has translated weekday labels. Formula-based weekday and administration fields require care. Coordinates mix text and numeric types but convert to numbers.
+- **Recorded rule.** SICARIATO-flagged entries are retained in the private build and excluded from crash outcomes. Their frequency is withheld.
+- **Open, provider.** Recording formats differ in October–December 2021, October 2024 and August 2025; ZONA and vehicle fields have missing values. Cause fields have formula errors around opening, and recorded vehicle counts disagree with linked vehicle rows in September 2023 and October 2025. Exact frequencies and complements are withheld. Local evidence: audit tables and `road_safety/output/completeness/`.
+- **Open.** Recorded parish labels are unreliable, repeated exact coordinates may indicate default locations, and recorded times are heaped with a later change in practice. Use polygon assignments; retain these limitations. Exact point attributes, frequencies and percentages are withheld. Local evidence: the data audit.
+- **Historical design qualification.** Name-only fast-road flags can match local streets with the same name. Amendment 1 records the approved geometric confirmation; Amendment 4 uses a separately frozen public-road geography rule. No new outcome definition is introduced by this release.
+- **Historical Amendment 2 qualification.** Forecast, geography and inference limitations and prior exposure are recorded in the amendment. A prior local release allowed approximate reconstruction of a withheld indexed path using linked means and adjacent paths; that historical snapshot remains excluded. Later targeted corrections were not universal reconstruction certification.
+- **Release issue.** Main at `4abdbe8` contains crash-derived tables, plots, logs and prose that fail rounding, suppression or linked-margin protection. See `reports/verification/2026-10-07_road_safety_main_release_audit.md`. The clean branch excludes historical crash-derived outputs and reports and redacts approved documents; no original main file or ancestor commit is rewritten.
+- **Scope limitation.** The requested baseline `ddde0a8` already contains protected prose in its AMT provenance and earlier known-issue entries. The clean branch can make its current tree compliant, but cannot remove those values from retained ancestor history. Publishing it is not a purge of historical disclosures.
